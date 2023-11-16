@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 16 14:14:40 2023
+# Process ID: 6512
+# Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/synth_2
+# Command line: vivado.exe -log hdmi_out_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_wrapper.tcl
+# Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/synth_2/hdmi_out_wrapper.vds
+# Journal file: C:/Xil_prj/hdmi_out/hdmi_out.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source hdmi_out_wrapper.tcl -notrace

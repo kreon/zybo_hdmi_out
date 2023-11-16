@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 15 14:52:37 2023
+# Process ID: 1600
+# Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_gpio_led_0_synth_1
+# Command line: vivado.exe -log hdmi_out_axi_gpio_led_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_axi_gpio_led_0.tcl
+# Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_gpio_led_0_synth_1/hdmi_out_axi_gpio_led_0.vds
+# Journal file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_gpio_led_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_out_axi_gpio_led_0.tcl -notrace
