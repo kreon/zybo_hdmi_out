@@ -4,3 +4,4 @@ webtalk/
 *.log
 RemoteSystemsTempFiles/
 .metadata/
+*.analytics

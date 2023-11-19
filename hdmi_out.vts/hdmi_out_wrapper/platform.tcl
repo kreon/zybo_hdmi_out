@@ -20,3 +20,6 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {hdmi_out_wrapper}
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 

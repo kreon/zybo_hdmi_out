@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Nov 19 07:36:25 2023
+| Date         : Sun Nov 19 11:55:04 2023
 | Host         : ta4ka running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file hdmi_out_wrapper_clock_utilization_routed.rpt
 | Design       : hdmi_out_wrapper
@@ -51,9 +51,9 @@ Table of Contents
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                      | Driver Pin                                                               | Net                                            |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------------------------------+
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        4419 |               0 |        7.000 | clk_fpga_1                                                                                 | hdmi_out_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
-| g1        | src1      | BUFR/O          | None       | BUFR_X0Y5     | X1Y1         |                 1 |        2843 |               0 |       10.000 | axi_dynclk_0_PXL_CLK_O                                                                     | hdmi_out_i/axi_dynclk_0/U0/BUFR_inst/O                                   | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O           |
+| g1        | src1      | BUFR/O          | None       | BUFR_X0Y5     | X1Y1         |                 1 |        2861 |               0 |       10.000 | axi_dynclk_0_PXL_CLK_O                                                                     | hdmi_out_i/axi_dynclk_0/U0/BUFR_inst/O                                   | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O           |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 4 |        1787 |               0 |       10.000 | clk_fpga_0                                                                                 | hdmi_out_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O     | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i         |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 2 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O     | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i         |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -82,10 +82,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3312 |  1100 | 1372 |   400 |    0 |    20 |    3 |    10 |    0 |    20 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2065 |  1100 |  712 |   350 |    0 |    40 |    2 |    20 |    0 |    20 |
-| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  746 |  1100 |  297 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    4 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3027 |  1100 |  945 |   350 |    0 |    40 |    3 |    20 |    0 |    20 |
+| X0Y0              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2830 |  1100 | 1147 |   400 |    0 |    20 |    4 |    10 |    0 |    20 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2631 |  1100 |  932 |   350 |    0 |    40 |    1 |    20 |    0 |    20 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  705 |  1100 |  250 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    4 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 | 3002 |  1100 |  959 |   350 |    0 |    40 |    3 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -119,8 +119,8 @@ All Modules
 +----+-------+-------+-----------------------+
 |    | X0    | X1    | HORIZONTAL PROG DELAY |
 +----+-------+-------+-----------------------+
-| Y1 |     1 |    33 |                     0 |
-| Y0 |  2719 |  1592 |                     0 |
+| Y1 |     1 |    45 |                     0 |
+| Y0 |  2164 |  2135 |                     0 |
 +----+-------+-------+-----------------------+
 
 
@@ -130,7 +130,7 @@ All Modules
 +-----------+-----------------+-------------------+------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                  | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                  |
 +-----------+-----------------+-------------------+------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
-| g1        | BUFR/O          | X1Y1              | axi_dynclk_0_PXL_CLK_O |      10.000 | {0.000 4.000} |        2835 |        8 |              0 |        0 | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O |
+| g1        | BUFR/O          | X1Y1              | axi_dynclk_0_PXL_CLK_O |      10.000 | {0.000 4.000} |        2853 |        8 |              0 |        0 | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O |
 +-----------+-----------------+-------------------+------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -141,7 +141,7 @@ All Modules
 +----+----+-----------+-----------------------+
 |    | X0 | X1        | HORIZONTAL PROG DELAY |
 +----+----+-----------+-----------------------+
-| Y1 |  0 |  (D) 2843 |                     0 |
+| Y1 |  0 |  (D) 2861 |                     0 |
 | Y0 |  0 |         0 |                     - |
 +----+----+-----------+-----------------------+
 
@@ -163,8 +163,8 @@ All Modules
 +----+------+------+-----------------------+
 |    | X0   | X1   | HORIZONTAL PROG DELAY |
 +----+------+------+-----------------------+
-| Y1 |  750 |  171 |                     0 |
-| Y0 |  840 |   26 |                     0 |
+| Y1 |  713 |  116 |                     0 |
+| Y0 |  831 |  127 |                     0 |
 +----+------+------+-----------------------+
 
 
@@ -182,12 +182,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+------+-----------------------+
-|    | X0 | X1   | HORIZONTAL PROG DELAY |
-+----+----+------+-----------------------+
-| Y1 |  0 |    0 |                     - |
-| Y0 |  0 |  458 |                     0 |
-+----+----+------+-----------------------+
++----+-----+------+-----------------------+
+|    | X0  | X1   | HORIZONTAL PROG DELAY |
++----+-----+------+-----------------------+
+| Y1 |   0 |    0 |                     - |
+| Y0 |  28 |  430 |                     0 |
++----+-----+------+-----------------------+
 
 
 10. Clock Region Cell Placement per Global Clock: Region X0Y0
@@ -196,8 +196,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2719 |               0 | 2537 |         178 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
-| g2        | n/a   | BUFG/O          | None       |         840 |               0 |  775 |          65 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | n/a   | BUFG/O          | None       |        2164 |               0 | 2032 |         127 |    4 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
+| g2        | n/a   | BUFG/O          | None       |         831 |               0 |  770 |          61 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
+| g3        | n/a   | BUFG/O          | None       |          28 |               0 |   28 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -210,9 +211,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1592 |               0 | 1581 |           8 |    2 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
-| g2        | n/a   | BUFG/O          | None       |          26 |               0 |   26 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
-| g3        | n/a   | BUFG/O          | None       |         458 |               0 |  458 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i         |
+| g0        | n/a   | BUFG/O          | None       |        2135 |               0 | 2074 |          59 |    1 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
+| g2        | n/a   | BUFG/O          | None       |         127 |               0 |  127 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
+| g3        | n/a   | BUFG/O          | None       |         430 |               0 |  430 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -226,7 +227,7 @@ All Modules
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 | g0        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
-| g2        | n/a   | BUFG/O          | None       |         750 |               0 | 746 |           3 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
+| g2        | n/a   | BUFG/O          | None       |         713 |               0 | 705 |           7 |    0 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -239,9 +240,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          33 |               0 |   30 |           0 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
-| g1        | n/a   | BUFR/O          | None       |        2843 |               0 | 2827 |           5 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O           |
-| g2        | n/a   | BUFG/O          | None       |         171 |               0 |  170 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
+| g0        | n/a   | BUFG/O          | None       |          45 |               0 |   42 |           0 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK1 |
+| g1        | n/a   | BUFR/O          | None       |        2861 |               0 | 2845 |           5 |    3 |   0 |  0 |    0 |   0 |       0 | hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O           |
+| g2        | n/a   | BUFG/O          | None       |         116 |               0 |  115 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | hdmi_out_i/processing_system7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -289,5 +290,5 @@ resize_pblock [get_pblocks {CLKAG_hdmi_out_i/axi_dynclk_0/U0/PXL_CLK_O}] -add {C
 #startgroup
 create_pblock {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i"}]]]
-resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup

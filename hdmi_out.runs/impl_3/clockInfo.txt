@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Sun Nov 19 07:35:36 2023
+| Date         : Sun Nov 19 11:54:16 2023
 | Host         : ta4ka
 | Design       : design_1
 | Device       : xc7z010-clg400-1--

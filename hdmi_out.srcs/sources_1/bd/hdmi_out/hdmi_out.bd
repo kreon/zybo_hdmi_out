@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE78C383CB6F87947",
+      "boundary_crc": "0x734F986823C69921",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../hdmi_out.gen/sources_1/bd/hdmi_out",
       "name": "hdmi_out",
@@ -47,7 +47,9 @@
       "proc_sys_reset_0": "",
       "proc_sys_reset_1": "",
       "processing_system7_0": "",
-      "system_ila_0": ""
+      "system_ila_0": "",
+      "rgb2vga_0": "",
+      "rgb_doubler_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -365,6 +367,27 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "VGA_R": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "VGA_G": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "VGA_B": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "VGA_HS_O": {
+        "direction": "O"
+      },
+      "VGA_VS_O": {
+        "direction": "O"
       }
     },
     "components": {
@@ -3773,6 +3796,102 @@
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
         }
+      },
+      "rgb2vga_0": {
+        "vlnv": "digilentinc.com:ip:rgb2vga:1.0",
+        "ip_revision": "3",
+        "xci_name": "hdmi_out_rgb2vga_0_0",
+        "xci_path": "ip\\hdmi_out_rgb2vga_0_0\\hdmi_out_rgb2vga_0_0.xci",
+        "inst_hier_path": "rgb2vga_0"
+      },
+      "rgb_doubler_0": {
+        "vlnv": "xilinx.com:module_ref:rgb_doubler:1.0",
+        "ip_revision": "1",
+        "xci_name": "hdmi_out_rgb_doubler_0_1",
+        "xci_path": "ip\\hdmi_out_rgb_doubler_0_1\\hdmi_out_rgb_doubler_0_1.xci",
+        "inst_hier_path": "rgb_doubler_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rgb_doubler",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "RGB_IN": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:vid_io:1.0",
+            "vlnv": "xilinx.com:interface:vid_io_rtl:1.0",
+            "port_maps": {
+              "DATA": {
+                "physical_name": "vid_data",
+                "direction": "I",
+                "left": "23",
+                "right": "0"
+              },
+              "ACTIVE_VIDEO": {
+                "physical_name": "vid_active_video",
+                "direction": "I"
+              },
+              "HSYNC": {
+                "physical_name": "vid_hsync",
+                "direction": "I"
+              },
+              "VSYNC": {
+                "physical_name": "vid_vsync",
+                "direction": "I"
+              }
+            }
+          },
+          "RGB_OUT0": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:vid_io:1.0",
+            "vlnv": "xilinx.com:interface:vid_io_rtl:1.0",
+            "port_maps": {
+              "DATA": {
+                "physical_name": "vid_pData_0",
+                "direction": "O",
+                "left": "23",
+                "right": "0"
+              },
+              "ACTIVE_VIDEO": {
+                "physical_name": "vid_pVDE_0",
+                "direction": "O"
+              },
+              "HSYNC": {
+                "physical_name": "vid_pHSync_0",
+                "direction": "O"
+              },
+              "VSYNC": {
+                "physical_name": "vid_pVSync_0",
+                "direction": "O"
+              }
+            }
+          },
+          "RGB_OUT1": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:vid_io:1.0",
+            "vlnv": "xilinx.com:interface:vid_io_rtl:1.0",
+            "port_maps": {
+              "DATA": {
+                "physical_name": "vid_pData_1",
+                "direction": "O",
+                "left": "23",
+                "right": "0"
+              },
+              "ACTIVE_VIDEO": {
+                "physical_name": "vid_pVDE_1",
+                "direction": "O"
+              },
+              "HSYNC": {
+                "physical_name": "vid_pHSync_1",
+                "direction": "O"
+              },
+              "VSYNC": {
+                "physical_name": "vid_pVSync_1",
+                "direction": "O"
+              }
+            }
+          }
+        }
       }
     },
     "interface_nets": {
@@ -3903,10 +4022,22 @@
           "rgb2dvi_0/TMDS"
         ]
       },
+      "rgb_doubler_0_RGB_OUT0": {
+        "interface_ports": [
+          "rgb_doubler_0/RGB_OUT0",
+          "rgb2vga_0/vid_in"
+        ]
+      },
+      "rgb_doubler_0_RGB_OUT1": {
+        "interface_ports": [
+          "rgb_doubler_0/RGB_OUT1",
+          "rgb2dvi_0/RGB"
+        ]
+      },
       "v_axi4s_vid_out_0_vid_io_out": {
         "interface_ports": [
-          "rgb2dvi_0/RGB",
-          "v_axi4s_vid_out_0/vid_io_out"
+          "v_axi4s_vid_out_0/vid_io_out",
+          "rgb_doubler_0/RGB_IN"
         ]
       },
       "v_tc_0_vtiming_out": {
@@ -3934,7 +4065,8 @@
           "axi_dynclk_0/PXL_CLK_O",
           "rgb2dvi_0/PixelClk",
           "v_axi4s_vid_out_0/vid_io_out_clk",
-          "v_tc_0/clk"
+          "v_tc_0/clk",
+          "rgb2vga_0/PixelClk"
         ]
       },
       "axi_gpio_0_ip2intc_irpt": {
@@ -3993,6 +4125,36 @@
           "processing_system7_0/FCLK_RESET0_N",
           "proc_sys_reset_0/ext_reset_in",
           "proc_sys_reset_1/ext_reset_in"
+        ]
+      },
+      "rgb2vga_0_vga_pBlue": {
+        "ports": [
+          "rgb2vga_0/vga_pBlue",
+          "VGA_B"
+        ]
+      },
+      "rgb2vga_0_vga_pGreen": {
+        "ports": [
+          "rgb2vga_0/vga_pGreen",
+          "VGA_G"
+        ]
+      },
+      "rgb2vga_0_vga_pHSync": {
+        "ports": [
+          "rgb2vga_0/vga_pHSync",
+          "VGA_HS_O"
+        ]
+      },
+      "rgb2vga_0_vga_pRed": {
+        "ports": [
+          "rgb2vga_0/vga_pRed",
+          "VGA_R"
+        ]
+      },
+      "rgb2vga_0_vga_pVSync": {
+        "ports": [
+          "rgb2vga_0/vga_pVSync",
+          "VGA_VS_O"
         ]
       },
       "rst_processing_system7_0_100M_interconnect_aresetn": {

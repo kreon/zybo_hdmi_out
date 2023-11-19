@@ -70,13 +70,14 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
     <Option Name="XSimArrayDisplayLimit" Val="1024"/>
@@ -93,6 +94,13 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/rgb_doubler.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_out/hdmi_out.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -131,6 +139,12 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_out.bd" FileRelPathName="ip/hdmi_out_rgb2dvi_0_0/hdmi_out_rgb2dvi_0_0.xci">
           <Proxy FileSetName="hdmi_out_rgb2dvi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_out.bd" FileRelPathName="ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0.xci">
+          <Proxy FileSetName="hdmi_out_rgb2vga_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_out.bd" FileRelPathName="ip/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1.xci">
+          <Proxy FileSetName="hdmi_out_rgb_doubler_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_out.bd" FileRelPathName="ip/hdmi_out_v_axi4s_vid_out_0_0/hdmi_out_v_axi4s_vid_out_0_0.xci">
           <Proxy FileSetName="hdmi_out_v_axi4s_vid_out_0_0"/>
@@ -280,6 +294,18 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="hdmi_out_rgb2vga_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_out_rgb2vga_0_0" RelGenDir="$PGENDIR/hdmi_out_rgb2vga_0_0">
+      <Config>
+        <Option Name="TopModule" Val="hdmi_out_rgb2vga_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="hdmi_out_rgb_doubler_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_out_rgb_doubler_0_1" RelGenDir="$PGENDIR/hdmi_out_rgb_doubler_0_1">
+      <Config>
+        <Option Name="TopModule" Val="hdmi_out_rgb_doubler_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -312,9 +338,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_btn_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_gpio_btn_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_btn_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_gpio_btn_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_btn_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_btn_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -324,9 +348,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_sw_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_gpio_sw_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_sw_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_gpio_sw_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_sw_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_sw_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -336,9 +358,7 @@
     </Run>
     <Run Id="hdmi_out_axi_dynclk_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_dynclk_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_dynclk_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_dynclk_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_dynclk_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_dynclk_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -348,9 +368,7 @@
     </Run>
     <Run Id="hdmi_out_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_proc_sys_reset_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_proc_sys_reset_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -360,9 +378,7 @@
     </Run>
     <Run Id="hdmi_out_proc_sys_reset_1_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_proc_sys_reset_1_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_proc_sys_reset_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_proc_sys_reset_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_1_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -372,9 +388,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_hdmi_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_gpio_hdmi_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_hdmi_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_gpio_hdmi_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_hdmi_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_hdmi_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -384,9 +398,7 @@
     </Run>
     <Run Id="hdmi_out_rgb2dvi_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_rgb2dvi_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb2dvi_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_rgb2dvi_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2dvi_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2dvi_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -396,9 +408,7 @@
     </Run>
     <Run Id="hdmi_out_v_axi4s_vid_out_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_v_axi4s_vid_out_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_v_axi4s_vid_out_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_v_axi4s_vid_out_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_v_axi4s_vid_out_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_v_axi4s_vid_out_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -408,9 +418,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_led_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_gpio_led_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_led_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_gpio_led_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_led_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_led_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -420,9 +428,7 @@
     </Run>
     <Run Id="hdmi_out_axi_vdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axi_vdma_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_vdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axi_vdma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_vdma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_vdma_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -432,9 +438,7 @@
     </Run>
     <Run Id="hdmi_out_v_tc_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_v_tc_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_v_tc_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_v_tc_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_v_tc_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_v_tc_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -444,9 +448,7 @@
     </Run>
     <Run Id="hdmi_out_axis_subset_converter_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_axis_subset_converter_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axis_subset_converter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_axis_subset_converter_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axis_subset_converter_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axis_subset_converter_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -455,6 +457,26 @@
       <RQSFiles/>
     </Run>
     <Run Id="hdmi_out_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_xbar_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_xbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_xbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="synth_3" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_3/hdmi_out_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_3" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_3" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_3">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="hdmi_out_rgb2vga_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_rgb2vga_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb2vga_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_rgb2vga_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2vga_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2vga_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -466,7 +488,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="synth_3" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_3/hdmi_out_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_3" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_3" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_3">
+    <Run Id="hdmi_out_rgb_doubler_0_1_synth_1" Type="Ft3:Synth" SrcSet="hdmi_out_rgb_doubler_0_1" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb_doubler_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_out_rgb_doubler_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb_doubler_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb_doubler_0_1_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -497,9 +519,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_btn_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_btn_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_gpio_btn_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_btn_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_btn_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -516,9 +536,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_sw_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_sw_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_gpio_sw_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_sw_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_sw_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -535,9 +553,7 @@
     </Run>
     <Run Id="hdmi_out_axi_dynclk_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_dynclk_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_dynclk_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_dynclk_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_dynclk_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -554,9 +570,7 @@
     </Run>
     <Run Id="hdmi_out_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -573,9 +587,7 @@
     </Run>
     <Run Id="hdmi_out_proc_sys_reset_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_proc_sys_reset_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_proc_sys_reset_1_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_1_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_proc_sys_reset_1_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -592,9 +604,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_hdmi_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_hdmi_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_gpio_hdmi_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_hdmi_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_hdmi_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -611,9 +621,7 @@
     </Run>
     <Run Id="hdmi_out_rgb2dvi_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb2dvi_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_rgb2dvi_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2dvi_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2dvi_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -630,9 +638,7 @@
     </Run>
     <Run Id="hdmi_out_v_axi4s_vid_out_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_v_axi4s_vid_out_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_v_axi4s_vid_out_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_v_axi4s_vid_out_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_v_axi4s_vid_out_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -649,9 +655,7 @@
     </Run>
     <Run Id="hdmi_out_axi_gpio_led_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_gpio_led_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_gpio_led_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_led_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_gpio_led_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -668,9 +672,7 @@
     </Run>
     <Run Id="hdmi_out_axi_vdma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axi_vdma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axi_vdma_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_vdma_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axi_vdma_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -687,9 +689,7 @@
     </Run>
     <Run Id="hdmi_out_v_tc_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_v_tc_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_v_tc_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_v_tc_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_v_tc_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -706,9 +706,7 @@
     </Run>
     <Run Id="hdmi_out_axis_subset_converter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_axis_subset_converter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_axis_subset_converter_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_axis_subset_converter_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_axis_subset_converter_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -725,6 +723,41 @@
     </Run>
     <Run Id="hdmi_out_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_xbar_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_xbar_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_xbar_0_impl_1">
       <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_3" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_3" LaunchOptions="-jobs 10 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_3">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="hdmi_out_rgb2vga_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb2vga_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_rgb2vga_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2vga_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb2vga_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
           <Desc>Default settings for Implementation.</Desc>
         </StratHandle>
@@ -742,7 +775,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_3" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_3" LaunchOptions="-jobs 10 " AutoRQSDir="$PSRCDIR/utils_1/imports/impl_3">
+    <Run Id="hdmi_out_rgb_doubler_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_out_rgb_doubler_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hdmi_out_rgb_doubler_0_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb_doubler_0_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/hdmi_out_rgb_doubler_0_1_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
           <Desc>Default settings for Implementation.</Desc>
@@ -757,7 +790,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>

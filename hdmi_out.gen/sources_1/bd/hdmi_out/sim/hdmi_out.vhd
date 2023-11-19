@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Sun Nov 19 07:33:50 2023
+--Date        : Sun Nov 19 11:52:27 2023
 --Host        : ta4ka running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_out.bd
 --Design      : hdmi_out
@@ -2799,6 +2799,11 @@ entity hdmi_out is
     TMDS_clk_p : out STD_LOGIC;
     TMDS_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     TMDS_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    VGA_B : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_G : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    VGA_HS_O : out STD_LOGIC;
+    VGA_R : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_VS_O : out STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     hdmi_ddc_scl_i : in STD_LOGIC;
     hdmi_ddc_scl_o : out STD_LOGIC;
@@ -2817,7 +2822,7 @@ entity hdmi_out is
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of hdmi_out : entity is "hdmi_out,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_out,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=33,numReposBlks=22,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of hdmi_out : entity is "hdmi_out,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_out,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=35,numReposBlks=24,numNonXlnxBlks=3,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of hdmi_out : entity is "hdmi_out.hwdef";
 end hdmi_out;
@@ -3294,6 +3299,36 @@ architecture STRUCTURE of hdmi_out is
     resetn : in STD_LOGIC
   );
   end component hdmi_out_system_ila_0_0;
+  component hdmi_out_rgb2vga_0_0 is
+  port (
+    rgb_pData : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    rgb_pVDE : in STD_LOGIC;
+    rgb_pHSync : in STD_LOGIC;
+    rgb_pVSync : in STD_LOGIC;
+    PixelClk : in STD_LOGIC;
+    vga_pRed : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    vga_pGreen : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    vga_pBlue : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    vga_pHSync : out STD_LOGIC;
+    vga_pVSync : out STD_LOGIC
+  );
+  end component hdmi_out_rgb2vga_0_0;
+  component hdmi_out_rgb_doubler_0_1 is
+  port (
+    vid_active_video : in STD_LOGIC;
+    vid_vsync : in STD_LOGIC;
+    vid_hsync : in STD_LOGIC;
+    vid_data : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    vid_pData_0 : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    vid_pVDE_0 : out STD_LOGIC;
+    vid_pHSync_0 : out STD_LOGIC;
+    vid_pVSync_0 : out STD_LOGIC;
+    vid_pData_1 : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    vid_pVDE_1 : out STD_LOGIC;
+    vid_pHSync_1 : out STD_LOGIC;
+    vid_pVSync_1 : out STD_LOGIC
+  );
+  end component hdmi_out_rgb_doubler_0_1;
   signal axi_dynclk_0_LOCKED_O : STD_LOGIC;
   signal axi_dynclk_0_PXL_CLK_5X_O : STD_LOGIC;
   signal axi_dynclk_0_PXL_CLK_O : STD_LOGIC;
@@ -3554,6 +3589,19 @@ architecture STRUCTURE of hdmi_out is
   signal rgb2dvi_0_TMDS_CLK_P : STD_LOGIC;
   signal rgb2dvi_0_TMDS_DATA_N : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal rgb2dvi_0_TMDS_DATA_P : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal rgb2vga_0_vga_pBlue : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal rgb2vga_0_vga_pGreen : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal rgb2vga_0_vga_pHSync : STD_LOGIC;
+  signal rgb2vga_0_vga_pRed : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal rgb2vga_0_vga_pVSync : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT0_ACTIVE_VIDEO : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT0_DATA : STD_LOGIC_VECTOR ( 23 downto 0 );
+  signal rgb_doubler_0_RGB_OUT0_HSYNC : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT0_VSYNC : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT1_ACTIVE_VIDEO : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT1_DATA : STD_LOGIC_VECTOR ( 23 downto 0 );
+  signal rgb_doubler_0_RGB_OUT1_HSYNC : STD_LOGIC;
+  signal rgb_doubler_0_RGB_OUT1_VSYNC : STD_LOGIC;
   signal rst_processing_system7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_processing_system7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_processing_system7_0_150M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -3659,6 +3707,11 @@ begin
   TMDS_clk_p <= rgb2dvi_0_TMDS_CLK_P;
   TMDS_data_n(2 downto 0) <= rgb2dvi_0_TMDS_DATA_N(2 downto 0);
   TMDS_data_p(2 downto 0) <= rgb2dvi_0_TMDS_DATA_P(2 downto 0);
+  VGA_B(4 downto 0) <= rgb2vga_0_vga_pBlue(4 downto 0);
+  VGA_G(5 downto 0) <= rgb2vga_0_vga_pGreen(5 downto 0);
+  VGA_HS_O <= rgb2vga_0_vga_pHSync;
+  VGA_R(4 downto 0) <= rgb2vga_0_vga_pRed(4 downto 0);
+  VGA_VS_O <= rgb2vga_0_vga_pVSync;
   axi_gpio_0_GPIO1_TRI_I(3 downto 0) <= sws_4bits_tri_i(3 downto 0);
   axi_gpio_0_GPIO2_TRI_I(0) <= hdmi_hpd_tri_i(0);
   axi_gpio_0_GPIO_TRI_I(3 downto 0) <= btns_4bits_tri_i(3 downto 0);
@@ -4243,10 +4296,38 @@ rgb2dvi_0: component hdmi_out_rgb2dvi_0_0
       TMDS_Data_n(2 downto 0) => rgb2dvi_0_TMDS_DATA_N(2 downto 0),
       TMDS_Data_p(2 downto 0) => rgb2dvi_0_TMDS_DATA_P(2 downto 0),
       aRst_n => axi_dynclk_0_LOCKED_O,
-      vid_pData(23 downto 0) => v_axi4s_vid_out_0_vid_io_out_DATA(23 downto 0),
-      vid_pHSync => v_axi4s_vid_out_0_vid_io_out_HSYNC,
-      vid_pVDE => v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO,
-      vid_pVSync => v_axi4s_vid_out_0_vid_io_out_VSYNC
+      vid_pData(23 downto 0) => rgb_doubler_0_RGB_OUT1_DATA(23 downto 0),
+      vid_pHSync => rgb_doubler_0_RGB_OUT1_HSYNC,
+      vid_pVDE => rgb_doubler_0_RGB_OUT1_ACTIVE_VIDEO,
+      vid_pVSync => rgb_doubler_0_RGB_OUT1_VSYNC
+    );
+rgb2vga_0: component hdmi_out_rgb2vga_0_0
+     port map (
+      PixelClk => axi_dynclk_0_PXL_CLK_O,
+      rgb_pData(23 downto 0) => rgb_doubler_0_RGB_OUT0_DATA(23 downto 0),
+      rgb_pHSync => rgb_doubler_0_RGB_OUT0_HSYNC,
+      rgb_pVDE => rgb_doubler_0_RGB_OUT0_ACTIVE_VIDEO,
+      rgb_pVSync => rgb_doubler_0_RGB_OUT0_VSYNC,
+      vga_pBlue(4 downto 0) => rgb2vga_0_vga_pBlue(4 downto 0),
+      vga_pGreen(5 downto 0) => rgb2vga_0_vga_pGreen(5 downto 0),
+      vga_pHSync => rgb2vga_0_vga_pHSync,
+      vga_pRed(4 downto 0) => rgb2vga_0_vga_pRed(4 downto 0),
+      vga_pVSync => rgb2vga_0_vga_pVSync
+    );
+rgb_doubler_0: component hdmi_out_rgb_doubler_0_1
+     port map (
+      vid_active_video => v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO,
+      vid_data(23 downto 0) => v_axi4s_vid_out_0_vid_io_out_DATA(23 downto 0),
+      vid_hsync => v_axi4s_vid_out_0_vid_io_out_HSYNC,
+      vid_pData_0(23 downto 0) => rgb_doubler_0_RGB_OUT0_DATA(23 downto 0),
+      vid_pData_1(23 downto 0) => rgb_doubler_0_RGB_OUT1_DATA(23 downto 0),
+      vid_pHSync_0 => rgb_doubler_0_RGB_OUT0_HSYNC,
+      vid_pHSync_1 => rgb_doubler_0_RGB_OUT1_HSYNC,
+      vid_pVDE_0 => rgb_doubler_0_RGB_OUT0_ACTIVE_VIDEO,
+      vid_pVDE_1 => rgb_doubler_0_RGB_OUT1_ACTIVE_VIDEO,
+      vid_pVSync_0 => rgb_doubler_0_RGB_OUT0_VSYNC,
+      vid_pVSync_1 => rgb_doubler_0_RGB_OUT1_VSYNC,
+      vid_vsync => v_axi4s_vid_out_0_vid_io_out_VSYNC
     );
 system_ila_0: component hdmi_out_system_ila_0_0
      port map (

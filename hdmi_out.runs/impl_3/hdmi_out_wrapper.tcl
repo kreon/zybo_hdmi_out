@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_3" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_3" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }

@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Nov 19 07:34:01 2023
-# Process ID: 10744
+# Start of session at: Sun Nov 19 11:52:39 2023
+# Process ID: 7804
 # Current directory: C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3
 # Command line: vivado.exe -log hdmi_out_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_wrapper.tcl
 # Log file: C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/hdmi_out_wrapper.vds
@@ -29,47 +29,47 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8488
+INFO: [Synth 8-7075] Helper process launched with PID 8720
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1392.277 ; gain = 438.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1391.504 ; gain = 440.207
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_wrapper' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:54]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'hdmi_ddc_scl_iobuf' of component 'IOBUF' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_wrapper' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:59]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'hdmi_ddc_scl_iobuf' of component 'IOBUF' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:132]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'hdmi_ddc_sda_iobuf' of component 'IOBUF' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:129]
-INFO: [Synth 8-3491] module 'hdmi_out' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2774' bound to instance 'hdmi_out_i' of component 'hdmi_out' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:136]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2825]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_dynclk_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_dynclk_0_0_stub.vhdl:6' bound to instance 'axi_dynclk_0' of component 'hdmi_out_axi_dynclk_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3678]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_dynclk_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_dynclk_0_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_btn_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_btn_0_stub.vhdl:6' bound to instance 'axi_gpio_btn' of component 'hdmi_out_axi_gpio_btn_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3706]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_btn_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_btn_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_hdmi_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_hdmi_0_stub.vhdl:6' bound to instance 'axi_gpio_hdmi' of component 'hdmi_out_axi_gpio_hdmi_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3729]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_hdmi_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_hdmi_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_led_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_led_0_stub.vhdl:6' bound to instance 'axi_gpio_led' of component 'hdmi_out_axi_gpio_led_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3753]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_led_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_led_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_sw_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_sw_0_stub.vhdl:6' bound to instance 'axi_gpio_sw' of component 'hdmi_out_axi_gpio_sw_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3776]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_sw_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_gpio_sw_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'hdmi_ddc_sda_iobuf' of component 'IOBUF' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:139]
+INFO: [Synth 8-3491] module 'hdmi_out' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2774' bound to instance 'hdmi_out_i' of component 'hdmi_out' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2830]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_dynclk_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_dynclk_0_0_stub.vhdl:6' bound to instance 'axi_dynclk_0' of component 'hdmi_out_axi_dynclk_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3731]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_dynclk_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_dynclk_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_btn_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_btn_0_stub.vhdl:6' bound to instance 'axi_gpio_btn' of component 'hdmi_out_axi_gpio_btn_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3759]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_btn_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_btn_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_hdmi_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_hdmi_0_stub.vhdl:6' bound to instance 'axi_gpio_hdmi' of component 'hdmi_out_axi_gpio_hdmi_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3782]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_hdmi_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_hdmi_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_led_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_led_0_stub.vhdl:6' bound to instance 'axi_gpio_led' of component 'hdmi_out_axi_gpio_led_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3806]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_led_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_led_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_gpio_sw_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_sw_0_stub.vhdl:6' bound to instance 'axi_gpio_sw' of component 'hdmi_out_axi_gpio_sw_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3829]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_gpio_sw_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_gpio_sw_0_stub.vhdl:32]
 INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_mem_intercon_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1440]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_13T7PYN' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:764]
-INFO: [Synth 8-3491] module 'hdmi_out_auto_pc_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'hdmi_out_auto_pc_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:972]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_auto_pc_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_auto_pc_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'hdmi_out_s00_data_fifo_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_s00_data_fifo_0_stub.vhdl:6' bound to instance 's00_data_fifo' of component 'hdmi_out_s00_data_fifo_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1008]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_s00_data_fifo_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_s00_data_fifo_0_stub.vhdl:44]
-INFO: [Synth 8-3491] module 'hdmi_out_s00_regslice_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_s00_regslice_0_stub.vhdl:6' bound to instance 's00_regslice' of component 'hdmi_out_s00_regslice_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1043]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_s00_regslice_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_s00_regslice_0_stub.vhdl:46]
+INFO: [Synth 8-3491] module 'hdmi_out_auto_pc_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'hdmi_out_auto_pc_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:972]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_auto_pc_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_auto_pc_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'hdmi_out_s00_data_fifo_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_s00_data_fifo_0_stub.vhdl:6' bound to instance 's00_data_fifo' of component 'hdmi_out_s00_data_fifo_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1008]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_s00_data_fifo_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_s00_data_fifo_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'hdmi_out_s00_regslice_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_s00_regslice_0_stub.vhdl:6' bound to instance 's00_regslice' of component 'hdmi_out_s00_regslice_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_s00_regslice_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_s00_regslice_0_stub.vhdl:46]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_13T7PYN' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:764]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_out_axi_mem_intercon_0' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1440]
-INFO: [Synth 8-3491] module 'hdmi_out_axi_vdma_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_vdma_0_0_stub.vhdl:6' bound to instance 'axi_vdma_0' of component 'hdmi_out_axi_vdma_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3836]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_vdma_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axi_vdma_0_0_stub.vhdl:53]
-INFO: [Synth 8-3491] module 'hdmi_out_axis_subset_converter_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axis_subset_converter_0_0_stub.vhdl:6' bound to instance 'axis_subset_converter_0' of component 'hdmi_out_axis_subset_converter_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3880]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_axis_subset_converter_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_axis_subset_converter_0_0_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'hdmi_out_proc_sys_reset_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'hdmi_out_proc_sys_reset_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3897]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_proc_sys_reset_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_proc_sys_reset_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'hdmi_out_proc_sys_reset_1_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_proc_sys_reset_1_0_stub.vhdl:6' bound to instance 'proc_sys_reset_1' of component 'hdmi_out_proc_sys_reset_1_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3910]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_proc_sys_reset_1_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_proc_sys_reset_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'hdmi_out_processing_system7_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'hdmi_out_processing_system7_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3923]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_processing_system7_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_processing_system7_0_0_stub.vhdl:144]
+INFO: [Synth 8-3491] module 'hdmi_out_axi_vdma_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_vdma_0_0_stub.vhdl:6' bound to instance 'axi_vdma_0' of component 'hdmi_out_axi_vdma_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3889]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_vdma_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axi_vdma_0_0_stub.vhdl:53]
+INFO: [Synth 8-3491] module 'hdmi_out_axis_subset_converter_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axis_subset_converter_0_0_stub.vhdl:6' bound to instance 'axis_subset_converter_0' of component 'hdmi_out_axis_subset_converter_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3933]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axis_subset_converter_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_axis_subset_converter_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'hdmi_out_proc_sys_reset_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'hdmi_out_proc_sys_reset_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3950]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_proc_sys_reset_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_proc_sys_reset_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'hdmi_out_proc_sys_reset_1_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_proc_sys_reset_1_0_stub.vhdl:6' bound to instance 'proc_sys_reset_1' of component 'hdmi_out_proc_sys_reset_1_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3963]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_proc_sys_reset_1_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_proc_sys_reset_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'hdmi_out_processing_system7_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'hdmi_out_processing_system7_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:3976]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_processing_system7_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_processing_system7_0_0_stub.vhdl:144]
 INFO: [Synth 8-638] synthesizing module 'hdmi_out_processing_system7_0_axi_periph_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1727]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1HVGBVZ' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1HVGBVZ' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:58]
@@ -86,37 +86,41 @@ INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_ARPDC8' (0#1) [c:
 INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1KP2XM2' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:669]
 INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1KP2XM2' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:669]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_GE5H0T' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1151]
-INFO: [Synth 8-3491] module 'hdmi_out_auto_pc_1' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_auto_pc_1_stub.vhdl:6' bound to instance 'auto_pc' of component 'hdmi_out_auto_pc_1' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1334]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_auto_pc_1' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_auto_pc_1_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'hdmi_out_auto_pc_1' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_auto_pc_1_stub.vhdl:6' bound to instance 'auto_pc' of component 'hdmi_out_auto_pc_1' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1334]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_auto_pc_1' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_auto_pc_1_stub.vhdl:71]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_GE5H0T' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1151]
-INFO: [Synth 8-3491] module 'hdmi_out_xbar_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'hdmi_out_xbar_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2620]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_xbar_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'hdmi_out_xbar_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'hdmi_out_xbar_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2620]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_xbar_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_out_processing_system7_0_axi_periph_0' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:1727]
-INFO: [Synth 8-3491] module 'hdmi_out_rgb2dvi_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_rgb2dvi_0_0_stub.vhdl:6' bound to instance 'rgb2dvi_0' of component 'hdmi_out_rgb2dvi_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4237]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_rgb2dvi_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_rgb2dvi_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'hdmi_out_system_ila_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'hdmi_out_system_ila_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4251]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_system_ila_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_system_ila_0_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'hdmi_out_v_axi4s_vid_out_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_v_axi4s_vid_out_0_0_stub.vhdl:6' bound to instance 'v_axi4s_vid_out_0' of component 'hdmi_out_v_axi4s_vid_out_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4262]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_v_axi4s_vid_out_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_v_axi4s_vid_out_0_0_stub.vhdl:44]
-INFO: [Synth 8-3491] module 'hdmi_out_v_tc_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_v_tc_0_0_stub.vhdl:6' bound to instance 'v_tc_0' of component 'hdmi_out_v_tc_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4297]
-INFO: [Synth 8-638] synthesizing module 'hdmi_out_v_tc_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-10744-ta4ka/realtime/hdmi_out_v_tc_0_0_stub.vhdl:45]
-INFO: [Synth 8-3491] module 'hdmi_out_xlconcat_0_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconcat_0_0/synth/hdmi_out_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'hdmi_out_xlconcat_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4333]
+INFO: [Synth 8-3491] module 'hdmi_out_rgb2dvi_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb2dvi_0_0_stub.vhdl:6' bound to instance 'rgb2dvi_0' of component 'hdmi_out_rgb2dvi_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4290]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_rgb2dvi_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb2dvi_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'hdmi_out_rgb2vga_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb2vga_0_0_stub.vhdl:6' bound to instance 'rgb2vga_0' of component 'hdmi_out_rgb2vga_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4304]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_rgb2vga_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb2vga_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'hdmi_out_rgb_doubler_0_1' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb_doubler_0_1_stub.vhdl:6' bound to instance 'rgb_doubler_0' of component 'hdmi_out_rgb_doubler_0_1' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4317]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_rgb_doubler_0_1' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_rgb_doubler_0_1_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'hdmi_out_system_ila_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'hdmi_out_system_ila_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4332]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_system_ila_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_system_ila_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'hdmi_out_v_axi4s_vid_out_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_v_axi4s_vid_out_0_0_stub.vhdl:6' bound to instance 'v_axi4s_vid_out_0' of component 'hdmi_out_v_axi4s_vid_out_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4343]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_v_axi4s_vid_out_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_v_axi4s_vid_out_0_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'hdmi_out_v_tc_0_0' declared at 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_v_tc_0_0_stub.vhdl:6' bound to instance 'v_tc_0' of component 'hdmi_out_v_tc_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4378]
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_v_tc_0_0' [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/.Xil/Vivado-7804-ta4ka/realtime/hdmi_out_v_tc_0_0_stub.vhdl:45]
+INFO: [Synth 8-3491] module 'hdmi_out_xlconcat_0_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconcat_0_0/synth/hdmi_out_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'hdmi_out_xlconcat_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4414]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_out_xlconcat_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconcat_0_0/synth/hdmi_out_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_out_xlconcat_0_0' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconcat_0_0/synth/hdmi_out_xlconcat_0_0.v:53]
-INFO: [Synth 8-3491] module 'hdmi_out_xlconstant_0_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_0_0/synth/hdmi_out_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'hdmi_out_xlconstant_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4340]
+INFO: [Synth 8-3491] module 'hdmi_out_xlconstant_0_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_0_0/synth/hdmi_out_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'hdmi_out_xlconstant_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4421]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_out_xlconstant_0_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_0_0/synth/hdmi_out_xlconstant_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_out_xlconstant_0_0' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_0_0/synth/hdmi_out_xlconstant_0_0.v:53]
-INFO: [Synth 8-3491] module 'hdmi_out_xlconstant_1_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_1_0/synth/hdmi_out_xlconstant_1_0.v:53' bound to instance 'xlconstant_1' of component 'hdmi_out_xlconstant_1_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4344]
+INFO: [Synth 8-3491] module 'hdmi_out_xlconstant_1_0' declared at 'c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_1_0/synth/hdmi_out_xlconstant_1_0.v:53' bound to instance 'xlconstant_1' of component 'hdmi_out_xlconstant_1_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:4425]
 INFO: [Synth 8-6157] synthesizing module 'hdmi_out_xlconstant_1_0' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_1_0/synth/hdmi_out_xlconstant_1_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'hdmi_out_xlconstant_1_0' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xlconstant_1_0/synth/hdmi_out_xlconstant_1_0.v:53]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_out' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2825]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:181]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:188]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_out_wrapper' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_out' (0#1) [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/synth/hdmi_out.vhd:2830]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'iic_0_scl_iobuf' of component 'IOBUF' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:196]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:78197' bound to instance 'iic_0_sda_iobuf' of component 'IOBUF' [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_out_wrapper' (0#1) [C:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd:59]
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
@@ -219,18 +223,18 @@ WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_5_xlconcat is eith
 WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.699 ; gain = 568.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1519.699 ; gain = 568.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1519.699 ; gain = 568.402
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1519.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1519.699 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -275,6 +279,10 @@ Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi
 Finished Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0_in_context.xdc] for cell 'hdmi_out_i/processing_system7_0'
 Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0_in_context.xdc] for cell 'hdmi_out_i/system_ila_0'
 Finished Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0_in_context.xdc] for cell 'hdmi_out_i/system_ila_0'
+Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_out_i/rgb2vga_0'
+Finished Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_out_i/rgb2vga_0'
+Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1_in_context.xdc] for cell 'hdmi_out_i/rgb_doubler_0'
+Finished Parsing XDC File [c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1_in_context.xdc] for cell 'hdmi_out_i/rgb_doubler_0'
 Parsing XDC File [C:/xil_prj/hdmi_out/hdmi_out.srcs/constrs_1/new/ZYBO_Master.xdc]
 Finished Parsing XDC File [C:/xil_prj/hdmi_out/hdmi_out.srcs/constrs_1/new/ZYBO_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xil_prj/hdmi_out/hdmi_out.srcs/constrs_1/new/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_out_wrapper_propImpl.xdc].
@@ -283,23 +291,23 @@ Parsing XDC File [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/dont_touch.xdc]
 Finished Parsing XDC File [C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1519.996 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1556.148 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -605,11 +613,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/proc_sys_reset_0. (con
 Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/proc_sys_reset_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/rgb2vga_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for hdmi_out_i/rgb_doubler_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -632,25 +642,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -668,37 +678,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -724,9 +734,11 @@ Report BlackBoxes:
 |14    |hdmi_out_proc_sys_reset_1_0        |         1|
 |15    |hdmi_out_processing_system7_0_0    |         1|
 |16    |hdmi_out_rgb2dvi_0_0               |         1|
-|17    |hdmi_out_system_ila_0_0            |         1|
-|18    |hdmi_out_v_axi4s_vid_out_0_0       |         1|
-|19    |hdmi_out_v_tc_0_0                  |         1|
+|17    |hdmi_out_rgb2vga_0_0               |         1|
+|18    |hdmi_out_rgb_doubler_0_1           |         1|
+|19    |hdmi_out_system_ila_0_0            |         1|
+|20    |hdmi_out_v_axi4s_vid_out_0_0       |         1|
+|21    |hdmi_out_v_tc_0_0                  |         1|
 +------+-----------------------------------+----------+
 
 Report Cell Usage: 
@@ -746,39 +758,41 @@ Report Cell Usage:
 |11    |hdmi_out_proc_sys_reset_1_0_bbox        |     1|
 |12    |hdmi_out_processing_system7_0_0_bbox    |     1|
 |13    |hdmi_out_rgb2dvi_0_0_bbox               |     1|
-|14    |hdmi_out_s00_data_fifo_0_bbox           |     1|
-|15    |hdmi_out_s00_regslice_0_bbox            |     1|
-|16    |hdmi_out_system_ila_0_0_bbox            |     1|
-|17    |hdmi_out_v_axi4s_vid_out_0_0_bbox       |     1|
-|18    |hdmi_out_v_tc_0_0_bbox                  |     1|
-|19    |hdmi_out_xbar_0_bbox                    |     1|
-|20    |IBUF                                    |     9|
-|21    |IOBUF                                   |     4|
-|22    |OBUF                                    |     5|
+|14    |hdmi_out_rgb2vga_0_0_bbox               |     1|
+|15    |hdmi_out_rgb_doubler_0_1_bbox           |     1|
+|16    |hdmi_out_s00_data_fifo_0_bbox           |     1|
+|17    |hdmi_out_s00_regslice_0_bbox            |     1|
+|18    |hdmi_out_system_ila_0_0_bbox            |     1|
+|19    |hdmi_out_v_axi4s_vid_out_0_0_bbox       |     1|
+|20    |hdmi_out_v_tc_0_0_bbox                  |     1|
+|21    |hdmi_out_xbar_0_bbox                    |     1|
+|22    |IBUF                                    |     9|
+|23    |IOBUF                                   |     4|
+|24    |OBUF                                    |    23|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1519.996 ; gain = 566.195
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1519.996 ; gain = 566.195
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1556.148 ; gain = 568.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1556.148 ; gain = 604.852
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1519.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1556.148 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Synth Design complete | Checksum: 37cbddcc
+Synth Design complete | Checksum: a9ac5563
 INFO: [Common 17-83] Releasing license: Synthesis
-111 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+115 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1519.996 ; gain = 955.941
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.996 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1556.148 ; gain = 992.137
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1556.148 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/hdmi_out_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_out_wrapper_utilization_synth.rpt -pb hdmi_out_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 19 07:34:34 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 19 11:53:12 2023...

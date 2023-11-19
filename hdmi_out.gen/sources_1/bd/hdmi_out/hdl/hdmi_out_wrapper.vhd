@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Sun Nov 19 07:33:50 2023
+--Date        : Sun Nov 19 11:52:27 2023
 --Host        : ta4ka running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_out_wrapper.bd
 --Design      : hdmi_out_wrapper
@@ -40,6 +40,11 @@ entity hdmi_out_wrapper is
     TMDS_clk_p : out STD_LOGIC;
     TMDS_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     TMDS_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    VGA_B : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_G : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    VGA_HS_O : out STD_LOGIC;
+    VGA_R : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_VS_O : out STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     hdmi_ddc_scl_io : inout STD_LOGIC;
     hdmi_ddc_sda_io : inout STD_LOGIC;
@@ -54,24 +59,6 @@ end hdmi_out_wrapper;
 architecture STRUCTURE of hdmi_out_wrapper is
   component hdmi_out is
   port (
-    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
-    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    iic_0_sda_i : in STD_LOGIC;
-    iic_0_sda_o : out STD_LOGIC;
-    iic_0_sda_t : out STD_LOGIC;
-    iic_0_scl_i : in STD_LOGIC;
-    iic_0_scl_o : out STD_LOGIC;
-    iic_0_scl_t : out STD_LOGIC;
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    TMDS_clk_p : out STD_LOGIC;
-    TMDS_clk_n : out STD_LOGIC;
-    TMDS_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    TMDS_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -87,15 +74,38 @@ architecture STRUCTURE of hdmi_out_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
     hdmi_ddc_sda_i : in STD_LOGIC;
     hdmi_ddc_sda_o : out STD_LOGIC;
     hdmi_ddc_sda_t : out STD_LOGIC;
     hdmi_ddc_scl_i : in STD_LOGIC;
     hdmi_ddc_scl_o : out STD_LOGIC;
     hdmi_ddc_scl_t : out STD_LOGIC;
+    hdmi_hpd_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    iic_0_sda_i : in STD_LOGIC;
+    iic_0_sda_o : out STD_LOGIC;
+    iic_0_sda_t : out STD_LOGIC;
+    iic_0_scl_i : in STD_LOGIC;
+    iic_0_scl_o : out STD_LOGIC;
+    iic_0_scl_t : out STD_LOGIC;
+    TMDS_clk_p : out STD_LOGIC;
+    TMDS_clk_n : out STD_LOGIC;
+    TMDS_data_p : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    TMDS_data_n : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    hdmi_hpd_tri_i : in STD_LOGIC_VECTOR ( 0 to 0 )
+    HDMI_OEN : out STD_LOGIC_VECTOR ( 0 to 0 );
+    VGA_R : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_G : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    VGA_B : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    VGA_HS_O : out STD_LOGIC;
+    VGA_VS_O : out STD_LOGIC
   );
   end component hdmi_out;
   component IOBUF is
@@ -161,6 +171,11 @@ hdmi_out_i: component hdmi_out
       TMDS_clk_p => TMDS_clk_p,
       TMDS_data_n(2 downto 0) => TMDS_data_n(2 downto 0),
       TMDS_data_p(2 downto 0) => TMDS_data_p(2 downto 0),
+      VGA_B(4 downto 0) => VGA_B(4 downto 0),
+      VGA_G(5 downto 0) => VGA_G(5 downto 0),
+      VGA_HS_O => VGA_HS_O,
+      VGA_R(4 downto 0) => VGA_R(4 downto 0),
+      VGA_VS_O => VGA_VS_O,
       btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
       hdmi_ddc_scl_i => hdmi_ddc_scl_i,
       hdmi_ddc_scl_o => hdmi_ddc_scl_o,

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 19 07:33:53 2023" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 19 11:52:30 2023" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:2.0" DEVICE="7z010" NAME="hdmi_out" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -69,7 +69,7 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_RAS_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="IO" NAME="DDR_reset_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_DDR_DRSTB">
+    <PORT DIR="IO" NAME="DDR_reset_n" SIGIS="rst" SIGNAME="processing_system7_0_DDR_DRSTB">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DRSTB"/>
       </CONNECTIONS>
@@ -132,6 +132,31 @@
     <PORT DIR="O" LEFT="2" NAME="TMDS_data_p" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_TMDS_Data_p">
       <CONNECTIONS>
         <CONNECTION INSTANCE="rgb2dvi_0" PORT="TMDS_Data_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="VGA_B" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pBlue"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="5" NAME="VGA_G" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pGreen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pGreen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_HS_O" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pHSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pHSync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="VGA_R" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pRed">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pRed"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_VS_O" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pVSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pVSync"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="3" NAME="btns_4bits_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_btn_gpio_io_i">
@@ -345,6 +370,7 @@
             <CONNECTION INSTANCE="rgb2dvi_0" PORT="PixelClk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_io_out_clk"/>
             <CONNECTION INSTANCE="v_tc_0" PORT="clk"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="REF_CLK_I" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -2339,71 +2365,6 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_ARVALID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awaddr" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWADDR"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awburst" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWBURST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awcache" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWCACHE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awlen" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWLEN"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awlock" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awlock">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWLOCK"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWPROT"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awqos" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awqos">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWQOS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awsize" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWSIZE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_AWVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_BREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bresp" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_BRESP"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_BVALID"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="63" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_RDATA"/>
@@ -2427,31 +2388,6 @@
         <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_RVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wdata" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WDATA"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wlast" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WLAST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wstrb" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WSTRB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="S_AXI_HP0_WVALID"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S00_ACLK" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
@@ -2560,29 +2496,11 @@
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M00_AXI_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M00_AXI_arsize"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M00_AXI_arvalid"/>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M00_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M00_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M00_AXI_awcache"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M00_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M00_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M00_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M00_AXI_awqos"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M00_AXI_awready"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M00_AXI_awvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="M00_AXI_bready"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="M00_AXI_bresp"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="M00_AXI_bvalid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M00_AXI_rdata"/>
             <PORTMAP LOGICAL="RLAST" PHYSICAL="M00_AXI_rlast"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M00_AXI_rready"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M00_AXI_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M00_AXI_rvalid"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M00_AXI_wlast"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="M00_AXI_wready"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="M00_AXI_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -6235,71 +6153,6 @@
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S_AXI_HP0_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S_AXI_HP0_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awburst">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S_AXI_HP0_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awcache"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S_AXI_HP0_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S_AXI_HP0_AWLOCK" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awlock">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awlock"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S_AXI_HP0_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S_AXI_HP0_AWQOS" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awqos">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awqos"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S_AXI_HP0_AWREADY" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S_AXI_HP0_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S_AXI_HP0_AWVALID" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S_AXI_HP0_BREADY" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S_AXI_HP0_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S_AXI_HP0_BVALID" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="2" NAME="S_AXI_HP0_RACOUNT" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="7" NAME="S_AXI_HP0_RCOUNT" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="63" NAME="S_AXI_HP0_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_rdata">
@@ -6330,32 +6183,7 @@
         </PORT>
         <PORT DIR="O" LEFT="5" NAME="S_AXI_HP0_WACOUNT" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="7" NAME="S_AXI_HP0_WCOUNT" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="63" NAME="S_AXI_HP0_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S_AXI_HP0_WLAST" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S_AXI_HP0_WREADY" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S_AXI_HP0_WRISSUECAP1_EN" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="S_AXI_HP0_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S_AXI_HP0_WVALID" SIGIS="undef" SIGNAME="axi_mem_intercon_M00_AXI_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="TTC0_WAVE0_OUT" SIGIS="undef"/>
         <PORT DIR="O" NAME="TTC0_WAVE1_OUT" SIGIS="undef"/>
         <PORT DIR="O" NAME="TTC0_WAVE2_OUT" SIGIS="undef"/>
@@ -6575,29 +6403,11 @@
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S_AXI_HP0_ARREADY"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S_AXI_HP0_ARSIZE"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S_AXI_HP0_ARVALID"/>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="S_AXI_HP0_AWADDR"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="S_AXI_HP0_AWBURST"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="S_AXI_HP0_AWCACHE"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="S_AXI_HP0_AWLEN"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="S_AXI_HP0_AWLOCK"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="S_AXI_HP0_AWPROT"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="S_AXI_HP0_AWQOS"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="S_AXI_HP0_AWREADY"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S_AXI_HP0_AWSIZE"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="S_AXI_HP0_AWVALID"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="S_AXI_HP0_BREADY"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="S_AXI_HP0_BRESP"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="S_AXI_HP0_BVALID"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="S_AXI_HP0_RDATA"/>
             <PORTMAP LOGICAL="RLAST" PHYSICAL="S_AXI_HP0_RLAST"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="S_AXI_HP0_RREADY"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="S_AXI_HP0_RRESP"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="S_AXI_HP0_RVALID"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="S_AXI_HP0_WDATA"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="S_AXI_HP0_WLAST"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="S_AXI_HP0_WREADY"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="S_AXI_HP0_WSTRB"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="S_AXI_HP0_WVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -8072,22 +7882,22 @@
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_data"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pData_1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pHSync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_hsync"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pHSync_1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pVDE" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_active_video"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pVDE_1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pVSync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_vsync"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pVSync_1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -8100,12 +7910,182 @@
             <PORTMAP LOGICAL="DATA_P" PHYSICAL="TMDS_Data_p"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_0_vid_io_out" NAME="RGB" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="rgb_doubler_0_RGB_OUT1" NAME="RGB" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE"/>
             <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData"/>
             <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_pHSync"/>
             <PORTMAP LOGICAL="VSYNC" PHYSICAL="vid_pVSync"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/rgb2vga_0" HWVERSION="1.0" INSTANCE="rgb2vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="c:/xil_prj/library/ip/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="VID_IN_DATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="kBlueDepth" VALUE="5"/>
+        <PARAMETER NAME="kGreenDepth" VALUE="6"/>
+        <PARAMETER NAME="kRedDepth" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_out_rgb2vga_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="PXL_CLK_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pData_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pHSync_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pVDE_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_pVSync_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="vga_pGreen" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pGreen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_G"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vga_pHSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_HS_O"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="vga_pRed" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pRed">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_VS_O"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="rgb_doubler_0_RGB_OUT0" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="rgb_pVDE"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="rgb_pData"/>
+            <PORTMAP LOGICAL="HSYNC" PHYSICAL="rgb_pHSync"/>
+            <PORTMAP LOGICAL="VSYNC" PHYSICAL="rgb_pVSync"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/rgb_doubler_0" HWVERSION="1.0" INSTANCE="rgb_doubler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb_doubler" VLNV="xilinx.com:module_ref:rgb_doubler:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_out_rgb_doubler_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_active_video">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_active_video"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_hsync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_hsync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="vid_pData_0" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="vid_pData_1" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pHSync_0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pHSync_1" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pHSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pVDE_0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pVDE_1" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pVSync_0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vid_pVSync_1" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_vsync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_vsync"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_0_vid_io_out" NAME="RGB_IN" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_active_video"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="vid_data"/>
+            <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_hsync"/>
+            <PORTMAP LOGICAL="VSYNC" PHYSICAL="vid_vsync"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="rgb_doubler_0_RGB_OUT0" NAME="RGB_OUT0" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE_0"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData_0"/>
+            <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_pHSync_0"/>
+            <PORTMAP LOGICAL="VSYNC" PHYSICAL="vid_pVSync_0"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="rgb_doubler_0_RGB_OUT1" NAME="RGB_OUT1" TYPE="INITIATOR" VLNV="xilinx.com:interface:vid_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE_1"/>
+            <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData_1"/>
+            <PORTMAP LOGICAL="HSYNC" PHYSICAL="vid_pHSync_1"/>
+            <PORTMAP LOGICAL="VSYNC" PHYSICAL="vid_pVSync_1"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -12058,19 +12038,19 @@
         <PORT DIR="O" NAME="sof_state_out" SIGIS="undef"/>
         <PORT DIR="O" LEFT="31" NAME="status" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="underflow" SIGIS="undef"/>
-        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
+        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_active_video">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVDE"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_active_video"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
+        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pData"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_data"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
+        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_hsync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pHSync"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_hsync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_ce" POLARITY="ACTIVE_HIGH" SIGIS="ce"/>
@@ -12080,9 +12060,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
-        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
+        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb_doubler_0_vid_vsync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
+            <CONNECTION INSTANCE="rgb_doubler_0" PORT="vid_vsync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vtg_active_video" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_active_video">

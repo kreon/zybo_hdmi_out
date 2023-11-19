@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Nov 19 07:36:21 2023
+| Date         : Sun Nov 19 11:55:00 2023
 | Host         : ta4ka running 64-bit major release  (build 9200)
 | Command      : report_methodology -file hdmi_out_wrapper_methodology_drc_routed.rpt -pb hdmi_out_wrapper_methodology_drc_routed.pb -rpx hdmi_out_wrapper_methodology_drc_routed.rpx
 | Design       : hdmi_out_wrapper
@@ -176,7 +176,7 @@ Related violations: <none>
 
 ULMTCS-1#1 Warning
 Control Sets use limits recommend reduction  
-This design uses 384 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
+This design uses 385 control sets (vs. available limit of 4400, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 XDCB-5#1 Warning

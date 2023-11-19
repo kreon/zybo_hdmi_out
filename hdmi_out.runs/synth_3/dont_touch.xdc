@@ -9,18 +9,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out ||
 # IP: bd/hdmi_out/ip/hdmi_out_axi_dynclk_0_0/hdmi_out_axi_dynclk_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_dynclk_0_0 || ORIG_REF_NAME==hdmi_out_axi_dynclk_0_0} -quiet] -quiet
 
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_btn_0/hdmi_out_axi_gpio_btn_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_btn_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_btn_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_hdmi_0/hdmi_out_axi_gpio_hdmi_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_hdmi_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_hdmi_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_led_0/hdmi_out_axi_gpio_led_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_led_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_led_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_sw_0/hdmi_out_axi_gpio_sw_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_sw_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_sw_0} -quiet] -quiet
-
 # IP: bd/hdmi_out/ip/hdmi_out_axi_mem_intercon_0/hdmi_out_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_mem_intercon_0 || ORIG_REF_NAME==hdmi_out_axi_mem_intercon_0} -quiet] -quiet
 
@@ -30,14 +18,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_ax
 # IP: bd/hdmi_out/ip/hdmi_out_axis_subset_converter_0_0/hdmi_out_axis_subset_converter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axis_subset_converter_0_0 || ORIG_REF_NAME==hdmi_out_axis_subset_converter_0_0} -quiet] -quiet
 
-# IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_0_0/hdmi_out_proc_sys_reset_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_0_0 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_0_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_1_0/hdmi_out_proc_sys_reset_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_1_0 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_1_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_processing_system7_0_0 || ORIG_REF_NAME==hdmi_out_processing_system7_0_0} -quiet] -quiet
+# IP: bd/hdmi_out/ip/hdmi_out_xbar_0/hdmi_out_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_xbar_0 || ORIG_REF_NAME==hdmi_out_xbar_0} -quiet] -quiet
 
 # IP: bd/hdmi_out/ip/hdmi_out_processing_system7_0_axi_periph_0/hdmi_out_processing_system7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_processing_system7_0_axi_periph_0 || ORIG_REF_NAME==hdmi_out_processing_system7_0_axi_periph_0} -quiet] -quiet
@@ -60,11 +42,35 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_xl
 # IP: bd/hdmi_out/ip/hdmi_out_xlconstant_1_0/hdmi_out_xlconstant_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_xlconstant_1_0 || ORIG_REF_NAME==hdmi_out_xlconstant_1_0} -quiet] -quiet
 
+# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_btn_0/hdmi_out_axi_gpio_btn_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_btn_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_btn_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_hdmi_0/hdmi_out_axi_gpio_hdmi_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_hdmi_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_hdmi_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_led_0/hdmi_out_axi_gpio_led_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_led_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_led_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_sw_0/hdmi_out_axi_gpio_sw_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_sw_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_sw_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_0_0/hdmi_out_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_0_0 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_1_0/hdmi_out_proc_sys_reset_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_1_0 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_1_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_processing_system7_0_0 || ORIG_REF_NAME==hdmi_out_processing_system7_0_0} -quiet] -quiet
+
 # IP: bd/hdmi_out/ip/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_system_ila_0_0 || ORIG_REF_NAME==hdmi_out_system_ila_0_0} -quiet] -quiet
 
-# IP: bd/hdmi_out/ip/hdmi_out_xbar_0/hdmi_out_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_xbar_0 || ORIG_REF_NAME==hdmi_out_xbar_0} -quiet] -quiet
+# IP: bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_rgb2vga_0_0 || ORIG_REF_NAME==hdmi_out_rgb2vga_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_rgb_doubler_0_1 || ORIG_REF_NAME==hdmi_out_rgb_doubler_0_1} -quiet] -quiet
 
 # IP: bd/hdmi_out/ip/hdmi_out_s00_regslice_0/hdmi_out_s00_regslice_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s00_regslice_0 || ORIG_REF_NAME==hdmi_out_s00_regslice_0} -quiet] -quiet
