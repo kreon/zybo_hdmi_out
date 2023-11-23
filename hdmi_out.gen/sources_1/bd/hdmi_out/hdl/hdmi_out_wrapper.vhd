@@ -2,8 +2,8 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Sun Nov 19 11:52:27 2023
---Host        : ta4ka running 64-bit major release  (build 9200)
+--Date        : Thu Nov 23 12:11:07 2023
+--Host        : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_out_wrapper.bd
 --Design      : hdmi_out_wrapper
 --Purpose     : IP block netlist
@@ -52,7 +52,8 @@ entity hdmi_out_wrapper is
     iic_0_scl_io : inout STD_LOGIC;
     iic_0_sda_io : inout STD_LOGIC;
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
+    sws_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    sys_clock : in STD_LOGIC
   );
 end hdmi_out_wrapper;
 
@@ -105,7 +106,8 @@ architecture STRUCTURE of hdmi_out_wrapper is
     VGA_G : out STD_LOGIC_VECTOR ( 5 downto 0 );
     VGA_B : out STD_LOGIC_VECTOR ( 4 downto 0 );
     VGA_HS_O : out STD_LOGIC;
-    VGA_VS_O : out STD_LOGIC
+    VGA_VS_O : out STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
   end component hdmi_out;
   component IOBUF is
@@ -191,7 +193,8 @@ hdmi_out_i: component hdmi_out
       iic_0_sda_o => iic_0_sda_o,
       iic_0_sda_t => iic_0_sda_t,
       leds_4bits_tri_o(3 downto 0) => leds_4bits_tri_o(3 downto 0),
-      sws_4bits_tri_i(3 downto 0) => sws_4bits_tri_i(3 downto 0)
+      sws_4bits_tri_i(3 downto 0) => sws_4bits_tri_i(3 downto 0),
+      sys_clock => sys_clock
     );
 iic_0_scl_iobuf: component IOBUF
      port map (

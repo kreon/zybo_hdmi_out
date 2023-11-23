@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 -- Date        : Sun Nov 19 11:48:25 2023
 -- Host        : ta4ka running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_out_rgb2vga_0_0 -prefix
+--               hdmi_out_rgb2vga_0_0_ hdmi_out_rgb2vga_0_0_sim_netlist.vhdl
 -- Design      : hdmi_out_rgb2vga_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,8 +28,6 @@ entity hdmi_out_rgb2vga_0_0_rgb2vga is
     rgb_pHSync : in STD_LOGIC;
     rgb_pVSync : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_out_rgb2vga_0_0_rgb2vga : entity is "rgb2vga";
 end hdmi_out_rgb2vga_0_0_rgb2vga;
 
 architecture STRUCTURE of hdmi_out_rgb2vga_0_0_rgb2vga is

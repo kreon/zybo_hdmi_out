@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Nov 19 11:53:12 2023
-| Host         : ta4ka running 64-bit major release  (build 9200)
+| Date         : Thu Nov 23 12:37:02 2023
+| Host         : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_out_wrapper_utilization_synth.rpt -pb hdmi_out_wrapper_utilization_synth.pb
 | Design       : hdmi_out_wrapper
 | Device       : xc7z010clg400-1
@@ -160,27 +160,37 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------------------------------+------+
 |              Ref Name              | Used |
 +------------------------------------+------+
+| hdmi_out_xbar_1                    |    1 |
 | hdmi_out_xbar_0                    |    1 |
+| hdmi_out_v_tpg_0_0                 |    1 |
+| hdmi_out_v_tc_1_0                  |    1 |
 | hdmi_out_v_tc_0_0                  |    1 |
+| hdmi_out_v_axi4s_vid_out_0_1       |    1 |
 | hdmi_out_v_axi4s_vid_out_0_0       |    1 |
 | hdmi_out_system_ila_0_0            |    1 |
+| hdmi_out_s01_regslice_0            |    1 |
+| hdmi_out_s01_data_fifo_0           |    1 |
 | hdmi_out_s00_regslice_0            |    1 |
 | hdmi_out_s00_data_fifo_0           |    1 |
-| hdmi_out_rgb_doubler_0_1           |    1 |
 | hdmi_out_rgb2vga_0_0               |    1 |
 | hdmi_out_rgb2dvi_0_0               |    1 |
 | hdmi_out_processing_system7_0_0    |    1 |
 | hdmi_out_proc_sys_reset_1_0        |    1 |
+| hdmi_out_proc_sys_reset_0_1        |    1 |
 | hdmi_out_proc_sys_reset_0_0        |    1 |
+| hdmi_out_m00_regslice_0            |    1 |
+| hdmi_out_m00_data_fifo_0           |    1 |
+| hdmi_out_clk_wiz_0_0               |    1 |
+| hdmi_out_axis_subset_converter_0_1 |    1 |
 | hdmi_out_axis_subset_converter_0_0 |    1 |
+| hdmi_out_axis_broadcaster_0_0      |    1 |
 | hdmi_out_axi_vdma_0_0              |    1 |
-| hdmi_out_axi_gpio_sw_0             |    1 |
-| hdmi_out_axi_gpio_led_0            |    1 |
 | hdmi_out_axi_gpio_hdmi_0           |    1 |
 | hdmi_out_axi_gpio_btn_0            |    1 |
 | hdmi_out_axi_dynclk_0_0            |    1 |
 | hdmi_out_auto_pc_1                 |    1 |
 | hdmi_out_auto_pc_0                 |    1 |
+| hdmi_out_auto_cc_0                 |    1 |
 +------------------------------------+------+
 
 

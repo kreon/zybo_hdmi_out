@@ -69,12 +69,13 @@ module hdmi_out_s00_data_fifo_0 (
   input bit_as_bool aclk,
   input bit_as_bool aresetn,
   input bit [31 : 0] s_axi_araddr,
-  input bit [3 : 0] s_axi_arlen,
+  input bit [7 : 0] s_axi_arlen,
   input bit [2 : 0] s_axi_arsize,
   input bit [1 : 0] s_axi_arburst,
-  input bit [1 : 0] s_axi_arlock,
+  input bit [0 : 0] s_axi_arlock,
   input bit [3 : 0] s_axi_arcache,
   input bit [2 : 0] s_axi_arprot,
+  input bit [3 : 0] s_axi_arregion,
   input bit [3 : 0] s_axi_arqos,
   input bit_as_bool s_axi_arvalid,
   output bit_as_bool s_axi_arready,
@@ -84,12 +85,13 @@ module hdmi_out_s00_data_fifo_0 (
   output bit_as_bool s_axi_rvalid,
   input bit_as_bool s_axi_rready,
   output bit [31 : 0] m_axi_araddr,
-  output bit [3 : 0] m_axi_arlen,
+  output bit [7 : 0] m_axi_arlen,
   output bit [2 : 0] m_axi_arsize,
   output bit [1 : 0] m_axi_arburst,
-  output bit [1 : 0] m_axi_arlock,
+  output bit [0 : 0] m_axi_arlock,
   output bit [3 : 0] m_axi_arcache,
   output bit [2 : 0] m_axi_arprot,
+  output bit [3 : 0] m_axi_arregion,
   output bit [3 : 0] m_axi_arqos,
   output bit_as_bool m_axi_arvalid,
   input bit_as_bool m_axi_arready,
@@ -104,18 +106,19 @@ endmodule
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module hdmi_out_s00_data_fifo_0 (aclk,aresetn,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arqos,s_axi_arvalid,s_axi_arready,s_axi_rdata,s_axi_rresp,s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_araddr,m_axi_arlen,m_axi_arsize,m_axi_arburst,m_axi_arlock,m_axi_arcache,m_axi_arprot,m_axi_arqos,m_axi_arvalid,m_axi_arready,m_axi_rdata,m_axi_rresp,m_axi_rlast,m_axi_rvalid,m_axi_rready)
+module hdmi_out_s00_data_fifo_0 (aclk,aresetn,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arregion,s_axi_arqos,s_axi_arvalid,s_axi_arready,s_axi_rdata,s_axi_rresp,s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_araddr,m_axi_arlen,m_axi_arsize,m_axi_arburst,m_axi_arlock,m_axi_arcache,m_axi_arprot,m_axi_arregion,m_axi_arqos,m_axi_arvalid,m_axi_arready,m_axi_rdata,m_axi_rresp,m_axi_rlast,m_axi_rvalid,m_axi_rready)
 (* integer foreign = "SystemC";
 *);
   input bit aclk;
   input bit aresetn;
   input bit [31 : 0] s_axi_araddr;
-  input bit [3 : 0] s_axi_arlen;
+  input bit [7 : 0] s_axi_arlen;
   input bit [2 : 0] s_axi_arsize;
   input bit [1 : 0] s_axi_arburst;
-  input bit [1 : 0] s_axi_arlock;
+  input bit [0 : 0] s_axi_arlock;
   input bit [3 : 0] s_axi_arcache;
   input bit [2 : 0] s_axi_arprot;
+  input bit [3 : 0] s_axi_arregion;
   input bit [3 : 0] s_axi_arqos;
   input bit s_axi_arvalid;
   output wire s_axi_arready;
@@ -125,12 +128,13 @@ module hdmi_out_s00_data_fifo_0 (aclk,aresetn,s_axi_araddr,s_axi_arlen,s_axi_ars
   output wire s_axi_rvalid;
   input bit s_axi_rready;
   output wire [31 : 0] m_axi_araddr;
-  output wire [3 : 0] m_axi_arlen;
+  output wire [7 : 0] m_axi_arlen;
   output wire [2 : 0] m_axi_arsize;
   output wire [1 : 0] m_axi_arburst;
-  output wire [1 : 0] m_axi_arlock;
+  output wire [0 : 0] m_axi_arlock;
   output wire [3 : 0] m_axi_arcache;
   output wire [2 : 0] m_axi_arprot;
+  output wire [3 : 0] m_axi_arregion;
   output wire [3 : 0] m_axi_arqos;
   output wire m_axi_arvalid;
   input bit m_axi_arready;

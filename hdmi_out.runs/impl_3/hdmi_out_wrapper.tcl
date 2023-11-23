@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper.tcl"
+  variable script "C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_3" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_3" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -123,7 +122,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
@@ -132,25 +133,25 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/xil_prj/hdmi_out/hdmi_out.cache/wt [current_project]
-  set_property parent.project_path C:/xil_prj/hdmi_out/hdmi_out.xpr [current_project]
+  set_property webtalk.parent_dir C:/Xil_prj/hdmi_out/hdmi_out.cache/wt [current_project]
+  set_property parent.project_path C:/Xil_prj/hdmi_out/hdmi_out.xpr [current_project]
   set_property ip_repo_paths {
   d:/Work/Boards/Zybo/Projects/hdmi_out/repo
-  C:/xil_prj/library
+  C:/Xil_prj/library
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/xil_prj/hdmi_out/hdmi_out.cache/ip [current_project]
+  set_property ip_output_repo C:/Xil_prj/hdmi_out/hdmi_out.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3/hdmi_out_wrapper.dcp
+  add_files -quiet C:/Xil_prj/hdmi_out/hdmi_out.runs/synth_3/hdmi_out_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/xil_prj/hdmi_out/hdmi_out.srcs/sources_1/bd/hdmi_out/hdmi_out.bd
+  add_files C:/Xil_prj/hdmi_out/hdmi_out.srcs/sources_1/bd/hdmi_out/hdmi_out.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/xil_prj/hdmi_out/hdmi_out.srcs/constrs_1/new/ZYBO_Master.xdc
+  read_xdc C:/Xil_prj/hdmi_out/hdmi_out.srcs/constrs_1/new/ZYBO_Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

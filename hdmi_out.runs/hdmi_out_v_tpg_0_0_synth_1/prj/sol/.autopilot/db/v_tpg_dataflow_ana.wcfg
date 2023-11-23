@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="v_tpg.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_v_tpg_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg//AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity">
+         <obj_property name="label">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg//AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg//AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg//AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/grp_v_tpgHlsDataFlow_fu_443_activity">
+            <obj_property name="label">grp_v_tpgHlsDataFlow_fu_443_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_v_tpgHlsDataFlow_fu_443_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_v_tpgHlsDataFlow_fu_443_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/grp_v_tpgHlsDataFlow_fu_443_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/grp_v_tpgHlsDataFlow_fu_443_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/grp_v_tpgHlsDataFlow_fu_443_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/entry_proc_U0_activity">
+               <obj_property name="label">entry_proc_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBackground_U0_activity">
+               <obj_property name="label">tpgBackground_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">tpgBackground_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">tpgBackground_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBackground_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBackground_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBackground_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity">
+                  <obj_property name="label">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/tpgForeground_U0_activity">
+               <obj_property name="label">tpgForeground_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">tpgForeground_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">tpgForeground_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/tpgForeground_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/tpgForeground_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/tpgForeground_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity">
+                  <obj_property name="label">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity">
+               <obj_property name="label">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity">
+                  <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="UseFullPath">true</obj_property>
+                  <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity</obj_property>
+                  <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity</obj_property>
+                  <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+                  <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+                  <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+                  <obj_property name="CustomSignalColor">turquoise</obj_property>
+                  <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+                  <obj_property name="Render_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity.dataflowTxTooltipData</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg//AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity">
+      <obj_property name="ElementShortName">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_group">
+      <obj_property name="label">AESL_inst_hdmi_out_v_tpg_0_0_v_tpg</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/grp_v_tpgHlsDataFlow_fu_443_activity">
+         <obj_property name="ElementShortName">grp_v_tpgHlsDataFlow_fu_443_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_v_tpgHlsDataFlow_fu_443_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_hdmi_out_v_tpg_0_0_v_tpg_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_v_tpgHlsDataFlow_fu_443_group">
+         <obj_property name="label">grp_v_tpgHlsDataFlow_fu_443</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/entry_proc_U0_activity">
+            <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBackground_U0_activity">
+            <obj_property name="ElementShortName">tpgBackground_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">tpgBackground_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/tpgForeground_U0_activity">
+            <obj_property name="ElementShortName">tpgForeground_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">tpgForeground_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/MultiPixStream2AXIvideo_U0_activity">
+            <obj_property name="ElementShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">MultiPixStream2AXIvideo_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_v_tpgHlsDataFlow_fu_443_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_group">
+            <obj_property name="label">entry_proc_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="entry_proc_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="entry_proc_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="entry_proc_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="field_id_val8_c_group">
+                  <obj_property name="label">field_id_val8_c(field_id_val8_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/field_id_val8_c_blk_n">
+                     <obj_property name="ElementShortName">field_id_val8_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/field_id_val8_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/field_id_val8_c_full_n">
+                     <obj_property name="ElementShortName">field_id_val8_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/field_id_val8_c_write">
+                     <obj_property name="ElementShortName">field_id_val8_c_write</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="fid_in_val9_c_group">
+                  <obj_property name="label">fid_in_val9_c(fid_in_val9_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/fid_in_val9_c_blk_n">
+                     <obj_property name="ElementShortName">fid_in_val9_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/fid_in_val9_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/fid_in_val9_c_full_n">
+                     <obj_property name="ElementShortName">fid_in_val9_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/fid_in_val9_c_write">
+                     <obj_property name="ElementShortName">fid_in_val9_c_write</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="ovrlayId_val11_c_group">
+                  <obj_property name="label">ovrlayId_val11_c(ovrlayId_val11_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ovrlayId_val11_c_blk_n">
+                     <obj_property name="ElementShortName">ovrlayId_val11_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayId_val11_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ovrlayId_val11_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ovrlayId_val11_c_full_n">
+                     <obj_property name="ElementShortName">ovrlayId_val11_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayId_val11_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/ovrlayId_val11_c_write">
+                     <obj_property name="ElementShortName">ovrlayId_val11_c_write</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayId_val11_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="maskId_val12_c_group">
+                  <obj_property name="label">maskId_val12_c(maskId_val12_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/maskId_val12_c_blk_n">
+                     <obj_property name="ElementShortName">maskId_val12_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val12_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/maskId_val12_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/maskId_val12_c_full_n">
+                     <obj_property name="ElementShortName">maskId_val12_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val12_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/maskId_val12_c_write">
+                     <obj_property name="ElementShortName">maskId_val12_c_write</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val12_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="crossHairX_val18_c_group">
+                  <obj_property name="label">crossHairX_val18_c(crossHairX_val18_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairX_val18_c_blk_n">
+                     <obj_property name="ElementShortName">crossHairX_val18_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val18_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairX_val18_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairX_val18_c_full_n">
+                     <obj_property name="ElementShortName">crossHairX_val18_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val18_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairX_val18_c_write">
+                     <obj_property name="ElementShortName">crossHairX_val18_c_write</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val18_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="crossHairY_val19_c_group">
+                  <obj_property name="label">crossHairY_val19_c(crossHairY_val19_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairY_val19_c_blk_n">
+                     <obj_property name="ElementShortName">crossHairY_val19_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val19_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairY_val19_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairY_val19_c_full_n">
+                     <obj_property name="ElementShortName">crossHairY_val19_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val19_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/crossHairY_val19_c_write">
+                     <obj_property name="ElementShortName">crossHairY_val19_c_write</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val19_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxSize_val24_c_group">
+                  <obj_property name="label">boxSize_val24_c(boxSize_val24_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxSize_val24_c_blk_n">
+                     <obj_property name="ElementShortName">boxSize_val24_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val24_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxSize_val24_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxSize_val24_c_full_n">
+                     <obj_property name="ElementShortName">boxSize_val24_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val24_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxSize_val24_c_write">
+                     <obj_property name="ElementShortName">boxSize_val24_c_write</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val24_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorR_val25_c_group">
+                  <obj_property name="label">boxColorR_val25_c(boxColorR_val25_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorR_val25_c_blk_n">
+                     <obj_property name="ElementShortName">boxColorR_val25_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val25_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorR_val25_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorR_val25_c_full_n">
+                     <obj_property name="ElementShortName">boxColorR_val25_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val25_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorR_val25_c_write">
+                     <obj_property name="ElementShortName">boxColorR_val25_c_write</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val25_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorG_val26_c_group">
+                  <obj_property name="label">boxColorG_val26_c(boxColorG_val26_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorG_val26_c_blk_n">
+                     <obj_property name="ElementShortName">boxColorG_val26_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val26_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorG_val26_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorG_val26_c_full_n">
+                     <obj_property name="ElementShortName">boxColorG_val26_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val26_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorG_val26_c_write">
+                     <obj_property name="ElementShortName">boxColorG_val26_c_write</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val26_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorB_val27_c_group">
+                  <obj_property name="label">boxColorB_val27_c(boxColorB_val27_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorB_val27_c_blk_n">
+                     <obj_property name="ElementShortName">boxColorB_val27_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val27_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorB_val27_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorB_val27_c_full_n">
+                     <obj_property name="ElementShortName">boxColorB_val27_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val27_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/entry_proc_U0/boxColorB_val27_c_write">
+                     <obj_property name="ElementShortName">boxColorB_val27_c_write</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val27_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tpgBackground_U0_group">
+            <obj_property name="label">tpgBackground_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity">
+               <obj_property name="ElementShortName">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgBackground_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="redYuv_group">
+                  <obj_property name="label">redYuv(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/redYuv_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/redYuv_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/redYuv_ce0">
+                     <obj_property name="ElementShortName">redYuv_ce0</obj_property>
+                     <obj_property name="ObjectShortName">redYuv_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="grnYuv_group">
+                  <obj_property name="label">grnYuv(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grnYuv_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grnYuv_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grnYuv_ce0">
+                     <obj_property name="ElementShortName">grnYuv_ce0</obj_property>
+                     <obj_property name="ObjectShortName">grnYuv_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="bluYuv_group">
+                  <obj_property name="label">bluYuv(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bluYuv_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bluYuv_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bluYuv_ce0">
+                     <obj_property name="ElementShortName">bluYuv_ce0</obj_property>
+                     <obj_property name="ObjectShortName">bluYuv_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="blkYuv_group">
+                  <obj_property name="label">blkYuv(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_ce0">
+                     <obj_property name="ElementShortName">blkYuv_ce0</obj_property>
+                     <obj_property name="ObjectShortName">blkYuv_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="whiYuv_group">
+                  <obj_property name="label">whiYuv(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_ce0">
+                     <obj_property name="ElementShortName">whiYuv_ce0</obj_property>
+                     <obj_property name="ObjectShortName">whiYuv_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelRgb_r_group">
+                  <obj_property name="label">tpgBarSelRgb_r(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_r_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_r_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_r_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelRgb_r_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelRgb_r_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelYuv_y_group">
+                  <obj_property name="label">tpgBarSelYuv_y(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_y_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_y_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_y_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelYuv_y_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelYuv_y_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelRgb_g_group">
+                  <obj_property name="label">tpgBarSelRgb_g(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_g_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_g_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_g_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelRgb_g_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelRgb_g_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelYuv_u_group">
+                  <obj_property name="label">tpgBarSelYuv_u(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_u_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_u_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_u_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelYuv_u_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelYuv_u_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelYuv_v_group">
+                  <obj_property name="label">tpgBarSelYuv_v(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_v_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_v_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelYuv_v_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelYuv_v_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelYuv_v_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgBarSelRgb_b_group">
+                  <obj_property name="label">tpgBarSelRgb_b(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_b_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_b_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgBarSelRgb_b_ce0">
+                     <obj_property name="ElementShortName">tpgBarSelRgb_b_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgBarSelRgb_b_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_group">
+                  <obj_property name="label">tpgSinTableArray(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgTartanBarArray_group">
+                  <obj_property name="label">tpgTartanBarArray(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgTartanBarArray_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgTartanBarArray_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgTartanBarArray_ce0">
+                     <obj_property name="ElementShortName">tpgTartanBarArray_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgTartanBarArray_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="whiYuv_1_group">
+                  <obj_property name="label">whiYuv_1(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_1_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_1_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/whiYuv_1_ce0">
+                     <obj_property name="ElementShortName">whiYuv_1_ce0</obj_property>
+                     <obj_property name="ObjectShortName">whiYuv_1_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="blkYuv_1_group">
+                  <obj_property name="label">blkYuv_1(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_1_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_1_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/blkYuv_1_ce0">
+                     <obj_property name="ElementShortName">blkYuv_1_ce0</obj_property>
+                     <obj_property name="ObjectShortName">blkYuv_1_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_9bit_0_group">
+                  <obj_property name="label">tpgSinTableArray_9bit_0(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_0_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_0_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_0_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_9bit_0_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_9bit_0_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_9bit_1_group">
+                  <obj_property name="label">tpgSinTableArray_9bit_1(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_1_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_1_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_1_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_9bit_1_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_9bit_1_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_9bit_2_group">
+                  <obj_property name="label">tpgSinTableArray_9bit_2(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_2_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_2_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_2_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_9bit_2_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_9bit_2_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_9bit_3_group">
+                  <obj_property name="label">tpgSinTableArray_9bit_3(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_3_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_3_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_3_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_9bit_3_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_9bit_3_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgSinTableArray_9bit_4_group">
+                  <obj_property name="label">tpgSinTableArray_9bit_4(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_4_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_4_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgSinTableArray_9bit_4_ce0">
+                     <obj_property name="ElementShortName">tpgSinTableArray_9bit_4_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgSinTableArray_9bit_4_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="tpgCheckerBoardArray_group">
+                  <obj_property name="label">tpgCheckerBoardArray(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgCheckerBoardArray_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgCheckerBoardArray_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/tpgCheckerBoardArray_ce0">
+                     <obj_property name="ElementShortName">tpgCheckerBoardArray_ce0</obj_property>
+                     <obj_property name="ObjectShortName">tpgCheckerBoardArray_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_VESA_r_group">
+                  <obj_property name="label">DPtpgBarSelRgb_VESA_r(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_r_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_r_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_r_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_VESA_r_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_VESA_r_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_VESA_g_group">
+                  <obj_property name="label">DPtpgBarSelRgb_VESA_g(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_g_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_g_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_g_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_VESA_g_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_VESA_g_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_VESA_b_group">
+                  <obj_property name="label">DPtpgBarSelRgb_VESA_b(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_b_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_b_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_VESA_b_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_VESA_b_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_VESA_b_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarArray_group">
+                  <obj_property name="label">DPtpgBarArray(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarArray_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarArray_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarArray_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarArray_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarArray_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_CEA_r_group">
+                  <obj_property name="label">DPtpgBarSelRgb_CEA_r(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_r_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_r_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_r_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_CEA_r_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_CEA_r_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_CEA_g_group">
+                  <obj_property name="label">DPtpgBarSelRgb_CEA_g(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_g_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_g_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_g_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_CEA_g_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_CEA_g_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelRgb_CEA_b_group">
+                  <obj_property name="label">DPtpgBarSelRgb_CEA_b(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_b_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_b_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelRgb_CEA_b_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelRgb_CEA_b_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelRgb_CEA_b_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_601_y_group">
+                  <obj_property name="label">DPtpgBarSelYuv_601_y(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_y_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_y_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_y_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_601_y_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_601_y_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_601_v_group">
+                  <obj_property name="label">DPtpgBarSelYuv_601_v(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_v_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_v_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_v_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_601_v_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_601_v_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_601_u_group">
+                  <obj_property name="label">DPtpgBarSelYuv_601_u(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_u_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_u_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_601_u_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_601_u_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_601_u_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_709_y_group">
+                  <obj_property name="label">DPtpgBarSelYuv_709_y(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_y_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_y_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_y_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_709_y_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_709_y_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_709_v_group">
+                  <obj_property name="label">DPtpgBarSelYuv_709_v(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_v_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_v_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_v_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_709_v_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_709_v_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="DPtpgBarSelYuv_709_u_group">
+                  <obj_property name="label">DPtpgBarSelYuv_709_u(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_u_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_u_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/DPtpgBarSelYuv_709_u_ce0">
+                     <obj_property name="ElementShortName">DPtpgBarSelYuv_709_u_ce0</obj_property>
+                     <obj_property name="ObjectShortName">DPtpgBarSelYuv_709_u_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgBackground_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgBackground_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="bckgndYUV_group">
+                  <obj_property name="label">bckgndYUV(bckgndYUV_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bckgndYUV_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bckgndYUV_full_n">
+                     <obj_property name="ElementShortName">bckgndYUV_full_n</obj_property>
+                     <obj_property name="ObjectShortName">bckgndYUV_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/bckgndYUV_write">
+                     <obj_property name="ElementShortName">bckgndYUV_write</obj_property>
+                     <obj_property name="ObjectShortName">bckgndYUV_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="height_val4_c12_group">
+                  <obj_property name="label">height_val4_c12(height_val4_c12_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/height_val4_c12_blk_n">
+                     <obj_property name="ElementShortName">height_val4_c12_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c12_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/height_val4_c12_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/height_val4_c12_full_n">
+                     <obj_property name="ElementShortName">height_val4_c12_full_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c12_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/height_val4_c12_write">
+                     <obj_property name="ElementShortName">height_val4_c12_write</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c12_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="width_val7_c13_group">
+                  <obj_property name="label">width_val7_c13(width_val7_c13_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/width_val7_c13_blk_n">
+                     <obj_property name="ElementShortName">width_val7_c13_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c13_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/width_val7_c13_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/width_val7_c13_full_n">
+                     <obj_property name="ElementShortName">width_val7_c13_full_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c13_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/width_val7_c13_write">
+                     <obj_property name="ElementShortName">width_val7_c13_write</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c13_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="motionSpeed_val14_c_group">
+                  <obj_property name="label">motionSpeed_val14_c(motionSpeed_val14_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/motionSpeed_val14_c_blk_n">
+                     <obj_property name="ElementShortName">motionSpeed_val14_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val14_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/motionSpeed_val14_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/motionSpeed_val14_c_full_n">
+                     <obj_property name="ElementShortName">motionSpeed_val14_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val14_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/motionSpeed_val14_c_write">
+                     <obj_property name="ElementShortName">motionSpeed_val14_c_write</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val14_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="colorFormat_val17_c14_group">
+                  <obj_property name="label">colorFormat_val17_c14(colorFormat_val17_c14_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/colorFormat_val17_c14_blk_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_c14_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c14_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/colorFormat_val17_c14_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/colorFormat_val17_c14_full_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_c14_full_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c14_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/colorFormat_val17_c14_write">
+                     <obj_property name="ElementShortName">colorFormat_val17_c14_write</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c14_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_group">
+               <obj_property name="label">grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tpgForeground_U0_group">
+            <obj_property name="label">tpgForeground_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity">
+               <obj_property name="ElementShortName">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgForeground_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="bckgndYUV_group">
+                  <obj_property name="label">bckgndYUV(bckgndYUV_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/bckgndYUV_dout">
+                     <obj_property name="ElementShortName">bckgndYUV_dout[23:0]</obj_property>
+                     <obj_property name="ObjectShortName">bckgndYUV_dout[23:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/bckgndYUV_empty_n">
+                     <obj_property name="ElementShortName">bckgndYUV_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">bckgndYUV_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/bckgndYUV_read">
+                     <obj_property name="ElementShortName">bckgndYUV_read</obj_property>
+                     <obj_property name="ObjectShortName">bckgndYUV_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="height_val_group">
+                  <obj_property name="label">height_val(height_val4_c12_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val_blk_n">
+                     <obj_property name="ElementShortName">height_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val_dout">
+                     <obj_property name="ElementShortName">height_val_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">height_val_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val_empty_n">
+                     <obj_property name="ElementShortName">height_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val_read">
+                     <obj_property name="ElementShortName">height_val_read</obj_property>
+                     <obj_property name="ObjectShortName">height_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="width_val_group">
+                  <obj_property name="label">width_val(width_val7_c13_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val_blk_n">
+                     <obj_property name="ElementShortName">width_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val_dout">
+                     <obj_property name="ElementShortName">width_val_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">width_val_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val_empty_n">
+                     <obj_property name="ElementShortName">width_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val_read">
+                     <obj_property name="ElementShortName">width_val_read</obj_property>
+                     <obj_property name="ObjectShortName">width_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="patternId_val_group">
+                  <obj_property name="label">patternId_val(ovrlayId_val11_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/patternId_val_blk_n">
+                     <obj_property name="ElementShortName">patternId_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">patternId_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/patternId_val_dout">
+                     <obj_property name="ElementShortName">patternId_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">patternId_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/patternId_val_empty_n">
+                     <obj_property name="ElementShortName">patternId_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">patternId_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/patternId_val_read">
+                     <obj_property name="ElementShortName">patternId_val_read</obj_property>
+                     <obj_property name="ObjectShortName">patternId_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="maskId_val_group">
+                  <obj_property name="label">maskId_val(maskId_val12_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/maskId_val_blk_n">
+                     <obj_property name="ElementShortName">maskId_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/maskId_val_dout">
+                     <obj_property name="ElementShortName">maskId_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/maskId_val_empty_n">
+                     <obj_property name="ElementShortName">maskId_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/maskId_val_read">
+                     <obj_property name="ElementShortName">maskId_val_read</obj_property>
+                     <obj_property name="ObjectShortName">maskId_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="colorFormat_val_group">
+                  <obj_property name="label">colorFormat_val(colorFormat_val17_c14_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val_blk_n">
+                     <obj_property name="ElementShortName">colorFormat_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val_dout">
+                     <obj_property name="ElementShortName">colorFormat_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val_empty_n">
+                     <obj_property name="ElementShortName">colorFormat_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val_read">
+                     <obj_property name="ElementShortName">colorFormat_val_read</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="crossHairX_val_group">
+                  <obj_property name="label">crossHairX_val(crossHairX_val18_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairX_val_blk_n">
+                     <obj_property name="ElementShortName">crossHairX_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairX_val_dout">
+                     <obj_property name="ElementShortName">crossHairX_val_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairX_val_empty_n">
+                     <obj_property name="ElementShortName">crossHairX_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairX_val_read">
+                     <obj_property name="ElementShortName">crossHairX_val_read</obj_property>
+                     <obj_property name="ObjectShortName">crossHairX_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="crossHairY_val_group">
+                  <obj_property name="label">crossHairY_val(crossHairY_val19_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairY_val_blk_n">
+                     <obj_property name="ElementShortName">crossHairY_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairY_val_dout">
+                     <obj_property name="ElementShortName">crossHairY_val_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairY_val_empty_n">
+                     <obj_property name="ElementShortName">crossHairY_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/crossHairY_val_read">
+                     <obj_property name="ElementShortName">crossHairY_val_read</obj_property>
+                     <obj_property name="ObjectShortName">crossHairY_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxSize_val_group">
+                  <obj_property name="label">boxSize_val(boxSize_val24_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxSize_val_blk_n">
+                     <obj_property name="ElementShortName">boxSize_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxSize_val_dout">
+                     <obj_property name="ElementShortName">boxSize_val_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxSize_val_empty_n">
+                     <obj_property name="ElementShortName">boxSize_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxSize_val_read">
+                     <obj_property name="ElementShortName">boxSize_val_read</obj_property>
+                     <obj_property name="ObjectShortName">boxSize_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorR_val_group">
+                  <obj_property name="label">boxColorR_val(boxColorR_val25_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorR_val_blk_n">
+                     <obj_property name="ElementShortName">boxColorR_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorR_val_dout">
+                     <obj_property name="ElementShortName">boxColorR_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorR_val_empty_n">
+                     <obj_property name="ElementShortName">boxColorR_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorR_val_read">
+                     <obj_property name="ElementShortName">boxColorR_val_read</obj_property>
+                     <obj_property name="ObjectShortName">boxColorR_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorG_val_group">
+                  <obj_property name="label">boxColorG_val(boxColorG_val26_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorG_val_blk_n">
+                     <obj_property name="ElementShortName">boxColorG_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorG_val_dout">
+                     <obj_property name="ElementShortName">boxColorG_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorG_val_empty_n">
+                     <obj_property name="ElementShortName">boxColorG_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorG_val_read">
+                     <obj_property name="ElementShortName">boxColorG_val_read</obj_property>
+                     <obj_property name="ObjectShortName">boxColorG_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="boxColorB_val_group">
+                  <obj_property name="label">boxColorB_val(boxColorB_val27_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorB_val_blk_n">
+                     <obj_property name="ElementShortName">boxColorB_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorB_val_dout">
+                     <obj_property name="ElementShortName">boxColorB_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorB_val_empty_n">
+                     <obj_property name="ElementShortName">boxColorB_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/boxColorB_val_read">
+                     <obj_property name="ElementShortName">boxColorB_val_read</obj_property>
+                     <obj_property name="ObjectShortName">boxColorB_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="motionSpeed_val_group">
+                  <obj_property name="label">motionSpeed_val(motionSpeed_val14_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/motionSpeed_val_blk_n">
+                     <obj_property name="ElementShortName">motionSpeed_val_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/motionSpeed_val_dout">
+                     <obj_property name="ElementShortName">motionSpeed_val_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/motionSpeed_val_empty_n">
+                     <obj_property name="ElementShortName">motionSpeed_val_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/motionSpeed_val_read">
+                     <obj_property name="ElementShortName">motionSpeed_val_read</obj_property>
+                     <obj_property name="ObjectShortName">motionSpeed_val_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="whiYuv_2_group">
+                  <obj_property name="label">whiYuv_2(PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/whiYuv_2_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/whiYuv_2_q0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/whiYuv_2_ce0">
+                     <obj_property name="ElementShortName">whiYuv_2_ce0</obj_property>
+                     <obj_property name="ObjectShortName">whiYuv_2_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                     <obj_property name="label">ap_ready(t_read)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgForeground_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="tpgForeground_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="ovrlayYUV_group">
+                  <obj_property name="label">ovrlayYUV(ovrlayYUV_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ovrlayYUV_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ovrlayYUV_full_n">
+                     <obj_property name="ElementShortName">ovrlayYUV_full_n</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayYUV_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/ovrlayYUV_write">
+                     <obj_property name="ElementShortName">ovrlayYUV_write</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayYUV_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="height_val4_c_group">
+                  <obj_property name="label">height_val4_c(height_val4_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val4_c_blk_n">
+                     <obj_property name="ElementShortName">height_val4_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val4_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val4_c_full_n">
+                     <obj_property name="ElementShortName">height_val4_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/height_val4_c_write">
+                     <obj_property name="ElementShortName">height_val4_c_write</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="width_val7_c_group">
+                  <obj_property name="label">width_val7_c(width_val7_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val7_c_blk_n">
+                     <obj_property name="ElementShortName">width_val7_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val7_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val7_c_full_n">
+                     <obj_property name="ElementShortName">width_val7_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/width_val7_c_write">
+                     <obj_property name="ElementShortName">width_val7_c_write</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="colorFormat_val17_c_group">
+                  <obj_property name="label">colorFormat_val17_c(colorFormat_val17_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val17_c_blk_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_c_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val17_c_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val17_c_full_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_c_full_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/colorFormat_val17_c_write">
+                     <obj_property name="ElementShortName">colorFormat_val17_c_write</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_c_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_group">
+               <obj_property name="label">grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/tpgForeground_U0/grp_tpgForeground_Pipeline_VITIS_LOOP_774_2_fu_220/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_group">
+            <obj_property name="label">MultiPixStream2AXIvideo_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="protoinst" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity">
+               <obj_property name="ElementShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_activity</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="ovrlayYUV_group">
+                  <obj_property name="label">ovrlayYUV(ovrlayYUV_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ovrlayYUV_dout">
+                     <obj_property name="ElementShortName">ovrlayYUV_dout[23:0]</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayYUV_dout[23:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ovrlayYUV_empty_n">
+                     <obj_property name="ElementShortName">ovrlayYUV_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayYUV_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ovrlayYUV_read">
+                     <obj_property name="ElementShortName">ovrlayYUV_read</obj_property>
+                     <obj_property name="ObjectShortName">ovrlayYUV_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="height_val4_group">
+                  <obj_property name="label">height_val4(height_val4_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/height_val4_blk_n">
+                     <obj_property name="ElementShortName">height_val4_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/height_val4_dout">
+                     <obj_property name="ElementShortName">height_val4_dout[11:0]</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_dout[11:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/height_val4_empty_n">
+                     <obj_property name="ElementShortName">height_val4_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/height_val4_read">
+                     <obj_property name="ElementShortName">height_val4_read</obj_property>
+                     <obj_property name="ObjectShortName">height_val4_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="width_val7_group">
+                  <obj_property name="label">width_val7(width_val7_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/width_val7_blk_n">
+                     <obj_property name="ElementShortName">width_val7_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/width_val7_dout">
+                     <obj_property name="ElementShortName">width_val7_dout[12:0]</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_dout[12:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/width_val7_empty_n">
+                     <obj_property name="ElementShortName">width_val7_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/width_val7_read">
+                     <obj_property name="ElementShortName">width_val7_read</obj_property>
+                     <obj_property name="ObjectShortName">width_val7_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="colorFormat_val17_group">
+                  <obj_property name="label">colorFormat_val17(colorFormat_val17_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/colorFormat_val17_blk_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/colorFormat_val17_dout">
+                     <obj_property name="ElementShortName">colorFormat_val17_dout[7:0]</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_dout[7:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/colorFormat_val17_empty_n">
+                     <obj_property name="ElementShortName">colorFormat_val17_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/colorFormat_val17_read">
+                     <obj_property name="ElementShortName">colorFormat_val17_read</obj_property>
+                     <obj_property name="ObjectShortName">colorFormat_val17_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="fid_in_val9_group">
+                  <obj_property name="label">fid_in_val9(fid_in_val9_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/fid_in_val9_blk_n">
+                     <obj_property name="ElementShortName">fid_in_val9_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/fid_in_val9_dout">
+                     <obj_property name="ElementShortName">fid_in_val9_dout[0:0]</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_dout[0:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/fid_in_val9_empty_n">
+                     <obj_property name="ElementShortName">fid_in_val9_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/fid_in_val9_read">
+                     <obj_property name="ElementShortName">fid_in_val9_read</obj_property>
+                     <obj_property name="ObjectShortName">fid_in_val9_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="field_id_val8_group">
+                  <obj_property name="label">field_id_val8(field_id_val8_c_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/field_id_val8_blk_n">
+                     <obj_property name="ElementShortName">field_id_val8_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/field_id_val8_dout">
+                     <obj_property name="ElementShortName">field_id_val8_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/field_id_val8_empty_n">
+                     <obj_property name="ElementShortName">field_id_val8_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/field_id_val8_read">
+                     <obj_property name="ElementShortName">field_id_val8_read</obj_property>
+                     <obj_property name="ObjectShortName">field_id_val8_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="MultiPixStream2AXIvideo_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_group">
+               <obj_property name="label">grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171_Handshake_group">
+                  <obj_property name="label">Block-level handshake</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/ap_start">
+                     <obj_property name="ElementShortName">ap_start</obj_property>
+                     <obj_property name="ObjectShortName">ap_start</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/ap_ready">
+                     <obj_property name="ElementShortName">ap_ready</obj_property>
+                     <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_v_tpg_top/AESL_inst_hdmi_out_v_tpg_0_0_v_tpg/grp_v_tpgHlsDataFlow_fu_443/MultiPixStream2AXIvideo_U0/grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2_fu_171/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,200 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'v_tpgHlsDataFlow'" level="0">
+<item name = "Date">Thu Nov 23 12:36:15 2023
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">9.26 ns, 7.728 ns, 2.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">26, 4296605671, 0.241 us, 39.782 sec, 2, 4296605672, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="tpgBackground_U0">tpgBackground, 1, 4296605671, 9.259 ns, 39.782 sec, 1, 4296605671, no</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="tpgForeground_U0">tpgForeground, 1, 4295229436, 9.259 ns, 39.770 sec, 1, 4295229436, no</column>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 1, 8860321, 9.259 ns, 82.038 ms, 1, 8860321, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 14, -</column>
+<column name="FIFO">-, -, 1881, 1292, -</column>
+<column name="Instance">13, 13, 5169, 6919, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 2, -, -</column>
+<specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 16, 20, 46, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="MultiPixStream2AXIvideo_U0">MultiPixStream2AXIvideo, 0, 0, 159, 513, 0</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 3, 110, 0</column>
+<column name="tpgBackground_U0">tpgBackground, 13, 13, 4465, 5120, 0</column>
+<column name="tpgForeground_U0">tpgForeground, 0, 0, 542, 1176, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="bckgndYUV_U">0, 99, 0, -, 16, 24, 384</column>
+<column name="boxColorB_val27_c_U">0, 99, 0, -, 3, 8, 24</column>
+<column name="boxColorG_val26_c_U">0, 99, 0, -, 3, 8, 24</column>
+<column name="boxColorR_val25_c_U">0, 99, 0, -, 3, 8, 24</column>
+<column name="boxSize_val24_c_U">0, 99, 0, -, 3, 16, 48</column>
+<column name="colorFormat_val17_c14_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="colorFormat_val17_c_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="crossHairX_val18_c_U">0, 99, 0, -, 3, 16, 48</column>
+<column name="crossHairY_val19_c_U">0, 99, 0, -, 3, 16, 48</column>
+<column name="fid_in_val9_c_U">0, 99, 0, -, 4, 1, 4</column>
+<column name="field_id_val8_c_U">0, 99, 0, -, 4, 16, 64</column>
+<column name="height_val4_c12_U">0, 99, 0, -, 2, 16, 32</column>
+<column name="height_val4_c_U">0, 99, 0, -, 2, 12, 24</column>
+<column name="maskId_val12_c_U">0, 99, 0, -, 3, 8, 24</column>
+<column name="motionSpeed_val14_c_U">0, 99, 0, -, 2, 8, 16</column>
+<column name="ovrlayId_val11_c_U">0, 99, 0, -, 3, 8, 24</column>
+<column name="ovrlayYUV_U">0, 99, 0, -, 16, 24, 384</column>
+<column name="width_val7_c13_U">0, 99, 0, -, 2, 16, 32</column>
+<column name="width_val7_c_U">0, 99, 0, -, 2, 13, 26</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="entry_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="entry_proc_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+<column name="tpgBackground_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_entry_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_tpgBackground_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_tpgBackground_U0_ap_ready">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_tpgBackground_U0_ap_ready">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="height_val4">in, 16, ap_none, height_val4, scalar</column>
+<column name="height_val4_ap_vld">in, 1, ap_none, height_val4, scalar</column>
+<column name="width_val7">in, 16, ap_none, width_val7, scalar</column>
+<column name="width_val7_ap_vld">in, 1, ap_none, width_val7, scalar</column>
+<column name="field_id_val8">in, 16, ap_none, field_id_val8, scalar</column>
+<column name="field_id_val8_ap_vld">in, 1, ap_none, field_id_val8, scalar</column>
+<column name="fid_in_val9">in, 1, ap_stable, fid_in_val9, scalar</column>
+<column name="fid_in_val9_ap_vld">in, 1, ap_stable, fid_in_val9, scalar</column>
+<column name="bckgndId_val10">in, 8, ap_none, bckgndId_val10, scalar</column>
+<column name="bckgndId_val10_ap_vld">in, 1, ap_none, bckgndId_val10, scalar</column>
+<column name="ovrlayId_val11">in, 8, ap_none, ovrlayId_val11, scalar</column>
+<column name="ovrlayId_val11_ap_vld">in, 1, ap_none, ovrlayId_val11, scalar</column>
+<column name="maskId_val12">in, 8, ap_none, maskId_val12, scalar</column>
+<column name="maskId_val12_ap_vld">in, 1, ap_none, maskId_val12, scalar</column>
+<column name="motionSpeed_val14">in, 8, ap_none, motionSpeed_val14, scalar</column>
+<column name="motionSpeed_val14_ap_vld">in, 1, ap_none, motionSpeed_val14, scalar</column>
+<column name="colorFormat_val17">in, 8, ap_none, colorFormat_val17, scalar</column>
+<column name="colorFormat_val17_ap_vld">in, 1, ap_none, colorFormat_val17, scalar</column>
+<column name="crossHairX_val18">in, 16, ap_none, crossHairX_val18, scalar</column>
+<column name="crossHairX_val18_ap_vld">in, 1, ap_none, crossHairX_val18, scalar</column>
+<column name="crossHairY_val19">in, 16, ap_none, crossHairY_val19, scalar</column>
+<column name="crossHairY_val19_ap_vld">in, 1, ap_none, crossHairY_val19, scalar</column>
+<column name="ZplateHorContStart_val20">in, 16, ap_none, ZplateHorContStart_val20, scalar</column>
+<column name="ZplateHorContStart_val20_ap_vld">in, 1, ap_none, ZplateHorContStart_val20, scalar</column>
+<column name="ZplateHorContDelta_val21">in, 16, ap_none, ZplateHorContDelta_val21, scalar</column>
+<column name="ZplateHorContDelta_val21_ap_vld">in, 1, ap_none, ZplateHorContDelta_val21, scalar</column>
+<column name="ZplateVerContStart_val22">in, 16, ap_none, ZplateVerContStart_val22, scalar</column>
+<column name="ZplateVerContStart_val22_ap_vld">in, 1, ap_none, ZplateVerContStart_val22, scalar</column>
+<column name="ZplateVerContDelta_val23">in, 16, ap_none, ZplateVerContDelta_val23, scalar</column>
+<column name="ZplateVerContDelta_val23_ap_vld">in, 1, ap_none, ZplateVerContDelta_val23, scalar</column>
+<column name="boxSize_val24">in, 16, ap_none, boxSize_val24, scalar</column>
+<column name="boxSize_val24_ap_vld">in, 1, ap_none, boxSize_val24, scalar</column>
+<column name="boxColorR_val25">in, 8, ap_none, boxColorR_val25, scalar</column>
+<column name="boxColorR_val25_ap_vld">in, 1, ap_none, boxColorR_val25, scalar</column>
+<column name="boxColorG_val26">in, 8, ap_none, boxColorG_val26, scalar</column>
+<column name="boxColorG_val26_ap_vld">in, 1, ap_none, boxColorG_val26, scalar</column>
+<column name="boxColorB_val27">in, 8, ap_none, boxColorB_val27, scalar</column>
+<column name="boxColorB_val27_ap_vld">in, 1, ap_none, boxColorB_val27, scalar</column>
+<column name="dpDynamicRange_val28">in, 8, ap_none, dpDynamicRange_val28, scalar</column>
+<column name="dpDynamicRange_val28_ap_vld">in, 1, ap_none, dpDynamicRange_val28, scalar</column>
+<column name="dpYUVCoef_val29">in, 8, ap_none, dpYUVCoef_val29, scalar</column>
+<column name="dpYUVCoef_val29_ap_vld">in, 1, ap_none, dpYUVCoef_val29, scalar</column>
+<column name="m_axis_video_TDATA">out, 24, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 3, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 3, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
+<column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
+<column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>
+<column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="fid">out, 1, ap_vld, fid, pointer</column>
+<column name="fid_ap_vld">out, 1, ap_vld, fid, pointer</column>
+<column name="s">in, 32, ap_none, s, pointer</column>
+<column name="s_ap_vld">in, 1, ap_none, s, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, v_tpgHlsDataFlow, return value</column>
+</table>
+</item>
+</section>
+</profile>

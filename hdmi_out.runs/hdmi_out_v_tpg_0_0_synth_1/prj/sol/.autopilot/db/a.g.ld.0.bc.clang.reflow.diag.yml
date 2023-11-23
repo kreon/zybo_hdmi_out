@@ -1,0 +1,2633 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1070, Column: 18 }
+Function:        _Z24tpgPatternHorizontalRamptth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternHorizontalRamp(unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1068, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1093, Column: 18 }
+Function:        _Z22tpgPatternVerticalRampttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternVerticalRamp(unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1091, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1117, Column: 18 }
+Function:        _Z22tpgPatternTemporalRampth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternTemporalRamp(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1132, Column: 18 }
+Function:        _Z18tpgPatternSolidRedth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternSolidRed(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1131, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1153, Column: 18 }
+Function:        _Z20tpgPatternSolidGreenth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternSolidGreen(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1152, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1174, Column: 18 }
+Function:        _Z19tpgPatternSolidBlueth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternSolidBlue(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1173, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1195, Column: 18 }
+Function:        _Z20tpgPatternSolidBlackth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternSolidBlack(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1194, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1217, Column: 18 }
+Function:        _Z20tpgPatternSolidWhiteth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternSolidWhite(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1215, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1237, Column: 18 }
+Function:        _Z19tpgPatternColorBarstthi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternColorBars(unsigned short, unsigned short, unsigned char, int)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1236, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1329, Column: 18 }
+Function:        _Z19tpgPatternZonePlatettttttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternZonePlate(unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1322, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1371, Column: 18 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1370, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1399, Column: 13 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1370, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1439, Column: 18 }
+Function:        _Z20tpgPatternCrossHatchtttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternCrossHatch(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1438, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1275, Column: 18 }
+Function:        _Z17tpgPatternRainbowth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternRainbow(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1274, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1530, Column: 18 }
+Function:        _Z32tpgPatternVerticalHorizontalRampttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternVerticalHorizontalRamp(unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1528, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1553, Column: 18 }
+Function:        _Z22tpgPatternCheckerBoardtttth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternCheckerBoard(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1552, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1825, Column: 18 }
+Function:        _Z7tpgPRBSth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPRBS(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1824, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1621, Column: 18 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1619, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1621, Column: 23 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1619, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1720, Column: 18 }
+Function:        _Z34tpgPatternDPBlackWhiteVerticalLinet
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternDPBlackWhiteVerticalLine(unsigned short)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1719, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1736, Column: 18 }
+Function:        _Z23tpgPatternDPColorSquaretthhh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternDPColorSquare(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1735, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 552, Column: 18 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 553, Column: 18 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1985, Column: 18 }
+Function:        _Z14tpgPatternMaskN3hls6ScalarILi3E7ap_uintILi8EEEEhh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgPatternMask(hls::Scalar<3, ap_uint<8> >, unsigned char, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1984, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 768, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 769, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 770, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 923, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<8> >::Scalar()'
+    DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned char&, bool&, bool&, unsigned short&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 921, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            intpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z14tpgPatternMaskN3hls6ScalarILi3E7ap_uintILi8EEEEhh
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp13
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z23tpgPatternDPColorSquaretthhh
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp43
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z34tpgPatternDPBlackWhiteVerticalLinet
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp41
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp39
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Adding '''
+  - Name:            tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z7tpgPRBSth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp37
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z22tpgPatternCheckerBoardtttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp35
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z32tpgPatternVerticalHorizontalRampttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp33
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z17tpgPatternRainbowth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp31
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z20tpgPatternCrossHatchtttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp29
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Adding '''
+  - Name:            pixTartan
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp27
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z19tpgPatternZonePlatettttttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp25
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z19tpgPatternColorBarstthi
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp23
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z20tpgPatternSolidWhiteth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp21
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z20tpgPatternSolidBlackth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp19
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z19tpgPatternSolidBlueth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp17
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z20tpgPatternSolidGreenth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp15
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18tpgPatternSolidRedth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp13
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z22tpgPatternTemporalRampth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp11
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z22tpgPatternVerticalRampttth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp9
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z24tpgPatternHorizontalRamptth
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 803, Column: 14 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp13
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 721, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp43
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 714, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp41
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 707, Column: 23 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp39
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 703, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp37
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 697, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp35
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 689, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp33
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 681, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp31
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 673, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp29
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 665, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp27
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 657, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp25
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 649, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp23
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 641, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp21
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 633, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp19
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 625, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp17
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 617, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp15
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 609, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp13
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 601, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp11
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 593, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp9
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 585, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            intpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Adding '''
+  - Name:            tmp
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1621, Column: 18 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            tmp
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp43
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp41
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp39
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp37
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp35
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp33
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp31
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp29
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp27
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp25
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp23
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp21
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp19
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp17
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp15
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp13
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp11
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp9
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 552, Column: 18 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            outpix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp13
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 770, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 769, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            intpix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 768, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            outpix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 923, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1011, Column: 23 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1011_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1013, Column: 24 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1013_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1987, Column: 21 }
+Function:        _Z14tpgPatternMaskN3hls6ScalarILi3E7ap_uintILi8EEEEhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1987_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1961, Column: 21 }
+Function:        _Z19tpgPatternCrossHairN3hls6ScalarILi3E7ap_uintILi8EEEEtttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1961_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1930, Column: 21 }
+Function:        _Z13tpgPatternBoxN3hls6ScalarILi3E7ap_uintILi8EEEEttttttttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1930_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1761, Column: 21 }
+Function:        _Z23tpgPatternDPColorSquaretthhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1761_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1724, Column: 21 }
+Function:        _Z34tpgPatternDPBlackWhiteVerticalLinet
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1724_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1635, Column: 21 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1635_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1833, Column: 21 }
+Function:        _Z7tpgPRBSth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1833_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1578, Column: 21 }
+Function:        _Z22tpgPatternCheckerBoardtttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1578_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1535, Column: 21 }
+Function:        _Z32tpgPatternVerticalHorizontalRampttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1535_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1277, Column: 21 }
+Function:        _Z17tpgPatternRainbowth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1277_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1465, Column: 21 }
+Function:        _Z20tpgPatternCrossHatchtttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1465_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1396, Column: 21 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1396_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1349, Column: 21 }
+Function:        _Z19tpgPatternZonePlatettttttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1349_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1243, Column: 21 }
+Function:        _Z19tpgPatternColorBarstthi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1243_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1218, Column: 21 }
+Function:        _Z20tpgPatternSolidWhiteth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1218_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1196, Column: 21 }
+Function:        _Z20tpgPatternSolidBlackth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1196_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1175, Column: 21 }
+Function:        _Z19tpgPatternSolidBlueth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1175_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1154, Column: 21 }
+Function:        _Z20tpgPatternSolidGreenth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1154_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1133, Column: 21 }
+Function:        _Z18tpgPatternSolidRedth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1133_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1118, Column: 21 }
+Function:        _Z22tpgPatternTemporalRampth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1118_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1103, Column: 21 }
+Function:        _Z22tpgPatternVerticalRampttth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1103_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1075, Column: 21 }
+Function:        _Z24tpgPatternHorizontalRamptth
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1075_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 921, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1011_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1011:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 921, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERNS0_INS_4axisIS2_ILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_RhRbSE_SC_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1013_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1013:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1984, Column: 0 }
+Function:        _Z14tpgPatternMaskN3hls6ScalarILi3E7ap_uintILi8EEEEhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1987_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1987:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternMask
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1958, Column: 0 }
+Function:        _Z19tpgPatternCrossHairN3hls6ScalarILi3E7ap_uintILi8EEEEtttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1961_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1961:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternCrossHair
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1871, Column: 0 }
+Function:        _Z13tpgPatternBoxN3hls6ScalarILi3E7ap_uintILi8EEEEttttttttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1930_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1930:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternBox
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1735, Column: 0 }
+Function:        _Z23tpgPatternDPColorSquaretthhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1761_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1761:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternDPColorSquare
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1719, Column: 0 }
+Function:        _Z34tpgPatternDPBlackWhiteVerticalLinet
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1724_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1724:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternDPBlackWhiteVerticalLine
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1619, Column: 0 }
+Function:        _Z21tpgPatternDPColorRamptth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1635_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1635:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternDPColorRamp
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1824, Column: 0 }
+Function:        _Z7tpgPRBSth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1833_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1833:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPRBS
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1552, Column: 0 }
+Function:        _Z22tpgPatternCheckerBoardtttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1578_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1578:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternCheckerBoard
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1528, Column: 0 }
+Function:        _Z32tpgPatternVerticalHorizontalRampttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1535_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1535:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternVerticalHorizontalRamp
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1274, Column: 0 }
+Function:        _Z17tpgPatternRainbowth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1277_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1277:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternRainbow
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1438, Column: 0 }
+Function:        _Z20tpgPatternCrossHatchtttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1465_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1465:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternCrossHatch
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1370, Column: 0 }
+Function:        _Z25tpgPatternTartanColorBarstttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1396_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1396:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternTartanColorBars
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1322, Column: 0 }
+Function:        _Z19tpgPatternZonePlatettttttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1349_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1349:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternZonePlate
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1236, Column: 0 }
+Function:        _Z19tpgPatternColorBarstthi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1243_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1243:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternColorBars
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1215, Column: 0 }
+Function:        _Z20tpgPatternSolidWhiteth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1218_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1218:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternSolidWhite
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1194, Column: 0 }
+Function:        _Z20tpgPatternSolidBlackth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1196_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1196:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternSolidBlack
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1173, Column: 0 }
+Function:        _Z19tpgPatternSolidBlueth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1175_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1175:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternSolidBlue
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1152, Column: 0 }
+Function:        _Z20tpgPatternSolidGreenth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1154_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1154:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternSolidGreen
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1131, Column: 0 }
+Function:        _Z18tpgPatternSolidRedth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1133_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1133:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternSolidRed
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1116, Column: 0 }
+Function:        _Z22tpgPatternTemporalRampth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1118_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1118:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternTemporalRamp
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1091, Column: 0 }
+Function:        _Z22tpgPatternVerticalRampttth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1103_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1103:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternVerticalRamp
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1068, Column: 0 }
+Function:        _Z24tpgPatternHorizontalRamptth
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1075_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1075:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          tpgPatternHorizontalRamp
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternHorizontalRamp(unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1068, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternVerticalRamp(unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1091, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternTemporalRamp(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternSolidRed(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1131, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternSolidGreen(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1152, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternSolidBlue(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1173, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternSolidBlack(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1194, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternSolidWhite(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1215, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternColorBars(unsigned short, unsigned short, unsigned char, int)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1236, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternZonePlate(unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1322, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1370, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternRainbow(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1274, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternVerticalHorizontalRamp(unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1528, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternCheckerBoard(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1552, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPRBS(unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1824, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1619, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 548, Column: 0 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternDPBlackWhiteVerticalLine(unsigned short)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1719, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 762, Column: 0 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternBox(hls::Scalar<3, ap_uint<8> >, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1871, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 762, Column: 0 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternCrossHair(hls::Scalar<3, ap_uint<8> >, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1958, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 762, Column: 0 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tpgPatternMask(hls::Scalar<3, ap_uint<8> >, unsigned char, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1984, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 762, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1621, Column: 18 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tmp.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp29
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp43
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1985, Column: 18 }
+Function:        _ZL13tpgForegroundRN3hls6streamINS_6ScalarILi3E7ap_uintILi8EEEELi0EEERtS7_RhS8_S8_S7_S7_S7_S7_S7_S7_S8_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp13
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 325, Column: 22 }
+Function:        _ZL16v_tpgHlsDataFlowRtS_S_RbRhS1_S1_S1_S1_S_S_S_S_S_S_S_S_S_S_S1_S1_RiRN3hls6streamINS3_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES0_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            ovrlayYUV
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '24'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 324, Column: 22 }
+Function:        _ZL16v_tpgHlsDataFlowRtS_S_RbRhS1_S1_S1_S1_S_S_S_S_S_S_S_S_S_S_S1_S1_RiRN3hls6streamINS3_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES0_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            bckgndYUV
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '24'
+  - String:          '-bits'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 721, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          sw.bb42
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_565_2
+  - String:          '''('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565:21'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 673, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          sw.bb28
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_565_2
+  - String:          '''('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565:21'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 1347, Column: 18 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          _Z19tpgPatternZonePlatettttttth.exit
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_565_2
+  - String:          '''('
+  - LoopLoc:         'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565:21'
+  - String:          ') .'
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 721, Column: 26 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'tpgPatternDPColorSquare(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1735, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 673, Column: 14 }
+Function:        _ZL13tpgBackgroundRtS_RiRhS_S_S_S_S1_S1_S1_S1_RN3hls6streamINS2_6ScalarILi3E7ap_uintILi8EEEELi0EEE
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'tpgPatternCrossHatch(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 1438, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 548, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src\v_tpg_zoneplate.h', 
+                   Line: 2110, Column: 0 }
+Function:        _Z5v_tpgRtS_S_RbRhS1_S1_S1_S1_S_S_S_S_S_S_S_S_S_S_S1_S1_S_RN3hls6streamINS2_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES0_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=cyclic factor=5 variable=tpgSinTableArray_9bit'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  v_tpg
+  - String:          ' '
+  - varLoc:          'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src\v_tpg_zoneplate.h:2110:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:568:9'
+    DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                       Line: 568, Column: 9 }
+  - VarName:         tpgSinTableArray_9bit
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp', 
+                   Line: 568, Column: 9 }
+Function:        _Z5v_tpgRtS_S_RbRhS1_S1_S1_S1_S_S_S_S_S_S_S_S_S_S_S1_S1_S_RN3hls6streamINS2_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES0_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '5'
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            tpgSinTableArray_9bit
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src\v_tpg_zoneplate.h', 
+                   Line: 2110, Column: 0 }
+Function:        _Z5v_tpgRtS_S_RbRhS1_S1_S1_S1_S_S_S_S_S_S_S_S_S_S_S1_S1_S_RN3hls6streamINS2_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tpgSinTableArray_9bit
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '5'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

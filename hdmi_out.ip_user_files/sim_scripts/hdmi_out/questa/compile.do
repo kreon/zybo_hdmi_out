@@ -34,6 +34,18 @@ vlib questa_lib/msim/proc_sys_reset_v5_0_14
 vlib questa_lib/msim/axi_vip_v1_1_15
 vlib questa_lib/msim/processing_system7_vip_v1_0_17
 vlib questa_lib/msim/gigantic_mux
+vlib questa_lib/msim/xbip_utils_v3_0_11
+vlib questa_lib/msim/axi_utils_v2_0_7
+vlib questa_lib/msim/xbip_pipe_v3_0_7
+vlib questa_lib/msim/xbip_dsp48_wrapper_v3_0_5
+vlib questa_lib/msim/xbip_dsp48_addsub_v3_0_7
+vlib questa_lib/msim/xbip_bram18k_v3_0_7
+vlib questa_lib/msim/mult_gen_v12_0_19
+vlib questa_lib/msim/floating_point_v7_0_21
+vlib questa_lib/msim/xbip_dsp48_mult_v3_0_7
+vlib questa_lib/msim/xbip_dsp48_multadd_v3_0_7
+vlib questa_lib/msim/div_gen_v5_1_20
+vlib questa_lib/msim/v_tpg_v8_2_3
 vlib questa_lib/msim/axi_protocol_converter_v2_1_29
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
@@ -69,6 +81,18 @@ vmap proc_sys_reset_v5_0_14 questa_lib/msim/proc_sys_reset_v5_0_14
 vmap axi_vip_v1_1_15 questa_lib/msim/axi_vip_v1_1_15
 vmap processing_system7_vip_v1_0_17 questa_lib/msim/processing_system7_vip_v1_0_17
 vmap gigantic_mux questa_lib/msim/gigantic_mux
+vmap xbip_utils_v3_0_11 questa_lib/msim/xbip_utils_v3_0_11
+vmap axi_utils_v2_0_7 questa_lib/msim/axi_utils_v2_0_7
+vmap xbip_pipe_v3_0_7 questa_lib/msim/xbip_pipe_v3_0_7
+vmap xbip_dsp48_wrapper_v3_0_5 questa_lib/msim/xbip_dsp48_wrapper_v3_0_5
+vmap xbip_dsp48_addsub_v3_0_7 questa_lib/msim/xbip_dsp48_addsub_v3_0_7
+vmap xbip_bram18k_v3_0_7 questa_lib/msim/xbip_bram18k_v3_0_7
+vmap mult_gen_v12_0_19 questa_lib/msim/mult_gen_v12_0_19
+vmap floating_point_v7_0_21 questa_lib/msim/floating_point_v7_0_21
+vmap xbip_dsp48_mult_v3_0_7 questa_lib/msim/xbip_dsp48_mult_v3_0_7
+vmap xbip_dsp48_multadd_v3_0_7 questa_lib/msim/xbip_dsp48_multadd_v3_0_7
+vmap div_gen_v5_1_20 questa_lib/msim/div_gen_v5_1_20
+vmap v_tpg_v8_2_3 questa_lib/msim/v_tpg_v8_2_3
 vmap axi_protocol_converter_v2_1_29 questa_lib/msim/axi_protocol_converter_v2_1_29
 
 vlog -work xilinx_vip  -incr -mfcu  -sv -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L xilinx_vip "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
@@ -231,8 +255,6 @@ vcom -work axi_gpio_v2_0_31  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_axi_gpio_btn_0/sim/hdmi_out_axi_gpio_btn_0.vhd" \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_axi_gpio_hdmi_0/sim/hdmi_out_axi_gpio_hdmi_0.vhd" \
-"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_axi_gpio_led_0/sim/hdmi_out_axi_gpio_led_0.vhd" \
-"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_axi_gpio_sw_0/sim/hdmi_out_axi_gpio_sw_0.vhd" \
 
 vcom -work proc_sys_reset_v5_0_14  -93  \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/408c/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
@@ -267,9 +289,51 @@ vcom -work xil_defaultlib  -93  \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/sim/hdmi_out_rgb2vga_0_0.vhd" \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb_doubler_0_1/sim/hdmi_out_rgb_doubler_0_1.vhd" \
 
+vcom -work xbip_utils_v3_0_11  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vcom -work axi_utils_v2_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vcom -work xbip_pipe_v3_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_wrapper_v3_0_5  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_addsub_v3_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_bram18k_v3_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vcom -work mult_gen_v12_0_19  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vcom -work floating_point_v7_0_21  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/floating_point_v7_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_mult_v3_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_dsp48_mult_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_multadd_v3_0_7  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+
+vcom -work div_gen_v5_1_20  -93  \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/div_gen_v5_1_vh_rfs.vhd" \
+
+vlog -work v_tpg_v8_2_3  -incr -mfcu  "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/7fb4/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/434f/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ec67/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/6b2b/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/e2ba/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/a29c/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ae90/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/0e59/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdl/v_tpg_v8_2_rfs.v" \
+
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/7fb4/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/434f/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ec67/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/6b2b/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/e2ba/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/a29c/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ae90/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/0e59/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/sim/hdmi_out_v_tpg_0_0.v" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xbar_1/sim/hdmi_out_xbar_1.v" \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_s00_regslice_0/sim/hdmi_out_s00_regslice_0.v" \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_s00_data_fifo_0/sim/hdmi_out_s00_data_fifo_0.v" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_s01_regslice_0/sim/hdmi_out_s01_regslice_0.v" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_s01_data_fifo_0/sim/hdmi_out_s01_data_fifo_0.v" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_m00_data_fifo_0/sim/hdmi_out_m00_data_fifo_0.v" \
+"../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_m00_regslice_0/sim/hdmi_out_m00_regslice_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_29  -incr -mfcu  "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/7fb4/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/434f/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ec67/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/6b2b/hdl" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/e2ba/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/a29c/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/ae90/hdl/verilog" "+incdir+../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/0e59/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
 "../../../../hdmi_out.gen/sources_1/bd/hdmi_out/ipshared/a63f/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

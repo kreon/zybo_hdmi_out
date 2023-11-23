@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Zybo-Z7-10-HDMI" location="C:/Xil_prj/hdmi_out/hdmi_out.vts/Zybo-Z7-10-HDMI" platform="C:/Xil_prj/hdmi_out/hdmi_out.vts/hdmi_out_wrapper/export/hdmi_out_wrapper/hdmi_out_wrapper.xpfm" platformUID="xilinx:zybo::0.0(custom)" systemProject="Zybo-Z7-10-HDMI_system" sysConfig="hdmi_out_wrapper" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="7bc5e595b5a6fecd4cde18cd7083518a">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.316427152">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.608588404" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

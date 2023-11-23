@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date                      : Sun Nov 19 11:54:28 2023
-| Host                      : ta4ka running 64-bit major release  (build 9200)
+| Date                      : Thu Nov 23 12:38:42 2023
+| Host                      : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 | Command                   : report_io -file hdmi_out_wrapper_io_placed.rpt
 | Design                    : hdmi_out_wrapper
 | Device                    : xc7z010
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           174 |
+|           175 |
 +---------------+
 
 
@@ -250,7 +250,7 @@ Table of Contents
 | L13        |                     |            | VCCINT                  | VCCINT        |                   |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L14        |                     | High Range | IO_L22P_T3_AD7P_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L15        |                     | High Range | IO_L22N_T3_AD7N_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| L16        |                     | High Range | IO_L11P_T1_SRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| L16        | sys_clock           | High Range | IO_L11P_T1_SRCC_35      | INPUT         | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | L17        |                     | High Range | IO_L11N_T1_SRCC_35      | User IO       |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | L18        |                     |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | L19        | VGA_G[2]            | High Range | IO_L9P_T1_DQS_AD3P_35   | OUTPUT        | LVCMOS33          |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |

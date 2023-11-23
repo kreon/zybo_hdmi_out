@@ -1,0 +1,1244 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 23 12:35:12 2023
+# Process ID: 9348
+# Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1
+# Command line: vivado.exe -log hdmi_out_v_tpg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_v_tpg_0_0.tcl
+# Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0.vds
+# Journal file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1\vivado.jou
+# Running On: ARGUS-IT-WS1, OS: Windows, CPU Frequency: 3686 MHz, CPU Physical cores: 10, Host memory: 34084 MB
+#-----------------------------------------------------------
+source hdmi_out_v_tpg_0_0.tcl -notrace
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zybo/B.3/board.xml.
+Resolution: Please contact your board vendor with this message.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Work/Boards/Zybo/Projects/hdmi_out/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xil_prj/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'd:/Work/Boards/Zybo/Projects/hdmi_out/repo/digilent/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Xil_prj/library/if/tmds_v1_0/tmds.xml'
+Режим вывода команд на экран (ECHO) отключен.
+Режим вывода команд на экран (ECHO) отключен.
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'dkasmin' on host 'argus-it-ws1' (Windows NT_amd64 version 6.2) on Thu Nov 23 12:35:19 +0300 2023
+INFO: [HLS 200-10] In directory 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1'
+Sourcing Tcl script 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset prj 
+INFO: [HLS 200-10] Creating and opening project 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj'.
+INFO: [HLS 200-1510] Running: set_top v_tpg 
+INFO: [HLS 200-1510] Running: open_solution sol 
+INFO: [HLS 200-10] Creating and opening solution 'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg_config.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg_config.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg.cpp 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg_zoneplate.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg_zoneplate.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls_video.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls_video.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls_opencv.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls_opencv.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_axi_io.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_axi_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_arithm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_fast.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_fast.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_haar.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_haar.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_harris.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_harris.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_histogram.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_hough.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_hough.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_imgbase.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_imgproc.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_io.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_mem.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_mem.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_stereobm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_types.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_types.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls -I c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src  c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-10] Adding design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_undistort.h' to the project
+INFO: [HLS 200-1510] Running: create_clock -period 9.259 -name ap_clk 
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 9.259ns.
+INFO: [HLS 200-1510] Running: config_schedule -verbose 
+WARNING: [HLS 200-484] The 'config_schedule -verbose' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: config_rtl -module_prefix hdmi_out_v_tpg_0_0_ 
+INFO: [HLS 200-1510] Running: config_export -vendor xilinx.com -library ip -version 8.2 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 91.863 MB.
+INFO: [HLS 200-10] Analyzing design file 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/v_tpg.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 20.614 seconds; current allocated memory: 110.391 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 9,769 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,801 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,076 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,022 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,659 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,454 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,411 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,415 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,485 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,514 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,491 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,468 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,504 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,450 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,463 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,453 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternHorizontalRamp(unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1070:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternVerticalRamp(unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1093:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternTemporalRamp(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1117:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternSolidRed(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1132:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternSolidGreen(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1153:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternSolidBlue(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1174:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternSolidBlack(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1195:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternSolidWhite(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1217:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternColorBars(unsigned short, unsigned short, unsigned char, int)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1237:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternZonePlate(unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1329:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1371:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1399:13)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternCrossHatch(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1439:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternRainbow(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1275:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternVerticalHorizontalRamp(unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1530:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternCheckerBoard(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1553:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPRBS(unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1825:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1621:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1621:23)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternDPBlackWhiteVerticalLine(unsigned short)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1720:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternDPColorSquare(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1736:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:552:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:553:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgPatternMask(hls::Scalar<3, ap_uint<8> >, unsigned char, unsigned char)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1985:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:768:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:769:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:770:18)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned char&, bool&, bool&, unsigned short&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:923:18)
+INFO: [HLS 214-377] Adding 'ref.tmp13' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:803:14)
+INFO: [HLS 214-377] Adding 'ref.tmp43' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721:26)
+INFO: [HLS 214-377] Adding 'ref.tmp41' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:714:26)
+INFO: [HLS 214-377] Adding 'ref.tmp39' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:707:23)
+INFO: [HLS 214-377] Adding 'ref.tmp37' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:703:14)
+INFO: [HLS 214-377] Adding 'ref.tmp35' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:697:14)
+INFO: [HLS 214-377] Adding 'ref.tmp33' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:689:26)
+INFO: [HLS 214-377] Adding 'ref.tmp31' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681:26)
+INFO: [HLS 214-377] Adding 'ref.tmp29' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:673:14)
+INFO: [HLS 214-377] Adding 'ref.tmp27' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:665:14)
+INFO: [HLS 214-377] Adding 'ref.tmp25' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:657:26)
+INFO: [HLS 214-377] Adding 'ref.tmp23' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:649:14)
+INFO: [HLS 214-377] Adding 'ref.tmp21' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:641:26)
+INFO: [HLS 214-377] Adding 'ref.tmp19' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:633:26)
+INFO: [HLS 214-377] Adding 'ref.tmp17' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:625:26)
+INFO: [HLS 214-377] Adding 'ref.tmp15' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:617:26)
+INFO: [HLS 214-377] Adding 'ref.tmp13' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:609:26)
+INFO: [HLS 214-377] Adding 'ref.tmp11' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:601:26)
+INFO: [HLS 214-377] Adding 'ref.tmp9' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:593:26)
+INFO: [HLS 214-377] Adding 'ref.tmp' into disaggregation list because there's array-partition pragma applied on the struct field (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:585:26)
+INFO: [HLS 214-377] Adding 'pix' into disaggregation list because there's array-partition pragma applied on the struct field (c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h:198:9)
+INFO: [HLS 214-377] Adding 'intpix' into disaggregation list because there's array-partition pragma applied on the struct field (c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h:198:9)
+INFO: [HLS 214-377] Adding 'outpix' into disaggregation list because there's array-partition pragma applied on the struct field (c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h:198:9)
+INFO: [HLS 214-377] Adding 'tmp' into disaggregation list because there's array-partition pragma applied on the struct field (c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src/hls/hls_video_core.h:198:9)
+INFO: [HLS 214-210] Disaggregating variable 'tmp' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1621:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp43'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp41'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp39'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp37'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp35'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp33'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp31'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp29'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp27'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp25'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp23'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp21'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp19'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp17'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp15'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp13'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp11'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp9'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:552:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:770:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'intpix' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:769:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:768:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:923:18)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1011_3' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1011:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1013_4' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1013:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1987_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1987:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1961_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1961:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1930_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1930:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1761_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1761:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1724_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1724:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1635_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1635:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1833_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1833:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1578_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1578:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1535_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1535:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1277_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1277:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1465_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1465:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1396_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1396:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1349_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1349:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1243_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1243:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1218_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1218:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1196_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1196:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1175_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1175:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1154_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1154:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1133_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1133:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1118_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1118:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1103_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1103:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1075_1' is marked as complete unroll implied by the pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1075:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1011_3' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1011:23) in function 'MultiPixStream2AXIvideo' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:921:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1013_4' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1013:24) in function 'MultiPixStream2AXIvideo' completely with a factor of 3 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:921:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1987_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1987:21) in function 'tpgPatternMask' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1984:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1961_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1961:21) in function 'tpgPatternCrossHair' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1958:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1930_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1930:21) in function 'tpgPatternBox' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1871:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1761_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1761:21) in function 'tpgPatternDPColorSquare' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1735:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1724_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1724:21) in function 'tpgPatternDPBlackWhiteVerticalLine' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1719:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1635_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1635:21) in function 'tpgPatternDPColorRamp' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1619:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1833_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1833:21) in function 'tpgPRBS' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1824:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1578_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1578:21) in function 'tpgPatternCheckerBoard' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1552:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1535_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1535:21) in function 'tpgPatternVerticalHorizontalRamp' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1528:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1277_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1277:21) in function 'tpgPatternRainbow' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1274:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1465_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1465:21) in function 'tpgPatternCrossHatch' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1438:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1396_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1396:21) in function 'tpgPatternTartanColorBars' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1370:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1349_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1349:21) in function 'tpgPatternZonePlate' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1322:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1243_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1243:21) in function 'tpgPatternColorBars' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1236:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1218_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1218:21) in function 'tpgPatternSolidWhite' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1215:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1196_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1196:21) in function 'tpgPatternSolidBlack' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1194:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1175_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1175:21) in function 'tpgPatternSolidBlue' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1173:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1154_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1154:21) in function 'tpgPatternSolidGreen' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1152:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1133_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1133:21) in function 'tpgPatternSolidRed' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1131:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1118_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1118:21) in function 'tpgPatternTemporalRamp' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1116:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1103_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1103:21) in function 'tpgPatternVerticalRamp' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1091:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1075_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1075:21) in function 'tpgPatternHorizontalRamp' completely with a factor of 1 (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1068:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternHorizontalRamp(unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternVerticalRamp(unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternTemporalRamp(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternSolidRed(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternSolidGreen(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternSolidBlue(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternSolidBlack(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternSolidWhite(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternColorBars(unsigned short, unsigned short, unsigned char, int)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternZonePlate(unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternTartanColorBars(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternRainbow(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternVerticalHorizontalRamp(unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternCheckerBoard(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPRBS(unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternDPColorRamp(unsigned short, unsigned short, unsigned char)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternDPBlackWhiteVerticalLine(unsigned short)' into 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:548:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternBox(hls::Scalar<3, ap_uint<8> >, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:762:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternCrossHair(hls::Scalar<3, ap_uint<8> >, unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:762:0)
+INFO: [HLS 214-178] Inlining function 'tpgPatternMask(hls::Scalar<3, ap_uint<8> >, unsigned char, unsigned char)' into 'tpgForeground(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:762:0)
+INFO: [HLS 214-248] Applying array_partition to 'tmp.i': Complete partitioning on dimension 1. (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1621:18)
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp29': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp43': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp13': Complete partitioning on dimension 1. (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1985:18)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'ovrlayYUV' with compact=bit mode in 24-bits (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:325:22)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'bckgndYUV' with compact=bit mode in 24-bits (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:324:22)
+INFO: [HLS 214-364] Automatically inlining function 'tpgPatternDPColorSquare(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)' to improve effectiveness of pipeline pragma in function 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721:26)
+INFO: [HLS 214-364] Automatically inlining function 'tpgPatternCrossHatch(unsigned short, unsigned short, unsigned short, unsigned short, unsigned char)' to improve effectiveness of pipeline pragma in function 'tpgBackground(unsigned short&, unsigned short&, int&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&)' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:673:14)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'tpgSinTableArray_9bit' due to pipeline pragma (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:568:9)
+INFO: [HLS 214-248] Applying array_partition to 'tpgSinTableArray_9bit': Cyclic partitioning with factor 5 on dimension 1. (c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/src\v_tpg_zoneplate.h:2110:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 17.494 seconds; current allocated memory: 111.785 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 111.984 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 120.375 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 124.289 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 4096 for loop 'VITIS_LOOP_981_2' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 4096) < AVE (= 32767)) for loop 'VITIS_LOOP_981_2' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 2160 for loop 'VITIS_LOOP_979_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 2160) < AVE (= 32767)) for loop 'VITIS_LOOP_979_1' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:973:7) in function 'MultiPixStream2AXIvideo'.
+INFO: [XFORM 203-102] Partitioning array 'xCount.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'xCount.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'xCount.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'xCount' automatically.
+INFO: [XFORM 203-102] Partitioning array 'xBar' automatically.
+INFO: [XFORM 203-102] Partitioning array 'hBarSel.5' automatically.
+INFO: [XFORM 203-102] Partitioning array 'hBarSel.4' automatically.
+INFO: [XFORM 203-102] Partitioning array 'hBarSel.3' automatically.
+INFO: [XFORM 203-102] Partitioning array 'hBarSel' automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_tpgHlsDataFlow' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:334:1), detected/extracted 4 process function(s): 
+	 'entry_proc'
+	 'tpgBackground'
+	 'tpgForeground'
+	 'MultiPixStream2AXIvideo'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:801:8) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:774:21) in function 'tpgForeground'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1273:39) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1311:5) in function 'tpgBackground'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1618:43) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:711:5) in function 'tpgBackground'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1260:27) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1268:6) in function 'tpgBackground'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1415:13) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1429:6) in function 'tpgBackground'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1596:13) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1610:6) in function 'tpgBackground'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1799:69) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1806:4) in function 'tpgBackground'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1809:69) in function 'tpgBackground'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008:12) to (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1038:8) in function 'MultiPixStream2AXIvideo'... converting 13 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'tpgForeground' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:763:5)...3 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'tpgBackground' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:549:14)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.555 seconds; current allocated memory: 151.531 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 252.023 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_tpg' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+WARNING: [SYN 201-103] Legalizing function name 'reg<ap_uint<10> >' to 'reg_ap_uint_10_s'.
+WARNING: [SYN 201-103] Legalizing function name 'reg<int>' to 'reg_int_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	2	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining function 'reg<unsigned short>'.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.991 seconds; current allocated memory: 256.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 257.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	21	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.256 seconds; current allocated memory: 258.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 258.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_ap_uint_10_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	2	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining function 'reg<ap_uint<10> >'.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<ap_uint<10> >'
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 258.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 258.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_int_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	2	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining function 'reg<int>'.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<int>'
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.335 seconds; current allocated memory: 259.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 259.027 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1304_1) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('b', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1289->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 16363
+   c  'bitconcatenate' operation 15 bit ('shl_ln1', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1304->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+  DSP Expression: add_ln1304_1 = zext_ln1304 + zext_ln1302_2 * 16363
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1304) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('g', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1285->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 65429
+   c  constant 32896
+  DSP Expression: add_ln1304 = zext_ln1302_1 * 65429 + 32896
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1303_1) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('g', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1285->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 65451
+   c  'add' operation 16 bit ('add_ln1303', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1303->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+  DSP Expression: add_ln1303_1 = add_ln1303 + zext_ln1302_1 * 65451
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1303) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('r', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1281->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 32725
+   c  constant 32896
+  DSP Expression: add_ln1303 = zext_ln1302 * 32725 + 32896
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1302_2) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('b', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1289->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 29
+   c  'add' operation 16 bit ('add_ln1302_1', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1302->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+  DSP Expression: add_ln1302_2 = zext_ln1302_6 + zext_ln1302_3 * 29
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1302_1) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('g', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1285->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 150
+   c  'add' operation 15 bit ('add_ln1302', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1302->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+  DSP Expression: add_ln1302_1 = zext_ln1302_1 * 150 + zext_ln1302_5
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1302) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'select' operation 8 bit ('r', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1281->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681)
+   b  constant 77
+   c  constant 4224
+  DSP Expression: add_ln1302 = zext_ln1302 * 77 + 4224
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln1351) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  'call' operation 16 bit ('tmp_s', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1347->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:657) to 'reg<int>'
+   b  wire read operation ('ZplateHorContDelta_val_read') on port 'ZplateHorContDelta_val'
+   c  'add' operation 16 bit ('add_ln1351_1', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1351->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:657)
+  DSP Expression: add_ln1351 = add_ln1351_1 + tmp_s * ZplateHorContDelta_val_read
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln1347) to 3 in order to utilize available DSP registers.
+INFO: [SYN 201-351] The following objects are mapped to a DSP.
+   a  constant 131071
+   b  'load' operation 16 bit ('x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565) on local variable 'x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1734->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721
+   d  'load' operation 16 bit ('x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565) on local variable 'x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1734->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721
+  DSP Expression: mul_ln1347 = (zext_ln565_1 + 131071) * zext_ln565_1
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 37	0	20	703	45	2.2	4	2.2	3	18	1
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_565_2'.
+INFO: [SCHED 204-61]  rescheduled in stage scheduling from 9 to 19 with current asap = 9, alap = 19
+INFO: [SCHED 204-61]  rescheduled in stage scheduling from 1 to 12 with current asap = 1, alap = 12
+INFO: [SCHED 204-61]  rescheduled in stage scheduling from 1 to 12 with current asap = 1, alap = 12
+INFO: [SCHED 204-61]  rescheduled in stage scheduling from 0 to 12 with current asap = 0, alap = 12
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 23, loop 'VITIS_LOOP_565_2'
+WARNING: [HLS 200-871] Estimated clock period (7.728 ns) exceeds the target (target clock period: 9.259 ns, clock uncertainty: 2.500 ns, effective delay budget: 6.759 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' consists of the following:
+	'store' operation 0 bit ('x_write_ln1734', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1734->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721) of constant 0 on local variable 'x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1734->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721 [169]  (1.588 ns)
+	'load' operation 16 bit ('x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:565) on local variable 'x', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1734->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:721 [173]  (0.000 ns)
+	'add' operation 11 bit ('add_ln549_1', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:549) [206]  (1.639 ns)
+	'urem' operation 3 bit ('urem_ln1285', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1285->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:681) [535]  (3.228 ns)
+	blocking operation 1.27269 ns on control path)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.346 seconds; current allocated memory: 273.363 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 273.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpgBackground' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 4	0	0	87	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.417 seconds; current allocated memory: 273.621 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 273.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpgForeground_Pipeline_VITIS_LOOP_774_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 7	0	7	112	17	2.4	5	2.1	3	8	1
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_774_2'.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_774_2'
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.069 seconds; current allocated memory: 273.824 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 273.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpgForeground' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 4	0	0	42	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.336 seconds; current allocated memory: 274.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 274.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 2	0	0	46	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_981_2'.
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_981_2'
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 274.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 274.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	27	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.108 seconds; current allocated memory: 274.484 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 274.484 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_tpgHlsDataFlow' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 0	0	0	26	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_MultiPixStream2AXIvideo_U0 (from entry_proc_U0 to MultiPixStream2AXIvideo_U0) to 3 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.365 seconds; current allocated memory: 274.504 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 274.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_tpg' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
+####	 1	0	0	40	0	-nan(ind)	0	-nan(ind)	0	0	0
+INFO: [SCHED 204-11] Generating True dependence constraints ... 
+INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
+INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
+INFO: [SCHED 204-11] Generating Lut Grouping constraints ... 
+INFO: [SCHED 204-11] Generating Node latency constraints ... 
+INFO: [SCHED 204-11] Generating Relative time constraints ... 
+INFO: [SCHED 204-11] Generating Protocol constraints ... 
+INFO: [SCHED 204-11] Generating Precedence constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Pipeline constraints ... 
+INFO: [SCHED 204-11] Generating DSP mapping constraints ... 
+INFO: [SCHED 204-11] Generating Supporting dependence constraints ... 
+INFO: [SCHED 204-11] Generating Resource constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Latency constraints ... 
+INFO: [SCHED 204-11] Generating Cycle time constraints ... 
+INFO: [SCHED 204-11] Generating Blocking node constraints ... 
+INFO: [SCHED 204-11] Generating Chaining constraints ... 
+INFO: [SCHED 204-11] Generating Operation gating constraints ... 
+INFO: [SCHED 204-11] Generating Variable bound constraints ... 
+INFO: [SCHED 204-11] Generating PHI node constraints ... 
+INFO: [SCHED 204-11] Start checking consistency (resolving sdc graph) ...
+INFO: [SCHED 204-11] Finished checking consistency.
+INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
+INFO: [SCHED 204-11] Finished scheduling optimization.
+INFO: [SCHED 204-11] Start constructing STG ...
+INFO: [SCHED 204-11] Finished constructing STG.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.38 seconds; current allocated memory: 274.949 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 275.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.687 seconds; current allocated memory: 276.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 277.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_10_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_10_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 278.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_int_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_int_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 278.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'xBar_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'zonePlateVDelta' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'yCount' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_4_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'vHatch' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'yCount_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_3_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'yCount_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'rSerie' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'gSerie' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'bSerie' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_5_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'yCount_1' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpgBackground_Pipeline_VITIS_LOOP_565_2' pipeline 'VITIS_LOOP_565_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1552] Enabling free running pipeline (frp) architecture on pipeline 'VITIS_LOOP_565_2' in module 'tpgBackground_Pipeline_VITIS_LOOP_565_2'. Estimated max control fanout for pipeline is 6111.
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_16ns_1s_16ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_16ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_16ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_6s_15ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_13ns_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7s_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8ns_15ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8s_16s_16_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_11ns_13ns_23_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_9ns_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_11_3_9_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_11ns_4ns_3_15_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgBackground_Pipeline_VITIS_LOOP_565_2'.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_b_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.79 seconds; current allocated memory: 291.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'rampStart' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'rampVal_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'rampVal' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_4_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'zonePlateVAddr' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'vBarSel' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hdata' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'vBarSel_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_3_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'rampVal_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'vBarSel_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_5_0' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgBackground'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.802 seconds; current allocated memory: 305.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpgForeground_Pipeline_VITIS_LOOP_774_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'vDir' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hDir' is power-on initialization.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpgForeground_Pipeline_VITIS_LOOP_774_2' pipeline 'VITIS_LOOP_774_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'.
+INFO: [RTMG 210-279] Implementing memory 'hdmi_out_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 306.914 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpgForeground' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'boxHCoord' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'boxVCoord' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgForeground'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 309.051 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 311.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'fidStored' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 312.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_tpgHlsDataFlow' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_tpgHlsDataFlow'.
+INFO: [RTMG 210-285] Implementing FIFO 'field_id_val8_c_U(hdmi_out_v_tpg_0_0_fifo_w16_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'fid_in_val9_c_U(hdmi_out_v_tpg_0_0_fifo_w1_d4_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ovrlayId_val11_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'maskId_val12_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'crossHairX_val18_c_U(hdmi_out_v_tpg_0_0_fifo_w16_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'crossHairY_val19_c_U(hdmi_out_v_tpg_0_0_fifo_w16_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'boxSize_val24_c_U(hdmi_out_v_tpg_0_0_fifo_w16_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'boxColorR_val25_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'boxColorG_val26_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'boxColorB_val27_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_U(hdmi_out_v_tpg_0_0_fifo_w24_d16_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_val4_c12_U(hdmi_out_v_tpg_0_0_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_val7_c13_U(hdmi_out_v_tpg_0_0_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'motionSpeed_val14_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'colorFormat_val17_c14_U(hdmi_out_v_tpg_0_0_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_U(hdmi_out_v_tpg_0_0_fifo_w24_d16_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_val4_c_U(hdmi_out_v_tpg_0_0_fifo_w12_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_val7_c_U(hdmi_out_v_tpg_0_0_fifo_w13_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'colorFormat_val17_c_U(hdmi_out_v_tpg_0_0_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_tpgForeground_U0_U(hdmi_out_v_tpg_0_0_start_for_tpgForeground_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(hdmi_out_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.351 seconds; current allocated memory: 315.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_tpg' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/height' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/width' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/field_id' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/fid_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/bckgndId' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/ovrlayId' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/maskId' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/motionSpeed' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/colorFormat' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/crossHairX' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/crossHairY' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/ZplateHorContStart' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/ZplateHorContDelta' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/ZplateVerContStart' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/ZplateVerContDelta' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/boxSize' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/boxColorR' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/boxColorG' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/boxColorB' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/dpDynamicRange' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/dpYUVCoef' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/bck_motion_en' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/fid' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'fid' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_tpg' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 's' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'height', 'width', 'bckgndId', 'ovrlayId', 'maskId', 'motionSpeed', 'colorFormat', 'crossHairX', 'crossHairY', 'ZplateHorContStart', 'ZplateHorContDelta', 'ZplateVerContStart', 'ZplateVerContDelta', 'boxSize', 'boxColorR', 'boxColorG', 'boxColorB', 'dpDynamicRange', 'dpYUVCoef', 'field_id', 'bck_motion_en' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_tpg'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.577 seconds; current allocated memory: 317.902 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.862 seconds; current allocated memory: 321.551 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.738 seconds; current allocated memory: 332.328 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for v_tpg with prefix hdmi_out_v_tpg_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_tpg with prefix hdmi_out_v_tpg_0_0_.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.40 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 12 seconds. CPU system time: 2 seconds. Elapsed time: 57.327 seconds; current allocated memory: 243.723 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Режим вывода команд на экран (ECHO) отключен.
+Режим вывода команд на экран (ECHO) отключен.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zybo/B.3/board.xml.
+Resolution: Please contact your board vendor with this message.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 12:36:29 2023...
+INFO: [HLS 200-802] Generated output file prj/sol/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 10.278 seconds; current allocated memory: 5.750 MB.
+INFO: [HLS 200-112] Total CPU user time: 15 seconds. Total CPU system time: 2 seconds. Total elapsed time: 70.037 seconds; peak allocated memory: 340.633 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Nov 23 12:36:29 2023...
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_CTRL_s_axi.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_entry_proc.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w1_d4_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w8_d2_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w8_d3_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w12_d2_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w13_d2_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w16_d2_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w16_d3_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w16_d4_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_fifo_w24_d16_S.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_flow_control_loop_pipe_sequential_init.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_frp_fifoout.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_frp_pipeline_valid.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mul_11ns_13ns_23_1_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_mul_20s_9ns_28_1_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_MultiPixStream2AXIvideo.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_reg_ap_uint_10_s.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_reg_int_s.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_reg_unsigned_short_s.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_regslice_both.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_sparsemux_11_3_9_1_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_start_for_MultiPixStream2AXIvideo_U0.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_start_for_tpgForeground_U0.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_blkYuv_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_bluYuv_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarArray_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_b_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_g_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelRgb_CEA_r_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_u_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_v_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_601_y_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_u_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_v_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_DPtpgBarSelYuv_709_y_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_grnYuv_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_redYuv_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_b_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_g_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelRgb_r_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_u_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_v_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgBarSelYuv_y_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgCheckerBoardArray_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_0_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_1_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_2_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_3_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_9bit_4_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgSinTableArray_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_tpgTartanBarArray_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgBackground_Pipeline_VITIS_LOOP_565_2_whiYuv_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgForeground.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_tpgForeground_Pipeline_VITIS_LOOP_774_2_whiYuv_2_ROM_AUTO_1R.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_urem_11ns_4ns_3_15_1.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_v_tpgHlsDataFlow.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/vhdl/hdmi_out_v_tpg_0_0_v_tpg.vhd" already exists in file group "xilinx_vhdlhlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_am_addmul_16ns_1s_16ns_17_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_entry_proc.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w1_d4_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w8_d2_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w8_d3_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w12_d2_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w13_d2_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w16_d2_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w16_d3_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w16_d4_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_fifo_w24_d16_S.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_flow_control_loop_pipe_sequential_init.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_frp_fifoout.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_frp_pipeline_valid.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_hls_deadlock_detection_unit.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_hls_deadlock_detector.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_hls_deadlock_idx0_monitor.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_hls_deadlock_kernel_monitor_top.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_hls_deadlock_report_unit.vh" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_5ns_16ns_17_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_6s_15ns_16_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_7ns_13ns_15_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_7s_16s_16_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_8ns_15ns_16_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_8ns_8s_16s_16_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mul_11ns_13ns_23_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_mul_20s_9ns_28_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/hdmi_out_v_tpg_0_0_MultiPixStream2AXIvideo.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+INFO: [Common 17-14] Message 'IP_Flow 19-1971' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+compile_c: Time (s): cpu = 00:00:00 ; elapsed = 00:01:11 . Memory (MB): peak = 500.945 ; gain = 0.000
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_out_v_tpg_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 4078b44c729fc2b8 to dir: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Xil_prj/hdmi_out/hdmi_out.cache/ip/2023.2/4/0/4078b44c729fc2b8/hdmi_out_v_tpg_0_0.dcp to C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Xil_prj/hdmi_out/hdmi_out.cache/ip/2023.2/4/0/4078b44c729fc2b8/hdmi_out_v_tpg_0_0_sim_netlist.v to C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Xil_prj/hdmi_out/hdmi_out.cache/ip/2023.2/4/0/4078b44c729fc2b8/hdmi_out_v_tpg_0_0_sim_netlist.vhdl to C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Xil_prj/hdmi_out/hdmi_out.cache/ip/2023.2/4/0/4078b44c729fc2b8/hdmi_out_v_tpg_0_0_stub.v to C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Xil_prj/hdmi_out/hdmi_out.cache/ip/2023.2/4/0/4078b44c729fc2b8/hdmi_out_v_tpg_0_0_stub.vhdl to C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP hdmi_out_v_tpg_0_0, cache-ID = 4078b44c729fc2b8.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 12:36:29 2023...

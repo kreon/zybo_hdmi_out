@@ -55,10 +55,15 @@ USE ieee.numeric_std.ALL;
 
 ENTITY hdmi_out_rgb_doubler_0_1 IS
   PORT (
-    vid_active_video : IN STD_LOGIC;
-    vid_vsync : IN STD_LOGIC;
-    vid_hsync : IN STD_LOGIC;
-    vid_data : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    vid_active_video_0 : IN STD_LOGIC;
+    vid_vsync_0 : IN STD_LOGIC;
+    vid_hsync_0 : IN STD_LOGIC;
+    vid_data_0 : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    vid_active_video_1 : IN STD_LOGIC;
+    vid_vsync_1 : IN STD_LOGIC;
+    vid_hsync_1 : IN STD_LOGIC;
+    vid_data_1 : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    input_sel : IN STD_LOGIC;
     vid_pData_0 : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
     vid_pVDE_0 : OUT STD_LOGIC;
     vid_pHSync_0 : OUT STD_LOGIC;
@@ -75,10 +80,15 @@ ARCHITECTURE hdmi_out_rgb_doubler_0_1_arch OF hdmi_out_rgb_doubler_0_1 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF hdmi_out_rgb_doubler_0_1_arch: ARCHITECTURE IS "yes";
   COMPONENT rgb_doubler IS
     PORT (
-      vid_active_video : IN STD_LOGIC;
-      vid_vsync : IN STD_LOGIC;
-      vid_hsync : IN STD_LOGIC;
-      vid_data : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      vid_active_video_0 : IN STD_LOGIC;
+      vid_vsync_0 : IN STD_LOGIC;
+      vid_hsync_0 : IN STD_LOGIC;
+      vid_data_0 : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      vid_active_video_1 : IN STD_LOGIC;
+      vid_vsync_1 : IN STD_LOGIC;
+      vid_hsync_1 : IN STD_LOGIC;
+      vid_data_1 : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      input_sel : IN STD_LOGIC;
       vid_pData_0 : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
       vid_pVDE_0 : OUT STD_LOGIC;
       vid_pHSync_0 : OUT STD_LOGIC;
@@ -91,9 +101,12 @@ ARCHITECTURE hdmi_out_rgb_doubler_0_1_arch OF hdmi_out_rgb_doubler_0_1 IS
   END COMPONENT rgb_doubler;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_INFO OF vid_active_video: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN ACTIVE_VIDEO";
-  ATTRIBUTE X_INTERFACE_INFO OF vid_data: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN DATA";
-  ATTRIBUTE X_INTERFACE_INFO OF vid_hsync: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN HSYNC";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_active_video_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN0 ACTIVE_VIDEO";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_active_video_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN1 ACTIVE_VIDEO";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_data_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN0 DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_data_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN1 DATA";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_hsync_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN0 HSYNC";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_hsync_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN1 HSYNC";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pData_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT0 DATA";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pData_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT1 DATA";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pHSync_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT0 HSYNC";
@@ -102,14 +115,20 @@ ARCHITECTURE hdmi_out_rgb_doubler_0_1_arch OF hdmi_out_rgb_doubler_0_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF vid_pVDE_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT1 ACTIVE_VIDEO";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pVSync_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT0 VSYNC";
   ATTRIBUTE X_INTERFACE_INFO OF vid_pVSync_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_OUT1 VSYNC";
-  ATTRIBUTE X_INTERFACE_INFO OF vid_vsync: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN VSYNC";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_vsync_0: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN0 VSYNC";
+  ATTRIBUTE X_INTERFACE_INFO OF vid_vsync_1: SIGNAL IS "xilinx.com:interface:vid_io:1.0 RGB_IN1 VSYNC";
 BEGIN
   U0 : rgb_doubler
     PORT MAP (
-      vid_active_video => vid_active_video,
-      vid_vsync => vid_vsync,
-      vid_hsync => vid_hsync,
-      vid_data => vid_data,
+      vid_active_video_0 => vid_active_video_0,
+      vid_vsync_0 => vid_vsync_0,
+      vid_hsync_0 => vid_hsync_0,
+      vid_data_0 => vid_data_0,
+      vid_active_video_1 => vid_active_video_1,
+      vid_vsync_1 => vid_vsync_1,
+      vid_hsync_1 => vid_hsync_1,
+      vid_data_1 => vid_data_1,
+      input_sel => input_sel,
       vid_pData_0 => vid_pData_0,
       vid_pVDE_0 => vid_pVDE_0,
       vid_pHSync_0 => vid_pHSync_0,

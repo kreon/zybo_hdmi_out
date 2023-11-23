@@ -173,7 +173,7 @@ module hdmi_out_processing_system7_0_0 (
   input bit [5 : 0] S_AXI_HP0_WID,
   input bit [63 : 0] S_AXI_HP0_WDATA,
   input bit [7 : 0] S_AXI_HP0_WSTRB,
-  input bit [2 : 0] IRQ_F2P,
+  input bit [4 : 0] IRQ_F2P,
   output bit_as_bool FCLK_CLK0,
   output bit_as_bool FCLK_CLK1,
   output bit_as_bool FCLK_RESET0_N,
@@ -314,7 +314,7 @@ module hdmi_out_processing_system7_0_0 (ENET0_MDIO_MDC,ENET0_MDIO_O,ENET0_MDIO_T
   input bit [5 : 0] S_AXI_HP0_WID;
   input bit [63 : 0] S_AXI_HP0_WDATA;
   input bit [7 : 0] S_AXI_HP0_WSTRB;
-  input bit [2 : 0] IRQ_F2P;
+  input bit [4 : 0] IRQ_F2P;
   output wire FCLK_CLK0;
   output wire FCLK_CLK1;
   output wire FCLK_RESET0_N;

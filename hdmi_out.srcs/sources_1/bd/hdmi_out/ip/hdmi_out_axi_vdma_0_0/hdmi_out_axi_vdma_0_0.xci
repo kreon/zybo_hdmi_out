@@ -12,35 +12,35 @@
         "C_FAMILY": [ { "value": "zynq", "resolve_type": "user", "usage": "all" } ],
         "c_m_axi_mm2s_data_width": [ { "value": "64", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_m_axis_mm2s_tdata_width": [ { "value": "24", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_m_axi_s2mm_data_width": [ { "value": "64", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_s_axis_s2mm_tdata_width": [ { "value": "32", "value_permission": "bd", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_include_s2mm_dre": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "c_m_axi_s2mm_data_width": [ { "value": "64", "value_src": "propagated", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_s_axis_s2mm_tdata_width": [ { "value": "24", "value_src": "propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_include_s2mm_dre": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_include_s2mm_sf": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_include_mm2s_sf": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_enable_vidprmtr_reads": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_num_fstores": [ { "value": "4", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_use_fsync": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_use_mm2s_fsync": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_use_s2mm_fsync": [ { "value": "2", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "c_use_s2mm_fsync": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_mm2s_sof_enable": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_s2mm_sof_enable": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_include_internal_genlock": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_mm2s_genlock_mode": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_mm2s_genlock_num_masters": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_s2mm_genlock_mode": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_s2mm_genlock_num_masters": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "c_mm2s_genlock_mode": [ { "value": "3", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_mm2s_genlock_num_masters": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_s2mm_genlock_mode": [ { "value": "2", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_s2mm_genlock_num_masters": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_mm2s_linebuffer_depth": [ { "value": "2048", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_mm2s_linebuffer_thresh": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_s2mm_linebuffer_depth": [ { "value": "512", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "c_s2mm_linebuffer_depth": [ { "value": "2048", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_s2mm_linebuffer_thresh": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_include_mm2s": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_mm2s_max_burst_length": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_include_sg": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_dlytmr_resolution": [ { "value": "125", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_prmry_is_aclk_async": [ { "value": "0", "value_src": "propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_prmry_is_aclk_async": [ { "value": "1", "value_src": "propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_dynamic_resolution": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "c_s2mm_max_burst_length": [ { "value": "8", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_include_s2mm": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_s2mm_max_burst_length": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "c_include_s2mm": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_enable_all": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_enable_mm2s_rst_out": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_enable_mm2s_buf_empty": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -65,13 +65,13 @@
         "c_addr_width": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_SELECT_XPM": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "c_single_interface": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "c_enable_vert_flip": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ]
+        "c_enable_vert_flip": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "C_S_AXI_LITE_ADDR_WIDTH": [ { "value": "9", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_LITE_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_DLYTMR_RESOLUTION": [ { "value": "125", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_PRMRY_IS_ACLK_ASYNC": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_PRMRY_IS_ACLK_ASYNC": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ENABLE_VIDPRMTR_READS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_DYNAMIC_RESOLUTION": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_NUM_FSTORES": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -84,7 +84,7 @@
         "C_M_AXI_SG_ADDR_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXI_SG_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INCLUDE_MM2S": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_MM2S_GENLOCK_MODE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_MM2S_GENLOCK_MODE": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MM2S_GENLOCK_NUM_MASTERS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MM2S_GENLOCK_REPEAT_EN": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MM2S_SOF_ENABLE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -97,19 +97,19 @@
         "C_M_AXI_MM2S_DATA_WIDTH": [ { "value": "64", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXIS_MM2S_TDATA_WIDTH": [ { "value": "24", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXIS_MM2S_TUSER_BITS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_INCLUDE_S2MM": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_S2MM_GENLOCK_MODE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_INCLUDE_S2MM": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S2MM_GENLOCK_MODE": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S2MM_GENLOCK_NUM_MASTERS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S2MM_GENLOCK_REPEAT_EN": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S2MM_SOF_ENABLE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INCLUDE_S2MM_DRE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INCLUDE_S2MM_SF": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_S2MM_LINEBUFFER_DEPTH": [ { "value": "512", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S2MM_LINEBUFFER_DEPTH": [ { "value": "2048", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S2MM_LINEBUFFER_THRESH": [ { "value": "4", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_S2MM_MAX_BURST_LENGTH": [ { "value": "8", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S2MM_MAX_BURST_LENGTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXI_S2MM_ADDR_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXI_S2MM_DATA_WIDTH": [ { "value": "64", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_S_AXIS_S2MM_TDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S_AXIS_S2MM_TDATA_WIDTH": [ { "value": "24", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXIS_S2MM_TUSER_BITS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ENABLE_DEBUG_ALL": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ENABLE_DEBUG_INFO_0": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -164,6 +164,8 @@
         "s_axi_lite_aclk": [ { "direction": "in", "driver_value": "0x0" } ],
         "m_axi_mm2s_aclk": [ { "direction": "in", "driver_value": "0x0" } ],
         "m_axis_mm2s_aclk": [ { "direction": "in", "driver_value": "0x0" } ],
+        "m_axi_s2mm_aclk": [ { "direction": "in", "driver_value": "0x0" } ],
+        "s_axis_s2mm_aclk": [ { "direction": "in", "driver_value": "0x0" } ],
         "axi_resetn": [ { "direction": "in", "driver_value": "1" } ],
         "s_axi_lite_awvalid": [ { "direction": "in", "driver_value": "0x0" } ],
         "s_axi_lite_awready": [ { "direction": "out" } ],
@@ -182,6 +184,7 @@
         "s_axi_lite_rdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "s_axi_lite_rresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
         "mm2s_frame_ptr_out": [ { "direction": "out", "size_left": "5", "size_right": "0" } ],
+        "s2mm_frame_ptr_out": [ { "direction": "out", "size_left": "5", "size_right": "0" } ],
         "m_axi_mm2s_araddr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "m_axi_mm2s_arlen": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
         "m_axi_mm2s_arsize": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
@@ -201,7 +204,30 @@
         "m_axis_mm2s_tvalid": [ { "direction": "out" } ],
         "m_axis_mm2s_tready": [ { "direction": "in", "driver_value": "0x0" } ],
         "m_axis_mm2s_tlast": [ { "direction": "out" } ],
-        "mm2s_introut": [ { "direction": "out" } ]
+        "m_axi_s2mm_awaddr": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "m_axi_s2mm_awlen": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "m_axi_s2mm_awsize": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
+        "m_axi_s2mm_awburst": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "m_axi_s2mm_awprot": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
+        "m_axi_s2mm_awcache": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "m_axi_s2mm_awvalid": [ { "direction": "out" } ],
+        "m_axi_s2mm_awready": [ { "direction": "in", "driver_value": "0x0" } ],
+        "m_axi_s2mm_wdata": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "m_axi_s2mm_wstrb": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "m_axi_s2mm_wlast": [ { "direction": "out" } ],
+        "m_axi_s2mm_wvalid": [ { "direction": "out" } ],
+        "m_axi_s2mm_wready": [ { "direction": "in", "driver_value": "0x0" } ],
+        "m_axi_s2mm_bresp": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
+        "m_axi_s2mm_bvalid": [ { "direction": "in", "driver_value": "0x0" } ],
+        "m_axi_s2mm_bready": [ { "direction": "out" } ],
+        "s_axis_s2mm_tdata": [ { "direction": "in", "size_left": "23", "size_right": "0", "driver_value": "0" } ],
+        "s_axis_s2mm_tkeep": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0x7" } ],
+        "s_axis_s2mm_tuser": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
+        "s_axis_s2mm_tvalid": [ { "direction": "in", "driver_value": "0x0" } ],
+        "s_axis_s2mm_tready": [ { "direction": "out" } ],
+        "s_axis_s2mm_tlast": [ { "direction": "in", "driver_value": "0x0" } ],
+        "mm2s_introut": [ { "direction": "out" } ],
+        "s2mm_introut": [ { "direction": "out" } ]
       },
       "interfaces": {
         "S_AXI_LITE": {
@@ -288,7 +314,7 @@
             "HAS_WSTRB": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "HAS_BRESP": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "HAS_RRESP": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "NUM_WRITE_OUTSTANDING": [ { "value": "8", "value_src": "constant_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "NUM_WRITE_OUTSTANDING": [ { "value": "8", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "MAX_BURST_LENGTH": [ { "value": "32", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.000", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "hdmi_out_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -312,6 +338,63 @@
             "RREADY": [ { "physical_name": "m_axi_mm2s_rready" } ],
             "RRESP": [ { "physical_name": "m_axi_mm2s_rresp" } ],
             "RVALID": [ { "physical_name": "m_axi_mm2s_rvalid" } ]
+          }
+        },
+        "M_AXI_S2MM": {
+          "vlnv": "xilinx.com:interface:aximm:1.0",
+          "abstraction_type": "xilinx.com:interface:aximm_rtl:1.0",
+          "mode": "master",
+          "address_space_ref": "Data_S2MM",
+          "parameters": {
+            "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "format": "long", "usage": "all" } ],
+            "NUM_WRITE_OUTSTANDING": [ { "value": "2", "value_src": "constant", "value_permission": "bd", "format": "long", "usage": "all" } ],
+            "DATA_WIDTH": [ { "value": "64", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PROTOCOL": [ { "value": "AXI4", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "1.42857e+08", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ADDR_WIDTH": [ { "value": "32", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "ARUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "WUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "RUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "BUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "READ_WRITE_MODE": [ { "value": "WRITE_ONLY", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "HAS_BURST": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_LOCK": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_PROT": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_CACHE": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_QOS": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_REGION": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_WSTRB": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_BRESP": [ { "value": "1", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_RRESP": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "NUM_READ_OUTSTANDING": [ { "value": "2", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "MAX_BURST_LENGTH": [ { "value": "32", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.000", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "hdmi_out_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "NUM_READ_THREADS": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "NUM_WRITE_THREADS": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "RUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "WUSER_BITS_PER_BYTE": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "AWADDR": [ { "physical_name": "m_axi_s2mm_awaddr" } ],
+            "AWBURST": [ { "physical_name": "m_axi_s2mm_awburst" } ],
+            "AWCACHE": [ { "physical_name": "m_axi_s2mm_awcache" } ],
+            "AWLEN": [ { "physical_name": "m_axi_s2mm_awlen" } ],
+            "AWPROT": [ { "physical_name": "m_axi_s2mm_awprot" } ],
+            "AWREADY": [ { "physical_name": "m_axi_s2mm_awready" } ],
+            "AWSIZE": [ { "physical_name": "m_axi_s2mm_awsize" } ],
+            "AWVALID": [ { "physical_name": "m_axi_s2mm_awvalid" } ],
+            "BREADY": [ { "physical_name": "m_axi_s2mm_bready" } ],
+            "BRESP": [ { "physical_name": "m_axi_s2mm_bresp" } ],
+            "BVALID": [ { "physical_name": "m_axi_s2mm_bvalid" } ],
+            "WDATA": [ { "physical_name": "m_axi_s2mm_wdata" } ],
+            "WLAST": [ { "physical_name": "m_axi_s2mm_wlast" } ],
+            "WREADY": [ { "physical_name": "m_axi_s2mm_wready" } ],
+            "WSTRB": [ { "physical_name": "m_axi_s2mm_wstrb" } ],
+            "WVALID": [ { "physical_name": "m_axi_s2mm_wvalid" } ]
           }
         },
         "M_AXIS_MM2S": {
@@ -342,6 +425,34 @@
             "TVALID": [ { "physical_name": "m_axis_mm2s_tvalid" } ]
           }
         },
+        "S_AXIS_S2MM": {
+          "vlnv": "xilinx.com:interface:axis:1.0",
+          "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "TDATA_NUM_BYTES": [ { "value": "3", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "TDEST_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "TID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "TUSER_WIDTH": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_TREADY": [ { "value": "1", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_TSTRB": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_TKEEP": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "HAS_TLAST": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "108000000", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "/clk_wiz_0_clk_out1", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "TDATA": [ { "physical_name": "s_axis_s2mm_tdata" } ],
+            "TKEEP": [ { "physical_name": "s_axis_s2mm_tkeep" } ],
+            "TLAST": [ { "physical_name": "s_axis_s2mm_tlast" } ],
+            "TREADY": [ { "physical_name": "s_axis_s2mm_tready" } ],
+            "TUSER": [ { "physical_name": "s_axis_s2mm_tuser" } ],
+            "TVALID": [ { "physical_name": "s_axis_s2mm_tvalid" } ]
+          }
+        },
         "MM2S_INTROUT": {
           "vlnv": "xilinx.com:signal:interrupt:1.0",
           "abstraction_type": "xilinx.com:signal:interrupt_rtl:1.0",
@@ -352,6 +463,18 @@
           },
           "port_maps": {
             "INTERRUPT": [ { "physical_name": "mm2s_introut" } ]
+          }
+        },
+        "S2MM_INTROUT": {
+          "vlnv": "xilinx.com:signal:interrupt:1.0",
+          "abstraction_type": "xilinx.com:signal:interrupt_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "SENSITIVITY": [ { "value": "LEVEL_HIGH", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "PortWidth": [ { "value": "1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ]
+          },
+          "port_maps": {
+            "INTERRUPT": [ { "physical_name": "s2mm_introut" } ]
           }
         },
         "M_AXIS_MM2S_ACLK": {
@@ -377,14 +500,17 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "ASSOCIATED_BUSIF": [ { "value": "S_AXIS_S2MM", "value_src": "constant", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "user", "format": "long", "usage": "all" } ],
-            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "S_AXIS_S2MM", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "108000000", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.0", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "/clk_wiz_0_clk_out1", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "s_axis_s2mm_aclk" } ]
           }
         },
         "S_AXI_LITE_ACLK": {
@@ -428,14 +554,17 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "ASSOCIATED_BUSIF": [ { "value": "M_AXI_S2MM", "value_src": "constant", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "100000000", "resolve_type": "user", "format": "long", "usage": "all" } ],
-            "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_PORT": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "ASSOCIATED_RESET": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_BUSIF": [ { "value": "M_AXI_S2MM", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "FREQ_HZ": [ { "value": "1.42857e+08", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+            "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "PHASE": [ { "value": "0.000", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
+            "CLK_DOMAIN": [ { "value": "hdmi_out_processing_system7_0_0_FCLK_CLK1", "value_src": "default_prop", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "ASSOCIATED_RESET": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "CLK": [ { "physical_name": "m_axi_s2mm_aclk" } ]
           }
         },
         "M_AXI_SG_ACLK": {
@@ -472,10 +601,22 @@
           "port_maps": {
             "FRAME_PTR": [ { "physical_name": "mm2s_frame_ptr_out" } ]
           }
+        },
+        "S2MM_FRAME_PTR_OUT": {
+          "vlnv": "xilinx.com:signal:video_frame_ptr:1.0",
+          "abstraction_type": "xilinx.com:signal:video_frame_ptr_rtl:1.0",
+          "mode": "master",
+          "port_maps": {
+            "FRAME_PTR": [ { "physical_name": "s2mm_frame_ptr_out" } ]
+          }
         }
       },
       "address_spaces": {
         "Data_MM2S": {
+          "range": "4294967296",
+          "width": "32"
+        },
+        "Data_S2MM": {
           "range": "4294967296",
           "width": "32"
         }

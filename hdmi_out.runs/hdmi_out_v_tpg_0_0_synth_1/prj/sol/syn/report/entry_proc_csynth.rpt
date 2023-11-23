@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'entry_proc'
+================================================================
+* Date:           Thu Nov 23 12:36:12 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.26 ns|  3.380 ns|     2.50 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|      2|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|    108|    -|
+|Register         |        -|   -|      3|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|      3|    110|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|     ~0|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_done                   |   9|          2|    1|          2|
+    |boxColorB_val27_c_blk_n   |   9|          2|    1|          2|
+    |boxColorG_val26_c_blk_n   |   9|          2|    1|          2|
+    |boxColorR_val25_c_blk_n   |   9|          2|    1|          2|
+    |boxSize_val24_c_blk_n     |   9|          2|    1|          2|
+    |crossHairX_val18_c_blk_n  |   9|          2|    1|          2|
+    |crossHairY_val19_c_blk_n  |   9|          2|    1|          2|
+    |fid_in_val9_c_blk_n       |   9|          2|    1|          2|
+    |field_id_val8_c_blk_n     |   9|          2|    1|          2|
+    |maskId_val12_c_blk_n      |   9|          2|    1|          2|
+    |ovrlayId_val11_c_blk_n    |   9|          2|    1|          2|
+    |real_start                |   9|          2|    1|          2|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     | 108|         24|   12|         24|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------+-----+-----+------------+--------------------+--------------+
+|             RTL Ports             | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++-----------------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                             |   in|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_rst                             |   in|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_start                           |   in|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|start_full_n                       |   in|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_done                            |  out|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_continue                        |   in|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_idle                            |  out|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|ap_ready                           |  out|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|start_out                          |  out|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|start_write                        |  out|    1|  ap_ctrl_hs|          entry_proc|  return value|
+|field_id_val8                      |   in|   16|     ap_none|       field_id_val8|        scalar|
+|field_id_val8_c_din                |  out|   16|     ap_fifo|     field_id_val8_c|       pointer|
+|field_id_val8_c_num_data_valid     |   in|    3|     ap_fifo|     field_id_val8_c|       pointer|
+|field_id_val8_c_fifo_cap           |   in|    3|     ap_fifo|     field_id_val8_c|       pointer|
+|field_id_val8_c_full_n             |   in|    1|     ap_fifo|     field_id_val8_c|       pointer|
+|field_id_val8_c_write              |  out|    1|     ap_fifo|     field_id_val8_c|       pointer|
+|fid_in_val9                        |   in|    1|   ap_stable|         fid_in_val9|        scalar|
+|fid_in_val9_c_din                  |  out|    1|     ap_fifo|       fid_in_val9_c|       pointer|
+|fid_in_val9_c_num_data_valid       |   in|    3|     ap_fifo|       fid_in_val9_c|       pointer|
+|fid_in_val9_c_fifo_cap             |   in|    3|     ap_fifo|       fid_in_val9_c|       pointer|
+|fid_in_val9_c_full_n               |   in|    1|     ap_fifo|       fid_in_val9_c|       pointer|
+|fid_in_val9_c_write                |  out|    1|     ap_fifo|       fid_in_val9_c|       pointer|
+|ovrlayId_val11                     |   in|    8|     ap_none|      ovrlayId_val11|        scalar|
+|ovrlayId_val11_c_din               |  out|    8|     ap_fifo|    ovrlayId_val11_c|       pointer|
+|ovrlayId_val11_c_num_data_valid    |   in|    3|     ap_fifo|    ovrlayId_val11_c|       pointer|
+|ovrlayId_val11_c_fifo_cap          |   in|    3|     ap_fifo|    ovrlayId_val11_c|       pointer|
+|ovrlayId_val11_c_full_n            |   in|    1|     ap_fifo|    ovrlayId_val11_c|       pointer|
+|ovrlayId_val11_c_write             |  out|    1|     ap_fifo|    ovrlayId_val11_c|       pointer|
+|maskId_val12                       |   in|    8|     ap_none|        maskId_val12|        scalar|
+|maskId_val12_c_din                 |  out|    8|     ap_fifo|      maskId_val12_c|       pointer|
+|maskId_val12_c_num_data_valid      |   in|    3|     ap_fifo|      maskId_val12_c|       pointer|
+|maskId_val12_c_fifo_cap            |   in|    3|     ap_fifo|      maskId_val12_c|       pointer|
+|maskId_val12_c_full_n              |   in|    1|     ap_fifo|      maskId_val12_c|       pointer|
+|maskId_val12_c_write               |  out|    1|     ap_fifo|      maskId_val12_c|       pointer|
+|crossHairX_val18                   |   in|   16|     ap_none|    crossHairX_val18|        scalar|
+|crossHairX_val18_c_din             |  out|   16|     ap_fifo|  crossHairX_val18_c|       pointer|
+|crossHairX_val18_c_num_data_valid  |   in|    3|     ap_fifo|  crossHairX_val18_c|       pointer|
+|crossHairX_val18_c_fifo_cap        |   in|    3|     ap_fifo|  crossHairX_val18_c|       pointer|
+|crossHairX_val18_c_full_n          |   in|    1|     ap_fifo|  crossHairX_val18_c|       pointer|
+|crossHairX_val18_c_write           |  out|    1|     ap_fifo|  crossHairX_val18_c|       pointer|
+|crossHairY_val19                   |   in|   16|     ap_none|    crossHairY_val19|        scalar|
+|crossHairY_val19_c_din             |  out|   16|     ap_fifo|  crossHairY_val19_c|       pointer|
+|crossHairY_val19_c_num_data_valid  |   in|    3|     ap_fifo|  crossHairY_val19_c|       pointer|
+|crossHairY_val19_c_fifo_cap        |   in|    3|     ap_fifo|  crossHairY_val19_c|       pointer|
+|crossHairY_val19_c_full_n          |   in|    1|     ap_fifo|  crossHairY_val19_c|       pointer|
+|crossHairY_val19_c_write           |  out|    1|     ap_fifo|  crossHairY_val19_c|       pointer|
+|boxSize_val24                      |   in|   16|     ap_none|       boxSize_val24|        scalar|
+|boxSize_val24_c_din                |  out|   16|     ap_fifo|     boxSize_val24_c|       pointer|
+|boxSize_val24_c_num_data_valid     |   in|    3|     ap_fifo|     boxSize_val24_c|       pointer|
+|boxSize_val24_c_fifo_cap           |   in|    3|     ap_fifo|     boxSize_val24_c|       pointer|
+|boxSize_val24_c_full_n             |   in|    1|     ap_fifo|     boxSize_val24_c|       pointer|
+|boxSize_val24_c_write              |  out|    1|     ap_fifo|     boxSize_val24_c|       pointer|
+|boxColorR_val25                    |   in|    8|     ap_none|     boxColorR_val25|        scalar|
+|boxColorR_val25_c_din              |  out|    8|     ap_fifo|   boxColorR_val25_c|       pointer|
+|boxColorR_val25_c_num_data_valid   |   in|    3|     ap_fifo|   boxColorR_val25_c|       pointer|
+|boxColorR_val25_c_fifo_cap         |   in|    3|     ap_fifo|   boxColorR_val25_c|       pointer|
+|boxColorR_val25_c_full_n           |   in|    1|     ap_fifo|   boxColorR_val25_c|       pointer|
+|boxColorR_val25_c_write            |  out|    1|     ap_fifo|   boxColorR_val25_c|       pointer|
+|boxColorG_val26                    |   in|    8|     ap_none|     boxColorG_val26|        scalar|
+|boxColorG_val26_c_din              |  out|    8|     ap_fifo|   boxColorG_val26_c|       pointer|
+|boxColorG_val26_c_num_data_valid   |   in|    3|     ap_fifo|   boxColorG_val26_c|       pointer|
+|boxColorG_val26_c_fifo_cap         |   in|    3|     ap_fifo|   boxColorG_val26_c|       pointer|
+|boxColorG_val26_c_full_n           |   in|    1|     ap_fifo|   boxColorG_val26_c|       pointer|
+|boxColorG_val26_c_write            |  out|    1|     ap_fifo|   boxColorG_val26_c|       pointer|
+|boxColorB_val27                    |   in|    8|     ap_none|     boxColorB_val27|        scalar|
+|boxColorB_val27_c_din              |  out|    8|     ap_fifo|   boxColorB_val27_c|       pointer|
+|boxColorB_val27_c_num_data_valid   |   in|    3|     ap_fifo|   boxColorB_val27_c|       pointer|
+|boxColorB_val27_c_fifo_cap         |   in|    3|     ap_fifo|   boxColorB_val27_c|       pointer|
+|boxColorB_val27_c_full_n           |   in|    1|     ap_fifo|   boxColorB_val27_c|       pointer|
+|boxColorB_val27_c_write            |  out|    1|     ap_fifo|   boxColorB_val27_c|       pointer|
++-----------------------------------+-----+-----+------------+--------------------+--------------+
+

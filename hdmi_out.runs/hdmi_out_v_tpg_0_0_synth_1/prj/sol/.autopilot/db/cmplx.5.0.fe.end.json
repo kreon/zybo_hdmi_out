@@ -1,0 +1,180 @@
+{
+    "1": {
+        "name": "reg<ap_uint<10> >",
+        "file": "C:\/Xilinx\/Vitis_HLS\/2023.2\/common\/technology\/autopilot\\utils\/x_hls_utils.h",
+        "fileloc": "227",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "MultiPixStream2AXIvideo",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "399",
+        "instructions": "40",
+        "total_instructions": "104",
+        "calls": "10",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "tpgForeground_Pipeline_VITIS_LOOP_774_2",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "763",
+        "instructions": "128",
+        "total_instructions": "128",
+        "calls": "",
+        "basicblocks": "23",
+        "loads": {
+            "G": "3",
+            "L": "5"
+        },
+        "stores": {
+            "G": "6",
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "entry_proc",
+        "file": "v_tpg.cpp",
+        "fileloc": "0",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "tpgBackground",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "549",
+        "instructions": "131",
+        "total_instructions": "1010",
+        "calls": "11",
+        "basicblocks": "10",
+        "loads": {
+            "G": "13",
+            "L": "7"
+        },
+        "stores": {
+            "G": "4",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "v_tpg",
+        "file": "v_tpg.cpp",
+        "fileloc": "409",
+        "instructions": "144",
+        "total_instructions": "1578",
+        "calls": "8 6",
+        "basicblocks": "5",
+        "loads": {
+            "G": "2"
+        },
+        "stores": {
+            "G": "2"
+        }
+    },
+    "6": {
+        "name": "v_tpgHlsDataFlow",
+        "file": "v_tpg.cpp",
+        "fileloc": "304",
+        "instructions": "86",
+        "total_instructions": "1430",
+        "calls": "4 5 9 2",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "reg<int>",
+        "file": "x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "reg<unsigned short>",
+        "file": "x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "tpgForeground",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "763",
+        "instructions": "71",
+        "total_instructions": "199",
+        "calls": "3",
+        "basicblocks": "4",
+        "loads": {
+            "G": "2",
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "399",
+        "instructions": "64",
+        "total_instructions": "64",
+        "calls": "",
+        "basicblocks": "12",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "1",
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "tpgBackground_Pipeline_VITIS_LOOP_565_2",
+        "file": "C:\/Xil_prj\/hdmi_out\/hdmi_out.runs\/hdmi_out_v_tpg_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_tpg.cpp",
+        "fileloc": "549",
+        "instructions": "871",
+        "total_instructions": "879",
+        "calls": "7 1",
+        "basicblocks": "128",
+        "loads": {
+            "G": "71",
+            "L": "30"
+        },
+        "stores": {
+            "G": "55",
+            "L": "133"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

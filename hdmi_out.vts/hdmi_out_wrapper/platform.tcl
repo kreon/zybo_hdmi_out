@@ -23,3 +23,38 @@ platform generate
 platform active {hdmi_out_wrapper}
 platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
 platform generate -domains 
+platform generate
+platform active {hdmi_out_wrapper}
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -remove-boot-bsp
+platform write
+platform generate -domains zynq_fsbl 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+bsp reload
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform active {hdmi_out_wrapper}
+bsp reload
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+bsp reload
+platform generate -domains 
+platform active {hdmi_out_wrapper}
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
