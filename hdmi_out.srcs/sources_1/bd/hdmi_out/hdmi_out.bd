@@ -4558,13 +4558,13 @@
       "v_axi4s_vid_out_0_vid_io_out": {
         "interface_ports": [
           "v_axi4s_vid_out_0/vid_io_out",
-          "rgb2dvi_0/RGB"
+          "rgb2vga_0/vid_in"
         ]
       },
       "v_axi4s_vid_out_1_vid_io_out": {
         "interface_ports": [
-          "v_axi4s_vid_out_1/vid_io_out",
-          "rgb2vga_0/vid_in"
+          "rgb2dvi_0/RGB",
+          "v_axi4s_vid_out_1/vid_io_out"
         ]
       },
       "v_tc_0_vtiming_out": {
@@ -4603,9 +4603,9 @@
       "axi_dynclk_0_PXL_CLK_O": {
         "ports": [
           "axi_dynclk_0/PXL_CLK_O",
-          "rgb2dvi_0/PixelClk",
           "v_axi4s_vid_out_0/vid_io_out_clk",
-          "v_tc_0/clk"
+          "v_tc_0/clk",
+          "rgb2vga_0/PixelClk"
         ]
       },
       "axi_gpio_0_ip2intc_irpt": {
@@ -4638,8 +4638,8 @@
           "v_tc_1/clk",
           "v_axi4s_vid_out_1/vid_io_out_clk",
           "v_axi4s_vid_out_1/aclk",
-          "rgb2vga_0/PixelClk",
-          "axi_vdma_0/s_axis_s2mm_aclk"
+          "axi_vdma_0/s_axis_s2mm_aclk",
+          "rgb2dvi_0/PixelClk"
         ]
       },
       "clk_wiz_0_locked": {

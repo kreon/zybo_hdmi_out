@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 23 12:11:10 2023" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov 24 14:56:46 2023" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:2.0" DEVICE="7z010" NAME="hdmi_out" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -372,9 +372,9 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PXL_CLK_O" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="PixelClk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_io_out_clk"/>
             <CONNECTION INSTANCE="v_tc_0" PORT="clk"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="REF_CLK_I" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -5387,8 +5387,8 @@
             <CONNECTION INSTANCE="v_tc_1" PORT="clk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_io_out_clk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="aclk"/>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
             <CONNECTION INSTANCE="axi_vdma_0" PORT="s_axis_s2mm_aclk"/>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
@@ -8688,9 +8688,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_O">
+        <PORT CLKFREQUENCY="108000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_dynclk_0" PORT="PXL_CLK_O"/>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="SerialClk" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_5X_O">
@@ -8725,22 +8725,22 @@
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_data"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_data"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pHSync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_hsync"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_hsync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pVDE" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_active_video"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_active_video"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_pVSync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_vsync"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_vsync"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -8753,7 +8753,7 @@
             <PORTMAP LOGICAL="DATA_P" PHYSICAL="TMDS_Data_p"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_0_vid_io_out" NAME="RGB" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_1_vid_io_out" NAME="RGB" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE"/>
             <PORTMAP LOGICAL="DATA" PHYSICAL="vid_pData"/>
@@ -8776,29 +8776,29 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="108000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="axi_dynclk_0_PXL_CLK_O">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="axi_dynclk_0" PORT="PXL_CLK_O"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_data"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_data"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_hsync"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_hsync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_active_video"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_active_video"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_axi4s_vid_out_1" PORT="vid_vsync"/>
+            <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="vid_vsync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
@@ -8828,7 +8828,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_1_vid_io_out" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
+        <BUSINTERFACE BUSNAME="v_axi4s_vid_out_0_vid_io_out" NAME="vid_in" TYPE="TARGET" VLNV="xilinx.com:interface:vid_io:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="rgb_pVDE"/>
             <PORTMAP LOGICAL="DATA" PHYSICAL="rgb_pData"/>
@@ -12796,19 +12796,19 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="status" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="underflow" SIGIS="undef"/>
-        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
+        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVDE"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
+        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pData"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
+        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pHSync"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_ce" POLARITY="ACTIVE_HIGH" SIGIS="ce"/>
@@ -12818,9 +12818,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
-        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
+        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vtg_active_video" SIGIS="undef" SIGNAME="v_axi4s_vid_out_0_vtg_active_video">
@@ -12971,19 +12971,19 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="status" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="underflow" SIGIS="undef"/>
-        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVDE">
+        <PORT DIR="O" NAME="vid_active_video" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVDE"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pData">
+        <PORT DIR="O" LEFT="23" NAME="vid_data" RIGHT="0" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pData"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pHSync">
+        <PORT DIR="O" NAME="vid_hsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pHSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_ce" POLARITY="ACTIVE_HIGH" SIGIS="ce"/>
@@ -12993,9 +12993,9 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vid_io_out_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
-        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2vga_0_rgb_pVSync">
+        <PORT DIR="O" NAME="vid_vsync" SIGIS="undef" SIGNAME="rgb2dvi_0_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
+            <CONNECTION INSTANCE="rgb2dvi_0" PORT="vid_pVSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="vtg_active_video" SIGIS="undef" SIGNAME="v_axi4s_vid_out_1_vtg_active_video">

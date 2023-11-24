@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Nov 23 12:35:12 2023
-# Process ID: 9348
+# Start of session at: Fri Nov 24 14:57:01 2023
+# Process ID: 12992
 # Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1
 # Command line: vivado.exe -log hdmi_out_v_tpg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_v_tpg_0_0.tcl
 # Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/hdmi_out_v_tpg_0_0.vds

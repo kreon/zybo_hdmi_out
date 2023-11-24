@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgBackground'
 ================================================================
-* Date:           Thu Nov 23 12:36:07 2023
+* Date:           Fri Nov 24 14:57:58 2023
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        prj
@@ -240,7 +240,7 @@ The critical path consists of the following:
  <State 2>: 3.665ns
 The critical path consists of the following:
 	'load' operation 16 bit ('y', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:563) on local variable 'y', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:549 [180]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln563', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:563) [181]  (2.077 ns)
+	'add' operation 16 bit ('add_ln563', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:563) [182]  (2.077 ns)
 	'store' operation 0 bit ('store_ln549', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:549) of variable 'add_ln563', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:563 on local variable 'y', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:549 [195]  (1.588 ns)
 
  <State 3>: 6.750ns

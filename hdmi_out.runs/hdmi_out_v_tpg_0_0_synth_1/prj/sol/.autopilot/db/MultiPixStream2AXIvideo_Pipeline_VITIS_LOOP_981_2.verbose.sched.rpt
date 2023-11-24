@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_981_2'
 ================================================================
-* Date:           Thu Nov 23 12:36:09 2023
+* Date:           Fri Nov 24 14:58:00 2023
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        prj
@@ -180,7 +180,7 @@ The critical path consists of the following:
  <State 3>: 5.628ns
 The critical path consists of the following:
 	fifo read operation ('ovrlayYUV_read', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) on port 'ovrlayYUV' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [57]  (3.380 ns)
-	'select' operation 8 bit ('select_ln1020', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1020->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [66]  (1.248 ns)
+	'select' operation 8 bit ('select_ln1020_1', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1020->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [67]  (1.248 ns)
 	axis write operation ('write_ln1035', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1035->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) on port 'm_axis_video_V_data_V' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1035->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:399) [70]  (1.000 ns)
 
  <State 4>: 0.000ns

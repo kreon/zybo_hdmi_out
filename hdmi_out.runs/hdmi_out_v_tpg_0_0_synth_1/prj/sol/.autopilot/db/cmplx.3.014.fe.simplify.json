@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 8,
-    "calls": "7 3",
+    "calls": "7 6",
     "file": "v_tpg.cpp",
     "fileloc": 409,
     "instructions": 107,
@@ -25,30 +25,6 @@
     "total_instructions": 1
   },
   "2": {
-    "basicblocks": 35,
-    "calls": "",
-    "file": "v_tpg.cpp",
-    "fileloc": 759,
-    "instructions": 163,
-    "loads": {
-      "G": 7
-    },
-    "name": "tpgForeground",
-    "stores": {
-      "G": 8
-    },
-    "total_instructions": 202
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "4 2 6",
-    "file": "v_tpg.cpp",
-    "fileloc": 304,
-    "instructions": 10,
-    "name": "v_tpgHlsDataFlow",
-    "total_instructions": 1338
-  },
-  "4": {
     "basicblocks": 188,
     "calls": "1 5",
     "file": "v_tpg.cpp",
@@ -64,19 +40,7 @@
     },
     "total_instructions": 973
   },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 222,
-    "instructions": 2,
-    "name": "reg<ap_uint<10> >",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 2
-  },
-  "6": {
+  "3": {
     "basicblocks": 27,
     "calls": "",
     "file": "v_tpg.cpp",
@@ -91,6 +55,42 @@
       "L": 13
     },
     "total_instructions": 153
+  },
+  "4": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "v_tpg.cpp",
+    "fileloc": 759,
+    "instructions": 163,
+    "loads": {
+      "G": 7
+    },
+    "name": "tpgForeground",
+    "stores": {
+      "G": 8
+    },
+    "total_instructions": 202
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "reg<ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "2 4 3",
+    "file": "v_tpg.cpp",
+    "fileloc": 304,
+    "instructions": 10,
+    "name": "v_tpgHlsDataFlow",
+    "total_instructions": 1338
   },
   "7": {
     "basicblocks": 1,

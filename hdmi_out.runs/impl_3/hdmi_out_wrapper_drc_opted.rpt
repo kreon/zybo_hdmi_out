@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Nov 23 12:38:05 2023
+| Date         : Fri Nov 24 14:59:58 2023
 | Host         : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 | Command      : report_drc -file hdmi_out_wrapper_drc_opted.rpt -pb hdmi_out_wrapper_drc_opted.pb -rpx hdmi_out_wrapper_drc_opted.rpx
 | Design       : hdmi_out_wrapper
@@ -24,13 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 27
+             Violations found: 35
 +-----------+----------+----------------------------+------------+
 | Rule      | Severity | Description                | Violations |
 +-----------+----------+----------------------------+------------+
 | DPIP-1    | Warning  | Input pipelining           | 4          |
 | DPOP-1    | Warning  | PREG Output pipelining     | 3          |
 | DPOP-2    | Warning  | MREG Output pipelining     | 5          |
+| REQP-1580 | Warning  | Phase alignment            | 8          |
 | REQP-1839 | Warning  | RAMB36 async control check | 10         |
 | REQP-1840 | Warning  | RAMB18 async control check | 1          |
 | REQP-165  | Advisory | writefirst                 | 2          |
@@ -97,6 +98,46 @@ Related violations: <none>
 DPOP-2#5 Warning
 MREG Output pipelining  
 DSP hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/trunc_ln1356_reg_5362_reg multiplier stage hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/trunc_ln1356_reg_5362_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#3 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#4 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#5 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#6 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#7 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#8 Warning
+Phase alignment  
+Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
 Related violations: <none>
 
 REQP-1839#1 Warning

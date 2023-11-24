@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "hdmi_out_v_tpg_0_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }

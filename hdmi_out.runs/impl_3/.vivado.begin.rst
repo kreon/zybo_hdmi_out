@@ -1,30 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="11756" HostCore="16" HostMemory="034084802560">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="6692" HostCore="16" HostMemory="034084802560">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="12868" HostCore="16" HostMemory="034084802560">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="1356" HostCore="16" HostMemory="034084802560">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="5888" HostCore="16" HostMemory="034084802560">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="15336" HostCore="16" HostMemory="034084802560">
+    <Process Command="vivado.bat" Owner="dkasmin" Host="ARGUS-IT-WS1" Pid="11128" HostCore="16" HostMemory="034084802560">
     </Process>
 </ProcessHandle>

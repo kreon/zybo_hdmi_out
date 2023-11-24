@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Nov 23 12:37:09 2023
-# Process ID: 8828
+# Start of session at: Fri Nov 24 14:59:01 2023
+# Process ID: 12084
 # Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3
 # Command line: vivado.exe -log hdmi_out_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_out_wrapper.tcl -notrace
 # Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper.vdi
@@ -54,9 +54,9 @@ INFO: [Project 1-454] Reading design checkpoint 'c:/Xil_prj/hdmi_out/hdmi_out.ge
 INFO: [Project 1-454] Reading design checkpoint 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_xbar_0/hdmi_out_xbar_0.dcp' for cell 'hdmi_out_i/processing_system7_0_axi_periph/xbar'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_auto_cc_0/hdmi_out_auto_cc_0.dcp' for cell 'hdmi_out_i/processing_system7_0_axi_periph/m05_couplers/auto_cc'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_auto_pc_1/hdmi_out_auto_pc_1.dcp' for cell 'hdmi_out_i/processing_system7_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.538 . Memory (MB): peak = 1123.844 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 1123.789 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1070 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: hdmi_out_i/system_ila_0/U0/ila_lib UUID: c699b2f1-dea6-578d-8fb1-b192085369d5 
@@ -218,7 +218,7 @@ WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same
 INFO: [Project 1-1714] 56 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-1687] 62 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1873.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1872.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 131 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 76 instances
@@ -228,7 +228,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 48 Infos, 67 Warnings, 1 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1873.992 ; gain = 1287.395
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1872.660 ; gain = 1288.109
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
@@ -239,13 +239,13 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.694 . Memory (MB): peak = 1873.992 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.761 . Memory (MB): peak = 1872.660 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1088c127f
+Ending Cache Timing Information Task | Checksum: 17ab1d6f5
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.697 . Memory (MB): peak = 1873.992 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.693 . Memory (MB): peak = 1872.660 ; gain = 0.000
 
 Starting Logic Optimization Task
 
@@ -257,71 +257,71 @@ Phase 1.1.1 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
 INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 4612a7b9ed0879b2.
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2262.281 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2262.281 ; gain = 0.000
-Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 1500e5671
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2268.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2268.691 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.281 ; gain = 18.980
-Phase 1.1 Core Generation And Design Setup | Checksum: 1500e5671
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.691 ; gain = 20.023
+Phase 1.1 Core Generation And Design Setup | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.281 ; gain = 18.980
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.691 ; gain = 20.023
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1500e5671
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.281 ; gain = 18.980
-Phase 1 Initialization | Checksum: 1500e5671
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.691 ; gain = 20.023
+Phase 1 Initialization | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2262.281 ; gain = 18.980
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2268.691 ; gain = 20.023
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 1500e5671
+Phase 2.1 Timer Update | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.402 ; gain = 25.102
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2275.457 ; gain = 26.789
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 1500e5671
+Phase 2.2 Timing Data Collection | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Phase 2 Timer Update And Timing Data Collection | Checksum: 1500e5671
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Phase 2 Timer Update And Timing Data Collection | Checksum: 14aa14fbe
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.402 ; gain = 25.102
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2275.457 ; gain = 26.789
 
 Phase 3 Retarget
 INFO: [Opt 31-1566] Pulled 13 inverters resulting in an inversion of 105 pins
 INFO: [Opt 31-138] Pushed 5 inverter(s) to 19 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 1447fcfa3
+Phase 3 Retarget | Checksum: 213c9c7e4
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Retarget | Checksum: 1447fcfa3
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Retarget | Checksum: 213c9c7e4
 INFO: [Opt 31-389] Phase Retarget created 383 cells and removed 680 cells
 INFO: [Opt 31-1021] In phase Retarget, 283 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 1b3e79ed8
+Phase 4 Constant propagation | Checksum: 182f1f733
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Constant propagation | Checksum: 1b3e79ed8
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Constant propagation | Checksum: 182f1f733
 INFO: [Opt 31-389] Phase Constant propagation created 82 cells and removed 730 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 582 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
-Phase 5 Sweep | Checksum: 1b7414c3d
+Phase 5 Sweep | Checksum: 222cbfe8f
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Sweep | Checksum: 1b7414c3d
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Sweep | Checksum: 222cbfe8f
 INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 2010 cells
 INFO: [Opt 31-1021] In phase Sweep, 1379 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 6 BUFG optimization
-Phase 6 BUFG optimization | Checksum: 1b7414c3d
+Phase 6 BUFG optimization | Checksum: 222cbfe8f
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2268.402 ; gain = 25.102
-BUFG optimization | Checksum: 1b7414c3d
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2275.457 ; gain = 26.789
+BUFG optimization | Checksum: 222cbfe8f
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
@@ -427,38 +427,38 @@ WARNING: [Opt 31-1131] Can not pull register out from hdmi_out_i/v_tpg_0/U0/grp_
 WARNING: [Opt 31-1131] Can not pull register out from hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/maskId_val12_c_U/U_hdmi_out_v_tpg_0_0_fifo_w8_d3_S_ShiftReg/SRL_SIG_reg[2][3]_srl3 due to none static srl address bits
 INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 1b7414c3d
+Phase 7 Shift Register Optimization | Checksum: 222cbfe8f
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Shift Register Optimization | Checksum: 1b7414c3d
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Shift Register Optimization | Checksum: 222cbfe8f
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: 144362b64
+Phase 8 Post Processing Netlist | Checksum: 1b5dcdfa6
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Post Processing Netlist | Checksum: 144362b64
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Post Processing Netlist | Checksum: 1b5dcdfa6
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 210 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1fb62c980
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 159e1593c
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 2268.402 ; gain = 25.102
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2275.457 ; gain = 26.789
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2268.402 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 1fb62c980
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2275.457 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 159e1593c
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2268.402 ; gain = 25.102
-Phase 9 Finalization | Checksum: 1fb62c980
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2275.457 ; gain = 26.789
+Phase 9 Finalization | Checksum: 159e1593c
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2268.402 ; gain = 25.102
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2275.457 ; gain = 26.789
 Opt_design Change Summary
 =========================
 
@@ -475,11 +475,11 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 1fb62c980
+Ending Logic Optimization Task | Checksum: 159e1593c
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2268.402 ; gain = 25.102
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 2275.457 ; gain = 26.789
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2268.402 ; gain = 0.000
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2275.457 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -495,35 +495,35 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 30 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
 Number of BRAM Ports augmented: 29 newly gated: 17 Total Ports: 60
-Ending PowerOpt Patch Enables Task | Checksum: 236142936
+Ending PowerOpt Patch Enables Task | Checksum: 161b3aca3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 236142936
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 161b3aca3
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2592.855 ; gain = 324.453
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2588.391 ; gain = 312.934
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: fe0001a6
+Ending Logic Optimization Task | Checksum: 1fb4fd368
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: fe0001a6
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1fb4fd368
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: fe0001a6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1fb4fd368
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 86 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2592.855 ; gain = 718.863
+opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2588.391 ; gain = 715.730
 INFO: [runtcl-4] Executing : report_drc -file hdmi_out_wrapper_drc_opted.rpt -pb hdmi_out_wrapper_drc_opted.pb -rpx hdmi_out_wrapper_drc_opted.rpx
 Command: report_drc -file hdmi_out_wrapper_drc_opted.rpt -pb hdmi_out_wrapper_drc_opted.pb -rpx hdmi_out_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -532,16 +532,16 @@ INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Xil_prj/hdmi_out/hdmi
 report_drc completed successfully
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2588.391 ; gain = 0.000
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2592.855 ; gain = 0.000
 Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2588.391 ; gain = 0.000
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper_opt.dcp' has been generated.
 INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
@@ -562,58 +562,58 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: fa55c89a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14a78f01b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13e177cf2
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b102c561
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 23d484368
+Phase 1.3 Build Placer Netlist Model | Checksum: 256f3cc0d
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 23d484368
+Phase 1.4 Constrain Clocks/Macros | Checksum: 256f3cc0d
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 23d484368
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 256f3cc0d
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 21111f5ac
+Phase 2.1 Floorplanning | Checksum: 26194ce70
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1862532c5
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 260e296a9
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 1862532c5
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 260e296a9
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
 
 Phase 2.4.1 UpdateTiming Before Physical Synthesis
-Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 18ddc7f0f
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1be29509c
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 2.4.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 841 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 832 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 365 nets or LUTs. Breaked 0 LUT, combined 365 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 359 nets or LUTs. Breaked 0 LUT, combined 359 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -624,7 +624,7 @@ INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was
 INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -633,7 +633,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |            365  |                   365  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |            359  |                   359  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
@@ -642,69 +642,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |            365  |                   365  |           0  |           4  |  00:00:00  |
+|  Total                                            |            0  |            359  |                   359  |           0  |           4  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.4.2 Physical Synthesis In Placer | Checksum: 108a1a4ed
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 129fde32c
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 2.4 Global Placement Core | Checksum: 1b626e8d8
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 17868c8d5
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 1b626e8d8
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 17868c8d5
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 20c35ebf0
+Phase 3.1 Commit Multi Column Macros | Checksum: fc29c529
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1367b4b2d
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: d650a1c0
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1f7e38c32
+Phase 3.3 Area Swap Optimization | Checksum: 166f00eae
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 152ff142e
+Phase 3.4 Pipeline Register Optimization | Checksum: 16a91449b
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 1f25c54f4
+Phase 3.5 Fast Optimization | Checksum: e7f07a0b
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 1c32903ad
+Phase 3.6 Small Shape Detail Placement | Checksum: 627110f1
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1a3536234
+Phase 3.7 Re-assign LUT pins | Checksum: e623104f
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1b3e5d18b
+Phase 3.8 Pipeline Register Optimization | Checksum: 121f1c4de
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 21f0f28cd
+Phase 3.9 Fast Optimization | Checksum: 1c1f392ed
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 21f0f28cd
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1c1f392ed
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:25 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -712,7 +712,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1819c6e7d
+Post Placement Optimization Initialization | Checksum: 1e40a99e4
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -720,33 +720,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.066 | TNS=-0.066 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1028be512
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.430 | TNS=-1.560 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1f43f70d3
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.816 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.837 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 1028be512
+Ending Physical Synthesis Task | Checksum: 1f43f70d3
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1819c6e7d
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1e40a99e4
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:29 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:30 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.491. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: aa024f4a
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.138. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 114dfa42d
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: aa024f4a
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 114dfa42d
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: aa024f4a
+Phase 4.2 Post Placement Cleanup | Checksum: 114dfa42d
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -756,51 +756,51 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                2x2|
+|      North|                1x1|                4x4|
 |___________|___________________|___________________|
 |      South|                1x1|                2x2|
 |___________|___________________|___________________|
-|       East|                1x1|                1x1|
+|       East|                1x1|                2x2|
 |___________|___________________|___________________|
-|       West|                1x1|                1x1|
+|       West|                1x1|                2x2|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: aa024f4a
+Phase 4.3.1 Print Estimated Congestion | Checksum: 114dfa42d
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: aa024f4a
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 114dfa42d
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2588.391 ; gain = 0.000
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13e56ba59
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: b02fe2ca
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Ending Placer Task | Checksum: 13b3de9cb
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Ending Placer Task | Checksum: a9098d90
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:32 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 2588.391 ; gain = 0.000
 122 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:33 . Memory (MB): peak = 2592.855 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:37 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_io -file hdmi_out_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2592.855 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_out_wrapper_utilization_placed.rpt -pb hdmi_out_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file hdmi_out_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2592.855 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.882 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.900 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2588.391 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2592.855 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.970 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2588.391 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.988 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -808,23 +808,23 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2592.855 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2588.391 ; gain = 0.000
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
 131 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2602.965 ; gain = 10.109
-Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.930 . Memory (MB): peak = 2610.793 ; gain = 17.938
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2610.793 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2608.082 ; gain = 19.691
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.888 . Memory (MB): peak = 2613.562 ; gain = 24.672
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.562 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2610.793 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2610.793 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2610.793 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2610.793 ; gain = 17.938
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2613.562 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2613.562 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2613.562 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.975 . Memory (MB): peak = 2613.562 ; gain = 25.172
 INFO: [Common 17-1381] The checkpoint 'C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
@@ -839,148 +839,150 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: 9416b5da ConstDB: 0 ShapeSum: a72733f1 RouteDB: 0
-Post Restoration Checksum: NetGraph: ea1856f9 | NumContArr: 9d9a45dc | Constraints: c2a8fa9d | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 30d04920f
+Checksum: PlaceDB: 6504a8c8 ConstDB: 0 ShapeSum: 4404e4c8 RouteDB: 0
+Post Restoration Checksum: NetGraph: fe870f26 | NumContArr: 6f5c3f01 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2f3354361
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.766 ; gain = 18.270
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.371 ; gain = 14.613
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 30d04920f
+Phase 2.1 Fix Topology Constraints | Checksum: 2f3354361
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.766 ; gain = 18.270
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.371 ; gain = 14.613
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 30d04920f
+Phase 2.2 Pre Route Cleanup | Checksum: 2f3354361
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.766 ; gain = 18.270
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2639.371 ; gain = 14.613
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 2c08cc460
+Phase 2.3 Update Timing | Checksum: 216b43874
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2642.191 ; gain = 20.695
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.461  | TNS=0.000  | WHS=-0.350 | THS=-926.209|
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2639.371 ; gain = 14.613
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.117  | TNS=0.000  | WHS=-0.464 | THS=-891.920|
 
 
 Phase 2.4 Update Timing for Bus Skew
 
 Phase 2.4.1 Update Timing
-Phase 2.4.1 Update Timing | Checksum: 23baaf732
+Phase 2.4.1 Update Timing | Checksum: 2701b3c53
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2716.254 ; gain = 94.758
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.461  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2716.012 ; gain = 91.254
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.117  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 2.4 Update Timing for Bus Skew | Checksum: 2417740a7
+Phase 2.4 Update Timing for Bus Skew | Checksum: 1f9e0e682
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.344 ; gain = 102.848
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.094 ; gain = 99.336
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.00168919 %
+  Global Vertical Routing Utilization    = 0.00140766 %
   Global Horizontal Routing Utilization  = 0.000459559 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 25254
+  Number of Failed Nets               = 25247
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 25254
+  Number of Unrouted Nets             = 25247
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 2bd2de096
+Phase 2 Router Initialization | Checksum: 22ec394fd
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.344 ; gain = 102.848
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.094 ; gain = 99.336
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 2bd2de096
+Phase 3.1 Global Routing | Checksum: 22ec394fd
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.344 ; gain = 102.848
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.094 ; gain = 99.336
 
 Phase 3.2 Initial Net Routing
-Phase 3.2 Initial Net Routing | Checksum: 1b239bae1
+Phase 3.2 Initial Net Routing | Checksum: 1ce266178
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2724.387 ; gain = 102.891
-Phase 3 Initial Routing | Checksum: 1b239bae1
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.094 ; gain = 99.336
+Phase 3 Initial Routing | Checksum: 1ce266178
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 2724.094 ; gain = 99.336
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2017
- Number of Nodes with overlaps = 160
- Number of Nodes with overlaps = 35
- Number of Nodes with overlaps = 13
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.092  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 19de3f34e
-
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 2724.387 ; gain = 102.891
-
-Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2070
+ Number of Nodes with overlaps = 199
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 7
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.092  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.289 | TNS=-0.289 | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1d2f5956b
+Phase 4.1 Global Iteration 0 | Checksum: 26619e2c3
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2724.387 ; gain = 102.891
-Phase 4 Rip-up And Reroute | Checksum: 1d2f5956b
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.219  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 282519f89
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:23 . Memory (MB): peak = 2728.648 ; gain = 103.891
+Phase 4 Rip-up And Reroute | Checksum: 282519f89
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:23 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 20e4c8de0
+Phase 5.1.1 Update Timing | Checksum: 31da78d4a
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2724.387 ; gain = 102.891
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2728.648 ; gain = 103.891
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.282  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 299291f40
+Phase 5.1 Delay CleanUp | Checksum: 2e62869d6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 299291f40
+Phase 5.2 Clock Skew Optimization | Checksum: 2e62869d6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2724.387 ; gain = 102.891
-Phase 5 Delay and Skew Optimization | Checksum: 299291f40
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2728.648 ; gain = 103.891
+Phase 5 Delay and Skew Optimization | Checksum: 2e62869d6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 22ea5120a
+Phase 6.1.1 Update Timing | Checksum: 32ee7aa73
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2724.387 ; gain = 102.891
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.207  | TNS=0.000  | WHS=0.007  | THS=0.000  |
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2728.648 ; gain = 103.891
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.282  | TNS=0.000  | WHS=0.007  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 2162122c4
+Phase 6.1 Hold Fix Iter | Checksum: 2630eb873
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2724.387 ; gain = 102.891
-Phase 6 Post Hold Fix | Checksum: 2162122c4
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2728.648 ; gain = 103.891
+Phase 6 Post Hold Fix | Checksum: 2630eb873
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 12.0262 %
-  Global Horizontal Routing Utilization  = 16.4773 %
+  Global Vertical Routing Utilization    = 12.1074 %
+  Global Horizontal Routing Utilization  = 15.4683 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -990,44 +992,44 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 2162122c4
+Phase 7 Route finalize | Checksum: 2630eb873
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2724.387 ; gain = 102.891
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 2162122c4
+Phase 8 Verifying routed nets | Checksum: 2630eb873
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:23 . Memory (MB): peak = 2724.523 ; gain = 103.027
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1d3cd20f8
+Phase 9 Depositing Routes | Checksum: 21249523c
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:24 . Memory (MB): peak = 2724.523 ; gain = 103.027
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:26 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.207  | TNS=0.000  | WHS=0.007  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.282  | TNS=0.000  | WHS=0.007  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1d3cd20f8
+Phase 10 Post Router Timing | Checksum: 21249523c
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:25 . Memory (MB): peak = 2724.523 ; gain = 103.027
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:27 . Memory (MB): peak = 2728.648 ; gain = 103.891
 INFO: [Route 35-16] Router Completed Successfully
 
 Phase 11 Post-Route Event Processing
-Phase 11 Post-Route Event Processing | Checksum: 155c01d62
+Phase 11 Post-Route Event Processing | Checksum: fd04779e
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2724.523 ; gain = 103.027
-Ending Routing Task | Checksum: 155c01d62
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:27 . Memory (MB): peak = 2728.648 ; gain = 103.891
+Ending Routing Task | Checksum: fd04779e
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:25 . Memory (MB): peak = 2724.523 ; gain = 103.027
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:27 . Memory (MB): peak = 2728.648 ; gain = 103.891
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 148 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:27 . Memory (MB): peak = 2724.523 ; gain = 113.730
+route_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 2728.648 ; gain = 115.086
 INFO: [runtcl-4] Executing : report_drc -file hdmi_out_wrapper_drc_routed.rpt -pb hdmi_out_wrapper_drc_routed.pb -rpx hdmi_out_wrapper_drc_routed.rpx
 Command: report_drc -file hdmi_out_wrapper_drc_routed.rpt -pb hdmi_out_wrapper_drc_routed.pb -rpx hdmi_out_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -1040,7 +1042,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2801.738 ; gain = 77.215
+report_methodology: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2806.762 ; gain = 78.113
 INFO: [runtcl-4] Executing : report_power -file hdmi_out_wrapper_power_routed.rpt -pb hdmi_out_wrapper_power_summary_routed.pb -rpx hdmi_out_wrapper_power_routed.rpx
 Command: report_power -file hdmi_out_wrapper_power_routed.rpt -pb hdmi_out_wrapper_power_summary_routed.pb -rpx hdmi_out_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -1063,16 +1065,16 @@ INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file hdmi_out_w
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2878.395 ; gain = 16.320
-Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.883 . Memory (MB): peak = 2878.418 ; gain = 9.395
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2878.418 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2879.480 ; gain = 12.930
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.886 . Memory (MB): peak = 2879.480 ; gain = 9.949
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2879.480 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2878.418 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2878.418 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2878.418 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2878.418 ; gain = 16.344
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.182 . Memory (MB): peak = 2879.480 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2879.480 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2879.480 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 2879.480 ; gain = 12.930
 INFO: [Common 17-1381] The checkpoint 'C:/Xil_prj/hdmi_out/hdmi_out.runs/impl_3/hdmi_out_wrapper_routed.dcp' has been generated.
 INFO: [Memdata 28-208] The XPM instance: <hdmi_out_i/v_axi4s_vid_out_1/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_out_i/v_axi4s_vid_out_1>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
 INFO: [Memdata 28-208] The XPM instance: <hdmi_out_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <hdmi_out_i/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
@@ -1097,20 +1099,28 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP hdmi_out_i/v_tpg_0/U0/grp_v_tp
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/mul_11ns_13ns_23_1_1_U29/tmp_product multiplier stage hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/mul_11ns_13ns_23_1_1_U29/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/mul_ln1356_reg_5356_reg multiplier stage hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/mul_ln1356_reg_5356_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/trunc_ln1356_reg_5362_reg multiplier stage hdmi_out_i/v_tpg_0/U0/grp_v_tpgHlsDataFlow_fu_443/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_565_2_fu_482/trunc_ln1356_reg_5362_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A5*A2)+(A5*(~A2)*(~A4))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*A6*A3)+((~A2)*(~A6)*A4*(~A5)*A3)+((~A2)*(~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I0) is not included in the LUT equation: 'O6=(A3*A5)+(A3*(~A5)*A6)+((~A3)*A1*A6)+((~A3)*(~A1)*A5)+((~A3)*(~A1)*(~A5)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A3*A5)+(A3*(~A5)*A6)+((~A3)*A4*A6)+((~A3)*(~A4)*A5)+((~A3)*(~A4)*(~A5)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A5*A2)+(A5*(~A2)*(~A4))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O6=(A6*A5)+((~A6)*A4)+((~A6)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*A2*A1*A6)+((~A5)*(~A2)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A4)+((~A4)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I0) is not included in the LUT equation: 'O6=(A6*A3*A1*A4)+(A6*A3*A1*(~A4)*A2)+(A6*A3*(~A1)*A2)+(A6*(~A3)*A4)+(A6*(~A3)*(~A4)*A2)+((~A6)*A4)+((~A6)*(~A4)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O6=(A6*A1)+((~A6)*A2)+((~A6)*(~A2)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A1*A4)+(A1*(~A4)*A3)+((~A1)*A6*A3)+((~A1)*(~A6)*A4)+((~A1)*(~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A5)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*A2*A3)+((~A5)*(~A2)*A6*(~A4)*A3)+((~A5)*(~A2)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O6=(A5*A6)+((~A5)*A3)+((~A5)*(~A3)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A3*A4)+(A3*(~A4)*A2)+((~A3)*A5*A2)+((~A3)*(~A5)*A4)+((~A3)*(~A5)*(~A4)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A1)+(A3*(~A1)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I0) is not included in the LUT equation: 'O6=(A3*A1)+(A3*(~A1)*A6)+((~A3)*A5*A6)+((~A3)*(~A5)*A1)+((~A3)*(~A5)*(~A1)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O6=(A6*A5)+((~A6)*A3)+((~A6)*(~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*A5*A6*A4)+((~A2)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A6)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I0) is not included in the LUT equation: 'O6=(A6*A2*A1*A3)+(A6*A2*A1*(~A3)*A5)+(A6*A2*(~A1)*A5)+(A6*(~A2)*A3)+(A6*(~A2)*(~A3)*A5)+((~A6)*A3)+((~A6)*(~A3)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A5*A3)+(A5*(~A3)*A2)+((~A5)*A6*A2)+((~A5)*(~A6)*A3)+((~A5)*(~A6)*(~A3)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A1)+(A3*(~A1)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave. This can result in corrupted data. The hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLK / hdmi_out_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENBWREN (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I_0) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[0] (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[1] (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -1122,12 +1132,12 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/WEBWE[7] (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/E[0]) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ENARDEN_cooolgate_en_sig_23) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram_ENARDEN_cooolgate_en_sig_22) which is driven by a register (hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC RTSTAT-10] No routable loads: 178 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1]... and (the first 15 of 114 listed).
+WARNING: [DRC RTSTAT-10] No routable loads: 178 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/m00_couplers/m00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, hdmi_out_i/axi_mem_intercon/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1]... and (the first 15 of 114 listed).
 INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (hdmi_out_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (hdmi_out_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (hdmi_out_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (hdmi_out_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 38 Warnings, 4 Advisories
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 46 Warnings, 4 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -1140,7 +1150,7 @@ Writing bitstream ./hdmi_out_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-23 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+23 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3298.254 ; gain = 419.836
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 12:39:52 2023...
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3297.688 ; gain = 418.207
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 24 15:01:50 2023...

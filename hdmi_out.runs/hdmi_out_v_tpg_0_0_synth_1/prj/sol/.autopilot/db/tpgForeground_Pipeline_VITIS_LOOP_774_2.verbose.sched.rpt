@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'tpgForeground_Pipeline_VITIS_LOOP_774_2'
 ================================================================
-* Date:           Thu Nov 23 12:36:08 2023
+* Date:           Fri Nov 24 14:57:59 2023
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        prj
@@ -237,7 +237,7 @@ The critical path consists of the following:
  <State 2>: 6.058ns
 The critical path consists of the following:
 	'load' operation 16 bit ('boxHCoord_loc_1_load', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1912->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) on local variable 'boxHCoord_loc_1' [68]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln1894', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1894->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) [96]  (2.077 ns)
+	'icmp' operation 1 bit ('icmp_ln1889', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1889->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) [90]  (2.077 ns)
 	multiplexor before 'phi' operation 1 bit ('empty_87') [102]  (1.588 ns)
 	'phi' operation 1 bit ('empty_87') [102]  (0.000 ns)
 	'select' operation 16 bit ('select_ln1911', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1911->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) [121]  (0.805 ns)
@@ -254,9 +254,9 @@ The critical path consists of the following:
 
  <State 4>: 6.454ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation 8 bit ('pixIn') with incoming values : ('boxColorR_read') ('pixIn', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:778) [167]  (1.827 ns)
-	'phi' operation 8 bit ('pixIn') with incoming values : ('boxColorR_read') ('pixIn', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:778) [167]  (0.000 ns)
-	'select' operation 8 bit ('pixOut', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:778) [171]  (1.248 ns)
+	multiplexor before 'phi' operation 8 bit ('pixIn') with incoming values : ('pixIn', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:778) ('pixOut', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1947->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) ('whiYuv_2_load', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1974->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793) [166]  (1.827 ns)
+	'phi' operation 8 bit ('pixIn') with incoming values : ('pixIn', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:778) ('pixOut', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1947->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) ('whiYuv_2_load', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1974->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:793) [166]  (0.000 ns)
+	'select' operation 8 bit ('empty', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1947->C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:788) [173]  (1.248 ns)
 	fifo write operation ('write_ln808', C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:808) on port 'ovrlayYUV' (C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:808) [175]  (3.380 ns)
 
 

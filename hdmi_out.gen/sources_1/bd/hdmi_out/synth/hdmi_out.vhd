@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Thu Nov 23 12:11:06 2023
+--Date        : Fri Nov 24 14:56:42 2023
 --Host        : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_out.bd
 --Design      : hdmi_out
@@ -6072,25 +6072,25 @@ processing_system7_0_axi_periph: entity work.hdmi_out_processing_system7_0_axi_p
     );
 rgb2dvi_0: component hdmi_out_rgb2dvi_0_0
      port map (
-      PixelClk => axi_dynclk_0_PXL_CLK_O,
+      PixelClk => clk_wiz_0_clk_out1,
       SerialClk => axi_dynclk_0_PXL_CLK_5X_O,
       TMDS_Clk_n => rgb2dvi_0_TMDS_CLK_N,
       TMDS_Clk_p => rgb2dvi_0_TMDS_CLK_P,
       TMDS_Data_n(2 downto 0) => rgb2dvi_0_TMDS_DATA_N(2 downto 0),
       TMDS_Data_p(2 downto 0) => rgb2dvi_0_TMDS_DATA_P(2 downto 0),
       aRst_n => axi_dynclk_0_LOCKED_O,
-      vid_pData(23 downto 0) => v_axi4s_vid_out_0_vid_io_out_DATA(23 downto 0),
-      vid_pHSync => v_axi4s_vid_out_0_vid_io_out_HSYNC,
-      vid_pVDE => v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO,
-      vid_pVSync => v_axi4s_vid_out_0_vid_io_out_VSYNC
+      vid_pData(23 downto 0) => v_axi4s_vid_out_1_vid_io_out_DATA(23 downto 0),
+      vid_pHSync => v_axi4s_vid_out_1_vid_io_out_HSYNC,
+      vid_pVDE => v_axi4s_vid_out_1_vid_io_out_ACTIVE_VIDEO,
+      vid_pVSync => v_axi4s_vid_out_1_vid_io_out_VSYNC
     );
 rgb2vga_0: component hdmi_out_rgb2vga_0_0
      port map (
-      PixelClk => clk_wiz_0_clk_out1,
-      rgb_pData(23 downto 0) => v_axi4s_vid_out_1_vid_io_out_DATA(23 downto 0),
-      rgb_pHSync => v_axi4s_vid_out_1_vid_io_out_HSYNC,
-      rgb_pVDE => v_axi4s_vid_out_1_vid_io_out_ACTIVE_VIDEO,
-      rgb_pVSync => v_axi4s_vid_out_1_vid_io_out_VSYNC,
+      PixelClk => axi_dynclk_0_PXL_CLK_O,
+      rgb_pData(23 downto 0) => v_axi4s_vid_out_0_vid_io_out_DATA(23 downto 0),
+      rgb_pHSync => v_axi4s_vid_out_0_vid_io_out_HSYNC,
+      rgb_pVDE => v_axi4s_vid_out_0_vid_io_out_ACTIVE_VIDEO,
+      rgb_pVSync => v_axi4s_vid_out_0_vid_io_out_VSYNC,
       vga_pBlue(4 downto 0) => rgb2vga_0_vga_pBlue(4 downto 0),
       vga_pGreen(5 downto 0) => rgb2vga_0_vga_pGreen(5 downto 0),
       vga_pHSync => rgb2vga_0_vga_pHSync,

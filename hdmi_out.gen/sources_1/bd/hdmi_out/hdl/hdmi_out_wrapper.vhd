@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Thu Nov 23 12:11:07 2023
+--Date        : Fri Nov 24 14:56:42 2023
 --Host        : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 --Command     : generate_target hdmi_out_wrapper.bd
 --Design      : hdmi_out_wrapper

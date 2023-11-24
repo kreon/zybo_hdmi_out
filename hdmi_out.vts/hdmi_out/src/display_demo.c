@@ -178,16 +178,16 @@ void DemoRun()
 			DisplayChangeFrame(&dispCtrl, nextFrame);//6 - Invert Current Frame colors seamlessly
 			break;
 		case '7'://7 - Print OSD
-			OsdSetSize(16);
-			OsdSetTitle("Information");//11 chars
+			//OsdSetSize(16);
+			//OsdSetTitle("Information");//11 chars
 			MixOSDFrame(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.framePtr[nextFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
 			break;
 		case '8'://8 - Print OSD
-			//DemoPrintTest(pFrames[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_2);
-			DemoGradient(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
+			DemoPrintTest(pFrames[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_2);
 			break;
-		case '9'://9 - DemoAnimated
-			DemoAnimated(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
+		case '9'://9 - DemoGradient
+			//DemoAnimated(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
+			DemoGradient(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
 			break;
 		case 'q'://q - Quit
 			break;
@@ -220,7 +220,7 @@ void DemoPrintMenu()
 	xil_printf("6 - Invert Current Frame colors seamlessly\n\r");
 	xil_printf("7 - Osd Set Title\n\r");
 	xil_printf("8 - DemoPrintTest\n\r");
-	xil_printf("9 - DemoAnimated\n\r");
+	xil_printf("9 - DemoGradient\n\r");
 	xil_printf("q - Quit\n\r");
 	xil_printf("\n\r");
 	xil_printf("\n\r");
@@ -498,17 +498,17 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 				wGreen = argus_sz[xcoi + 1];
 				wBlue = argus_sz[xcoi + 2];
 			}else{
-				wRed = 255;
+				wRed = 0;
 				wGreen = 0;
-				wBlue = 0;
+				wBlue = 255;
 			}
 			iPixelAddr = xcoi;
 
 			for(ycoi = 0; ycoi < height; ycoi++)
 			{
-				frame[iPixelAddr] = wBlue;
-				frame[iPixelAddr + 1] = wGreen;
-				frame[iPixelAddr + 2] = wRed;
+				frame[iPixelAddr] = wBlue; //checked
+				frame[iPixelAddr + 1] = wGreen; //checked
+				frame[iPixelAddr + 2] = wRed; //checked
 				/*
 				 * This pattern is printed one vertical line at a time, so the address must be incremented
 				 * by the stride instead of just 1.
@@ -609,16 +609,16 @@ void MixOSDFrame(u8 *srcFrame, u8 *destFrame, u32 width, u32 height, u32 stride)
 	//draw pic argus_sz
 	for(ycoi = 0; ycoi < height; ycoi++)
 	{
-		for(xcoi = 0; xcoi<(pic_width*NUM_COMPONENTS); xcoi+=3)//3 components RGB
+		for(xcoi = 0; xcoi<pic_width; xcoi+=1)
 		{
-/*Blue*/	destFrame[xcoi + lineStart] = argus_sz[xcoi];         //Red
-/*Green*/	destFrame[xcoi + lineStart + 1] = argus_sz[xcoi + 2]; //Green
-/*Red*/		destFrame[xcoi + lineStart + 2] = argus_sz[xcoi + 1]; //Blue
+/*Blue*/	destFrame[xcoi*3 + lineStart] = argus_sz[xcoi*3 + ycoi*pic_width];         //Red
+/*Green*/	destFrame[xcoi*3 + lineStart + 1] = argus_sz[xcoi*3 + 2 + ycoi*pic_width]; //Green
+/*Red*/		destFrame[xcoi*3 + lineStart + 2] = argus_sz[xcoi*3 + 1 + ycoi*pic_width]; //Blue
 		}
-		for(; xcoi<(width * NUM_COMPONENTS); xcoi+=3)
+		for(; xcoi<width; xcoi+=1)
 		{
-			destFrame[xcoi + lineStart] = srcFrame[xcoi + lineStart];         //Green
-			destFrame[xcoi + lineStart + 1] = srcFrame[xcoi + lineStart + 1]; //Blue
+			destFrame[xcoi + lineStart] = srcFrame[xcoi + lineStart];         //Blue
+			destFrame[xcoi + lineStart + 1] = srcFrame[xcoi + lineStart + 1]; //Green
 			destFrame[xcoi + lineStart + 2] = srcFrame[xcoi + lineStart + 2]; //Red
 		}
 		lineStart += stride;//stride=1920*3(RGB)=5760
@@ -712,7 +712,6 @@ void DemoAnimated(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {//9 
 			/* Check for data on UART */
 			/* Store the first character in the UART recieve FIFO and echo it */
 			userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
-
 			if(userInput == 'q')	return;
 			else if	(userInput > 0)	print("q - Quit (don't change resolution)\n\r");
 	}
@@ -722,17 +721,20 @@ void DemoAnimated(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {//9 
 void DemoGradient(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {
 	// Get parameters from display controller struct
 	int x, y;
-	u32 *frame = (u32 *)dispPtr->framePtr[dispPtr->curFrame];
-	u32 red, green, blue;
-
+	u8 *frame = (u8 *)dispPtr->framePtr[dispPtr->curFrame];
+	u8 red, green, blue;
+	u32 lineStart=0;
 	// Fill the screen with a nice gradient pattern
 	for (y = 0; y < height; y++) {
-		for (x = 0; x < width; x++) {
+		for (x = 0; x < width; x+=1) {
 			green = (x*0xFF) / width;
 			blue = 0xFF - ((x*0xFF) / width);
 			red = (y*0xFF) / height;
-			frame[y*stride + x] = (red << BIT_DISPLAY_RED) | (green << BIT_DISPLAY_GREEN) | (blue << BIT_DISPLAY_BLUE);
+			frame[x*3 + lineStart] = (blue);
+			frame[x*3 + lineStart + 1] = (green);
+			frame[x*3 + lineStart + 2] = (red);
 		}
+		lineStart += stride;
 	}
 
 	Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);

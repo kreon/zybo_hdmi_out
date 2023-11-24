@@ -59,3 +59,17 @@ platform active {hdmi_out_wrapper}
 platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
 platform generate -domains 
 platform generate
+platform active {hdmi_out_wrapper}
+platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
+platform generate -domains 
+platform config -create-boot-bsp
+platform write
+domain active {zynq_fsbl}
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+domain active {zynq_fsbl}
+bsp reload
+platform config -remove-boot-bsp
+platform write
+platform generate -domains 

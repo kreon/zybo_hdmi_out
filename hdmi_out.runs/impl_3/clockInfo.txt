@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Thu Nov 23 12:38:14 2023
+| Date         : Fri Nov 24 15:00:07 2023
 | Host         : ARGUS-IT-WS1
 | Design       : design_1
 | Device       : xc7z010-clg400-1--
