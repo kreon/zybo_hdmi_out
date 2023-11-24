@@ -259,6 +259,9 @@ void DemoRun()
 			VideoStart(&videoCapt);
 			DisplayChangeFrame(&dispCtrl, nextFrame);
 			break;
+		case '9'://9 - DemoAnimated
+			DemoAnimated(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
+			break;
 		case 'q':
 			break;
 		case 'r':
@@ -297,6 +300,7 @@ void DemoPrintMenu()
 	xil_printf("6 - Change Video Framebuffer Index\n\r");
 	xil_printf("7 - Grab Video Frame and invert colors\n\r");
 	xil_printf("8 - Grab Video Frame and scale to Display resolution\n\r");
+	xil_printf("9 - DemoAnimated\n\r");
 	xil_printf("q - Quit\n\r");
 	xil_printf("\n\r");
 	xil_printf("\n\r");
@@ -654,4 +658,74 @@ void DemoISR(void *callBackRef, void *pVideo)
 {
 	char *data = (char *) callBackRef;
 	*data = 1; //set fRefresh to 1
+}
+
+void DemoAnimated(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {//9 - DemoAnimated
+	// Get parameters from display controller struct
+	int x, y;
+	u8 *frame;
+	u8 buff = dispCtrl.curFrame;
+	int right = 1, down = 1;
+	int xpos = 0, ypos = 0;
+	char userInput = 0;
+
+	print("\n\r\n\r");
+	print("q - Quit (don't change resolution)\n\r");
+
+	while (1) {
+			// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
+			buff = !buff;
+			frame = dispCtrl.framePtr[buff];
+
+			// Set the frame to white/black
+			memset(frame, 0x00, DEMO_MAX_FRAME);//0xff white
+
+			// Adjust the position of the square
+			if (right) {
+				xpos++;
+				if (xpos == width-64)
+					right = 0;
+			}
+			else {
+				xpos--;
+				if (xpos == 0)
+					right = 1;
+			}
+			if (down) {
+				ypos++;
+				if (ypos == height-64) {
+					down = 0;
+				}
+			}
+			else {
+				ypos--;
+				if (ypos == 0) {
+					down = 1;
+				}
+			}
+
+			// Draw black square on the screen
+			for (x = xpos; x < xpos+64; x++) {
+				for (y = ypos; y < ypos+64; y++) {
+					frame[y*stride + x] = 0xff;//set color
+				}
+			}
+
+			// Flush everything out to DDR
+			Xil_DCacheFlush();
+
+			// Switch active frame to the back buffer
+			DisplayChangeFrame(dispPtr, buff);
+
+			// Wait for the frame to switch (after active frame is drawn) before continuing
+			DisplayWaitForSync(dispPtr);
+
+			/* Check for data on UART */
+			/* Store the first character in the UART recieve FIFO and echo it */
+			userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+
+			if(userInput == 'q')	return;
+			else if	(userInput > 0)	print("q - Quit (don't change resolution)\n\r");
+	}
+
 }

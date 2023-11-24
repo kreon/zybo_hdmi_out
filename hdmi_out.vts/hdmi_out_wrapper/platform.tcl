@@ -58,3 +58,4 @@ platform generate -domains
 platform active {hdmi_out_wrapper}
 platform config -updatehw {C:/xil_prj/hdmi_out/hdmi_out_wrapper.xsa}
 platform generate -domains 
+platform generate

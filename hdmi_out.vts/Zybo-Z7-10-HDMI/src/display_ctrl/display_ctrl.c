@@ -483,7 +483,6 @@ int DisplayChangeFrame(DisplayCtrl *dispPtr, u32 frameIndex)
 
 int DisplayWaitForSync(DisplayCtrl *dispPtr)
 {
-	XAxiVdma *vdma = &dispPtr->vdma;
 	u32 target_frame = dispPtr->curFrame;
 	u32 current_frame;
 
@@ -492,7 +491,7 @@ int DisplayWaitForSync(DisplayCtrl *dispPtr)
 	}
 
 	for (;;) {
-		current_frame = XAxiVdma_CurrFrameStore(vdma, XAXIVDMA_READ);
+		current_frame = XAxiVdma_CurrFrameStore(dispPtr->vdma, XAXIVDMA_READ);
 		if (current_frame == target_frame) {
 			return XST_SUCCESS;
 		}

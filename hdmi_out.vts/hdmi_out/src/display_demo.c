@@ -186,7 +186,7 @@ void DemoRun()
 			//DemoPrintTest(pFrames[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_2);
 			DemoGradient(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
 			break;
-		case '9'://8 - DemoAnimated
+		case '9'://9 - DemoAnimated
 			DemoAnimated(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
 			break;
 		case 'q'://q - Quit
