@@ -1,47 +1,51 @@
 /************************************************************************/
-/*																		*/
-/*	display_ctrl.c	--	Digilent Display Controller Driver				*/
-/*																		*/
+/*                                                                      */
+/*  display_ctrl.c  --  Digilent Display Controller Driver              */
+/*                                                                      */
 /************************************************************************/
-/*	Author: Sam Bobrowicz												*/
-/*	Copyright 2014, Digilent Inc.										*/
+/*  Author: Sam Bobrowicz                                               */
+/*  Copyright 2014, Digilent Inc.                                       */
 /************************************************************************/
-/*  Module Description: 												*/
-/*																		*/
-/*		This module provides an easy to use API for controlling a    	*/
-/*		Display attached to a Digilent system board via VGA or HDMI. 	*/
-/*		run-time resolution setting and seamless framebuffer-swapping 	*/
-/*		for tear-free animation. 										*/
-/*																		*/
-/*		To use this driver, you must have a Xilinx Video Timing 		*/
-/* 		Controller core (vtc), Xilinx axi_vdma core, a Digilent 		*/
-/*		axi_dynclk core, a Xilinx AXI Stream to Video core, and either  */
-/*		a Digilent RGB2VGA or RGB2DVI core all present in your design.  */
-/*		See the Video in or Display out reference projects for your     */
-/*		system board to see how they need to be connected. Digilent     */
-/*		reference projects and IP cores can be found at 				*/
-/*		www.github.com/Digilent.			 							*/
-/*																		*/
-/*		The following steps should be followed to use this driver:		*/
-/*		1) Create a DisplayCtrl object and pass a pointer to it to 		*/
-/*		   DisplayInitialize.											*/
-/*		2) Call DisplaySetMode to set the desired mode					*/
-/*		3) Call DisplayStart to begin outputting data to the display	*/
-/*		4) To create a seamless animation, draw the next image to a		*/
-/*		   framebuffer currently not being displayed. Then call 		*/
-/*		   DisplayChangeFrame to begin displaying that frame.			*/
-/*		   Repeat as needed, only ever modifying inactive frames.		*/
-/*		5) To change the resolution, call DisplaySetMode, followed by	*/
-/*		   DisplayStart again.											*/
-/*																		*/
-/*																		*/
+/*  Module Description:                                                 */
+/*                                                                      */
+/*      This module provides an easy to use API for controlling a       */
+/*      Display attached to a Digilent system board via VGA or HDMI.    */
+/*      run-time resolution setting and seamless framebuffer-swapping   */
+/*      for tear-free animation.                                        */
+/*                                                                      */
+/*      To use this driver, you must have a Xilinx Video Timing         */
+/*      Controller core (vtc), Xilinx axi_vdma core, a Digilent         */
+/*      axi_dynclk core, a Xilinx AXI Stream to Video core, and either  */
+/*      a Digilent RGB2VGA or RGB2DVI core all present in your design.  */
+/*      See the Video in or Display out reference projects for your     */
+/*      system board to see how they need to be connected. Digilent     */
+/*      reference projects and IP cores can be found at                 */
+/*      www.github.com/Digilent.                                        */
+/*                                                                      */
+/*      The following steps should be followed to use this driver:      */
+/*      1) Create a DisplayCtrl object and pass a pointer to it to      */
+/*         DisplayInitialize.                                           */
+/*      2) Call DisplaySetMode to set the desired mode                  */
+/*      3) Call DisplayStart to begin outputting data to the display    */
+/*      4) To create a seamless animation, draw the next image to a     */
+/*         framebuffer currently not being displayed. Then call         */
+/*         DisplayChangeFrame to begin displaying that frame.           */
+/*         Repeat as needed, only ever modifying inactive frames.       */
+/*      5) To change the resolution, call DisplaySetMode, followed by   */
+/*         DisplayStart again.                                          */
+/*                                                                      */
+/*                                                                      */
 /************************************************************************/
-/*  Revision History:													*/
-/* 																		*/
-/*		2/20/2014(SamB): Created										*/
-/*		11/25/2015(SamB): Changed from axi_dispctrl to Xilinx cores		*/
-/*						  Separated Clock functions into dynclk library */
-/*																		*/
+/*  Revision History:                                                   */
+/*                                                                      */
+/*      2/20/2014(SamB): Created                                        */
+/*      11/25/2015(SamB): Changed from axi_dispctrl to Xilinx cores     */
+/*                        Separated Clock functions into dynclk library */
+/*      16/02/2017(RussellJ): Moved VDMA initialisation into            */
+/*                            DisplayInitialize() function              */
+/*      14/03/2017(RussellJ): Added DisplayWaitForSync() function,      */
+/*                            changed framePtr to be void*              */
+/*                                                                      */
 /************************************************************************/
 /*
  * TODO: It would be nice to remove the need for users above this to access
@@ -104,8 +108,8 @@ int DisplayStop(DisplayCtrl *dispPtr)
 	/*
 	 * Stop the VDMA core
 	 */
-	XAxiVdma_DmaStop(dispPtr->vdma, XAXIVDMA_READ);
-	while(XAxiVdma_IsBusy(dispPtr->vdma, XAXIVDMA_READ));
+	XAxiVdma_DmaStop(&dispPtr->vdma, XAXIVDMA_READ);
+	while(XAxiVdma_IsBusy(&dispPtr->vdma, XAXIVDMA_READ));
 
 	/*
 	 * Update Struct state
@@ -114,10 +118,10 @@ int DisplayStop(DisplayCtrl *dispPtr)
 
 	//TODO: consider stopping the clock here, perhaps after a check to see if the VTC is finished
 
-	if (XAxiVdma_GetDmaChannelErrors(dispPtr->vdma, XAXIVDMA_READ))
+	if (XAxiVdma_GetDmaChannelErrors(&dispPtr->vdma, XAXIVDMA_READ))
 	{
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Clearing DMA errors...\r\n");
-		XAxiVdma_ClearDmaChannelErrors(dispPtr->vdma, XAXIVDMA_READ, 0xFFFFFFFF);
+		XAxiVdma_ClearDmaChannelErrors(&dispPtr->vdma, XAXIVDMA_READ, 0xFFFFFFFF);
 		return XST_DMA_ERROR;
 	}
 
@@ -258,25 +262,25 @@ int DisplayStart(DisplayCtrl *dispPtr)
 	 * transferred until the disp_ctrl core signals the VDMA core by pulsing fsync.
 	 */
 
-	Status = XAxiVdma_DmaConfig(dispPtr->vdma, XAXIVDMA_READ, &(dispPtr->vdmaConfig));
+	Status = XAxiVdma_DmaConfig(&dispPtr->vdma, XAXIVDMA_READ, &(dispPtr->vdmaConfig));
 	if (Status != XST_SUCCESS)
 	{
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Read channel config failed %d\r\n", Status);
 		return XST_FAILURE;
 	}
-	Status = XAxiVdma_DmaSetBufferAddr(dispPtr->vdma, XAXIVDMA_READ, dispPtr->vdmaConfig.FrameStoreStartAddr);
+	Status = XAxiVdma_DmaSetBufferAddr(&dispPtr->vdma, XAXIVDMA_READ, dispPtr->vdmaConfig.FrameStoreStartAddr);
 	if (Status != XST_SUCCESS)
 	{
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Read channel set buffer address failed %d\r\n", Status);
 		return XST_FAILURE;
 	}
-	Status = XAxiVdma_DmaStart(dispPtr->vdma, XAXIVDMA_READ);
+	Status = XAxiVdma_DmaStart(&dispPtr->vdma, XAXIVDMA_READ);
 	if (Status != XST_SUCCESS)
 	{
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Start read transfer failed %d\r\n", Status);
 		return XST_FAILURE;
 	}
-	Status = XAxiVdma_StartParking(dispPtr->vdma, dispPtr->curFrame, XAXIVDMA_READ);
+	Status = XAxiVdma_StartParking(&dispPtr->vdma, dispPtr->curFrame, XAXIVDMA_READ);
 	if (Status != XST_SUCCESS)
 	{
 		xdbg_printf(XDBG_DEBUG_GENERAL, "Unable to park the channel %d\r\n", Status);
@@ -290,15 +294,16 @@ int DisplayStart(DisplayCtrl *dispPtr)
 
 /* ------------------------------------------------------------ */
 
-/***	DisplayInitialize(DisplayCtrl *dispPtr, XAxiVdma *vdma, u16 vtcId, u32 dynClkAddr, u8 *framePtr[DISPLAY_NUM_FRAMES], u32 stride)
+/***	DisplayInitialize(DisplayCtrl *dispPtr, u16 vdmaId, u16 vtcId, u32 dynClkAddr, u8 *framePtr[DISPLAY_NUM_FRAMES], u32 stride)
 **
 **	Parameters:
 **		dispPtr - Pointer to the struct that will be initialized
-**		vdma - Pointer to initialized VDMA struct
-**		vtcId - Device ID of the VTC core as found in xparameters.h
-**		dynClkAddr - BASE ADDRESS of the axi_dynclk core
-**		framePtr - array of pointers to the framebuffers. The framebuffers must be instantiated above this driver, and there must be 3
+**		vdma - Device ID of the VDMA core (as found in xparameters.h)
+**		vtcId - Device ID of the VTC core (as found in xparameters.h)
+**		dynClkAddr - BASE ADDRESS of the axi_dynclk core (as found in xparameters.h)
+**		framePtr - array of pointers to the framebuffers. The framebuffers must be instantiated above this driver, and there must be DISPLAY_NUM_FRAMES
 **		stride - line stride of the framebuffers. This is the number of bytes between the start of one line and the start of another.
+**
 **
 **	Return Value: int
 **		XST_SUCCESS if successful, XST_FAILURE otherwise
@@ -309,14 +314,30 @@ int DisplayStart(DisplayCtrl *dispPtr)
 **		Initializes the driver struct for use.
 **
 */
-int DisplayInitialize(DisplayCtrl *dispPtr, XAxiVdma *vdma, u16 vtcId, u32 dynClkAddr, u8 *framePtr[DISPLAY_NUM_FRAMES], u32 stride)
+int DisplayInitialize(DisplayCtrl *dispPtr, u16 vdmaId, u16 vtcId, u32 dynClkAddr, void *framePtr[DISPLAY_NUM_FRAMES], u32 stride)
 {
 	int Status;
 	int i;
 	XVtc_Config *vtcConfig;
+	XAxiVdma_Config *vdmaConfig;
 	ClkConfig clkReg;
 	ClkMode clkMode;
 
+	/*
+	 * Initialize VDMA driver
+	 */
+	vdmaConfig = XAxiVdma_LookupConfig(vdmaId);
+	if (!vdmaConfig)
+	{
+		xil_printf("No video DMA found for ID %d\r\n", vdmaId);
+		return XST_FAILURE;
+	}
+	Status = XAxiVdma_CfgInitialize(&dispPtr->vdma, vdmaConfig, vdmaConfig->BaseAddress);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
 
 	/*
 	 * Initialize all the fields in the DisplayCtrl struct
@@ -368,9 +389,6 @@ int DisplayInitialize(DisplayCtrl *dispPtr, XAxiVdma *vdma, u16 vtcId, u32 dynCl
 	if (Status != (XST_SUCCESS)) {
 		return (XST_FAILURE);
 	}
-
-	dispPtr->vdma = vdma;
-
 
 	/*
 	 * Initialize the VDMA Read configuration struct
@@ -453,7 +471,7 @@ int DisplayChangeFrame(DisplayCtrl *dispPtr, u32 frameIndex)
 	 */
 	if (dispPtr->state == DISPLAY_RUNNING)
 	{
-		Status = XAxiVdma_StartParking(dispPtr->vdma, dispPtr->curFrame, XAXIVDMA_READ);
+		Status = XAxiVdma_StartParking(&dispPtr->vdma, dispPtr->curFrame, XAXIVDMA_READ);
 		if (Status != XST_SUCCESS)
 		{
 			xdbg_printf(XDBG_DEBUG_GENERAL, "Cannot change frame, unable to start parking %d\r\n", Status);
@@ -463,7 +481,44 @@ int DisplayChangeFrame(DisplayCtrl *dispPtr, u32 frameIndex)
 
 	return XST_SUCCESS;
 }
+/* ------------------------------------------------------------ */
+
+/***	DisplayWaitForSync(DisplayCtrl *dispPtr)
+**
+**	Parameters:
+**		dispPtr - Pointer to the initialized DisplayCtrl struct
+**
+**	Return Value: int
+**		XST_SUCCESS if successful, XST_FAILURE otherwise
+**
+**	Errors:
+**
+**	Description:
+**		Blocks until the requested current frame is being shown.
+**		Allows for frame syncing after DisplayChangeFrame().
+**
+*/
+
+int DisplayWaitForSync(DisplayCtrl *dispPtr)
+{
+	XAxiVdma *vdma = &dispPtr->vdma;
+	u32 target_frame = dispPtr->curFrame;
+	u32 current_frame;
+
+	if (dispPtr->state != DISPLAY_RUNNING) {
+		return XST_FAILURE;
+	}
+
+	for (;;) {
+		current_frame = XAxiVdma_CurrFrameStore(vdma, XAXIVDMA_READ);
+		if (current_frame == target_frame) {
+			return XST_SUCCESS;
+		}
+		else if (current_frame >= DISPLAY_NUM_FRAMES) {
+			return XST_FAILURE;
+		}
+	}
+}
 
 
 /************************************************************************/
-

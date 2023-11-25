@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Nov 19 07:20:07 2023
-| Host         : ta4ka running 64-bit major release  (build 9200)
+| Date         : Tue Nov 21 15:34:42 2023
+| Host         : ARGUS-IT-WS1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_out_processing_system7_0_0_utilization_synth.rpt -pb hdmi_out_processing_system7_0_0_utilization_synth.pb
 | Design       : hdmi_out_processing_system7_0_0
 | Device       : xc7z010clg400-1

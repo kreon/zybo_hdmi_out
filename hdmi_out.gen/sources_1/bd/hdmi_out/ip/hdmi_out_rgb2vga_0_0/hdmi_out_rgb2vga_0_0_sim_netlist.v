@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 // Date        : Sun Nov 19 11:48:25 2023
 // Host        : ta4ka running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top hdmi_out_rgb2vga_0_0 -prefix
+//               hdmi_out_rgb2vga_0_0_ hdmi_out_rgb2vga_0_0_sim_netlist.v
 // Design      : hdmi_out_rgb2vga_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -61,7 +61,6 @@ module hdmi_out_rgb2vga_0_0
         .vga_pVSync(vga_pVSync));
 endmodule
 
-(* ORIG_REF_NAME = "rgb2vga" *) 
 module hdmi_out_rgb2vga_0_0_rgb2vga
    (vga_pRed,
     vga_pBlue,

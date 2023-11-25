@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/xil_prj/hdmi_out/hdmi_out.runs/synth_3'
+HD_PWD='C:/Xil_prj/hdmi_out/hdmi_out.runs/synth_3'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

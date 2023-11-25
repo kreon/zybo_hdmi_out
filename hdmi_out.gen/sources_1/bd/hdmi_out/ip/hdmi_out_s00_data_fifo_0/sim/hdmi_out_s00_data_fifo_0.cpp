@@ -61,7 +61,7 @@
 
 
 #ifdef XILINX_SIMULATOR
-hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
+hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arregion("s_axi_arregion"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
 {
 
   // initialize pins
@@ -70,10 +70,8 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
 
   // initialize transactors
   mp_S_AXI_transactor = NULL;
-  mp_s_axi_arlen_converter = NULL;
   mp_s_axi_arlock_converter = NULL;
   mp_M_AXI_transactor = NULL;
-  mp_m_axi_arlen_converter = NULL;
   mp_m_axi_arlock_converter = NULL;
 
   // initialize socket stubs
@@ -107,14 +105,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     S_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     S_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    S_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    S_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     S_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     S_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     S_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     S_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -122,7 +120,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     S_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     S_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -131,18 +129,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // S_AXI' transactor ports
 
     mp_S_AXI_transactor->ARADDR(s_axi_araddr);
-    mp_s_axi_arlen_converter = new xsc::common::vector2vector_converter<4,8>("s_axi_arlen_converter");
-    mp_s_axi_arlen_converter->vector_in(s_axi_arlen);
-    mp_s_axi_arlen_converter->vector_out(m_s_axi_arlen_converter_signal);
-    mp_S_AXI_transactor->ARLEN(m_s_axi_arlen_converter_signal);
+    mp_S_AXI_transactor->ARLEN(s_axi_arlen);
     mp_S_AXI_transactor->ARSIZE(s_axi_arsize);
     mp_S_AXI_transactor->ARBURST(s_axi_arburst);
-    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<2>("s_axi_arlock_converter");
+    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<1>("s_axi_arlock_converter");
     mp_s_axi_arlock_converter->vector_in(s_axi_arlock);
     mp_s_axi_arlock_converter->scalar_out(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARLOCK(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARCACHE(s_axi_arcache);
     mp_S_AXI_transactor->ARPROT(s_axi_arprot);
+    mp_S_AXI_transactor->ARREGION(s_axi_arregion);
     mp_S_AXI_transactor->ARQOS(s_axi_arqos);
     mp_S_AXI_transactor->ARVALID(s_axi_arvalid);
     mp_S_AXI_transactor->ARREADY(s_axi_arready);
@@ -186,14 +182,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     M_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     M_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    M_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    M_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     M_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     M_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     M_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     M_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -201,7 +197,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     M_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     M_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -210,18 +206,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // M_AXI' transactor ports
 
     mp_M_AXI_transactor->ARADDR(m_axi_araddr);
-    mp_m_axi_arlen_converter = new xsc::common::vector2vector_converter<8,4>("m_axi_arlen_converter");
-    mp_m_axi_arlen_converter->vector_in(m_m_axi_arlen_converter_signal);
-    mp_m_axi_arlen_converter->vector_out(m_axi_arlen);
-    mp_M_AXI_transactor->ARLEN(m_m_axi_arlen_converter_signal);
+    mp_M_AXI_transactor->ARLEN(m_axi_arlen);
     mp_M_AXI_transactor->ARSIZE(m_axi_arsize);
     mp_M_AXI_transactor->ARBURST(m_axi_arburst);
-    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<2>("m_axi_arlock_converter");
+    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arlock_converter");
     mp_m_axi_arlock_converter->scalar_in(m_m_axi_arlock_converter_signal);
     mp_m_axi_arlock_converter->vector_out(m_axi_arlock);
     mp_M_AXI_transactor->ARLOCK(m_m_axi_arlock_converter_signal);
     mp_M_AXI_transactor->ARCACHE(m_axi_arcache);
     mp_M_AXI_transactor->ARPROT(m_axi_arprot);
+    mp_M_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M_AXI_transactor->ARQOS(m_axi_arqos);
     mp_M_AXI_transactor->ARVALID(m_axi_arvalid);
     mp_M_AXI_transactor->ARREADY(m_axi_arready);
@@ -250,7 +244,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
+hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arregion("s_axi_arregion"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
 {
 
   // initialize pins
@@ -259,10 +253,8 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
 
   // initialize transactors
   mp_S_AXI_transactor = NULL;
-  mp_s_axi_arlen_converter = NULL;
   mp_s_axi_arlock_converter = NULL;
   mp_M_AXI_transactor = NULL;
-  mp_m_axi_arlen_converter = NULL;
   mp_m_axi_arlock_converter = NULL;
 
   // initialize socket stubs
@@ -296,14 +288,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     S_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     S_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    S_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    S_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     S_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     S_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     S_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     S_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -311,7 +303,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     S_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     S_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -320,18 +312,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // S_AXI' transactor ports
 
     mp_S_AXI_transactor->ARADDR(s_axi_araddr);
-    mp_s_axi_arlen_converter = new xsc::common::vector2vector_converter<4,8>("s_axi_arlen_converter");
-    mp_s_axi_arlen_converter->vector_in(s_axi_arlen);
-    mp_s_axi_arlen_converter->vector_out(m_s_axi_arlen_converter_signal);
-    mp_S_AXI_transactor->ARLEN(m_s_axi_arlen_converter_signal);
+    mp_S_AXI_transactor->ARLEN(s_axi_arlen);
     mp_S_AXI_transactor->ARSIZE(s_axi_arsize);
     mp_S_AXI_transactor->ARBURST(s_axi_arburst);
-    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<2>("s_axi_arlock_converter");
+    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<1>("s_axi_arlock_converter");
     mp_s_axi_arlock_converter->vector_in(s_axi_arlock);
     mp_s_axi_arlock_converter->scalar_out(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARLOCK(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARCACHE(s_axi_arcache);
     mp_S_AXI_transactor->ARPROT(s_axi_arprot);
+    mp_S_AXI_transactor->ARREGION(s_axi_arregion);
     mp_S_AXI_transactor->ARQOS(s_axi_arqos);
     mp_S_AXI_transactor->ARVALID(s_axi_arvalid);
     mp_S_AXI_transactor->ARREADY(s_axi_arready);
@@ -375,14 +365,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     M_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     M_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    M_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    M_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     M_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     M_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     M_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     M_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -390,7 +380,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     M_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     M_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -399,18 +389,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // M_AXI' transactor ports
 
     mp_M_AXI_transactor->ARADDR(m_axi_araddr);
-    mp_m_axi_arlen_converter = new xsc::common::vector2vector_converter<8,4>("m_axi_arlen_converter");
-    mp_m_axi_arlen_converter->vector_in(m_m_axi_arlen_converter_signal);
-    mp_m_axi_arlen_converter->vector_out(m_axi_arlen);
-    mp_M_AXI_transactor->ARLEN(m_m_axi_arlen_converter_signal);
+    mp_M_AXI_transactor->ARLEN(m_axi_arlen);
     mp_M_AXI_transactor->ARSIZE(m_axi_arsize);
     mp_M_AXI_transactor->ARBURST(m_axi_arburst);
-    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<2>("m_axi_arlock_converter");
+    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arlock_converter");
     mp_m_axi_arlock_converter->scalar_in(m_m_axi_arlock_converter_signal);
     mp_m_axi_arlock_converter->vector_out(m_axi_arlock);
     mp_M_AXI_transactor->ARLOCK(m_m_axi_arlock_converter_signal);
     mp_M_AXI_transactor->ARCACHE(m_axi_arcache);
     mp_M_AXI_transactor->ARPROT(m_axi_arprot);
+    mp_M_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M_AXI_transactor->ARQOS(m_axi_arqos);
     mp_M_AXI_transactor->ARVALID(m_axi_arvalid);
     mp_M_AXI_transactor->ARREADY(m_axi_arready);
@@ -439,7 +427,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
+hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arregion("s_axi_arregion"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
 {
 
   // initialize pins
@@ -448,10 +436,8 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
 
   // initialize transactors
   mp_S_AXI_transactor = NULL;
-  mp_s_axi_arlen_converter = NULL;
   mp_s_axi_arlock_converter = NULL;
   mp_M_AXI_transactor = NULL;
-  mp_m_axi_arlen_converter = NULL;
   mp_m_axi_arlock_converter = NULL;
 
   // initialize socket stubs
@@ -485,14 +471,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     S_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     S_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    S_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    S_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     S_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     S_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     S_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     S_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -500,7 +486,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     S_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     S_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     S_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -509,18 +495,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // S_AXI' transactor ports
 
     mp_S_AXI_transactor->ARADDR(s_axi_araddr);
-    mp_s_axi_arlen_converter = new xsc::common::vector2vector_converter<4,8>("s_axi_arlen_converter");
-    mp_s_axi_arlen_converter->vector_in(s_axi_arlen);
-    mp_s_axi_arlen_converter->vector_out(m_s_axi_arlen_converter_signal);
-    mp_S_AXI_transactor->ARLEN(m_s_axi_arlen_converter_signal);
+    mp_S_AXI_transactor->ARLEN(s_axi_arlen);
     mp_S_AXI_transactor->ARSIZE(s_axi_arsize);
     mp_S_AXI_transactor->ARBURST(s_axi_arburst);
-    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<2>("s_axi_arlock_converter");
+    mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<1>("s_axi_arlock_converter");
     mp_s_axi_arlock_converter->vector_in(s_axi_arlock);
     mp_s_axi_arlock_converter->scalar_out(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARLOCK(m_s_axi_arlock_converter_signal);
     mp_S_AXI_transactor->ARCACHE(s_axi_arcache);
     mp_S_AXI_transactor->ARPROT(s_axi_arprot);
+    mp_S_AXI_transactor->ARREGION(s_axi_arregion);
     mp_S_AXI_transactor->ARQOS(s_axi_arqos);
     mp_S_AXI_transactor->ARVALID(s_axi_arvalid);
     mp_S_AXI_transactor->ARREADY(s_axi_arready);
@@ -564,14 +548,14 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     M_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     M_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    M_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    M_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     M_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     M_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     M_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     M_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -579,7 +563,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     M_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     M_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     M_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
@@ -588,18 +572,16 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
     // M_AXI' transactor ports
 
     mp_M_AXI_transactor->ARADDR(m_axi_araddr);
-    mp_m_axi_arlen_converter = new xsc::common::vector2vector_converter<8,4>("m_axi_arlen_converter");
-    mp_m_axi_arlen_converter->vector_in(m_m_axi_arlen_converter_signal);
-    mp_m_axi_arlen_converter->vector_out(m_axi_arlen);
-    mp_M_AXI_transactor->ARLEN(m_m_axi_arlen_converter_signal);
+    mp_M_AXI_transactor->ARLEN(m_axi_arlen);
     mp_M_AXI_transactor->ARSIZE(m_axi_arsize);
     mp_M_AXI_transactor->ARBURST(m_axi_arburst);
-    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<2>("m_axi_arlock_converter");
+    mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arlock_converter");
     mp_m_axi_arlock_converter->scalar_in(m_m_axi_arlock_converter_signal);
     mp_m_axi_arlock_converter->vector_out(m_axi_arlock);
     mp_M_AXI_transactor->ARLOCK(m_m_axi_arlock_converter_signal);
     mp_M_AXI_transactor->ARCACHE(m_axi_arcache);
     mp_M_AXI_transactor->ARPROT(m_axi_arprot);
+    mp_M_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M_AXI_transactor->ARQOS(m_axi_arqos);
     mp_M_AXI_transactor->ARVALID(m_axi_arvalid);
     mp_M_AXI_transactor->ARREADY(m_axi_arready);
@@ -628,7 +610,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
+hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arregion("s_axi_arregion"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
 {
   // initialize pins
   mp_impl->aclk(aclk);
@@ -636,10 +618,8 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
 
   // initialize transactors
   mp_S_AXI_transactor = NULL;
-  mp_s_axi_arlen_converter = NULL;
   mp_s_axi_arlock_converter = NULL;
   mp_M_AXI_transactor = NULL;
-  mp_m_axi_arlen_converter = NULL;
   mp_m_axi_arlock_converter = NULL;
 
   // Instantiate Socket Stubs
@@ -662,14 +642,14 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     S_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     S_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     S_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    S_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    S_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     S_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     S_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     S_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     S_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -677,24 +657,22 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     S_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     S_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     S_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<64,32,1,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
   mp_S_AXI_transactor->ARADDR(s_axi_araddr);
-  mp_s_axi_arlen_converter = new xsc::common::vector2vector_converter<4,8>("s_axi_arlen_converter");
-  mp_s_axi_arlen_converter->vector_in(s_axi_arlen);
-  mp_s_axi_arlen_converter->vector_out(m_s_axi_arlen_converter_signal);
-  mp_S_AXI_transactor->ARLEN(m_s_axi_arlen_converter_signal);
+  mp_S_AXI_transactor->ARLEN(s_axi_arlen);
   mp_S_AXI_transactor->ARSIZE(s_axi_arsize);
   mp_S_AXI_transactor->ARBURST(s_axi_arburst);
-  mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<2>("s_axi_arlock_converter");
+  mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<1>("s_axi_arlock_converter");
   mp_s_axi_arlock_converter->vector_in(s_axi_arlock);
   mp_s_axi_arlock_converter->scalar_out(m_s_axi_arlock_converter_signal);
   mp_S_AXI_transactor->ARLOCK(m_s_axi_arlock_converter_signal);
   mp_S_AXI_transactor->ARCACHE(s_axi_arcache);
   mp_S_AXI_transactor->ARPROT(s_axi_arprot);
+  mp_S_AXI_transactor->ARREGION(s_axi_arregion);
   mp_S_AXI_transactor->ARQOS(s_axi_arqos);
   mp_S_AXI_transactor->ARVALID(s_axi_arvalid);
   mp_S_AXI_transactor->ARREADY(s_axi_arready);
@@ -721,14 +699,14 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     M_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     M_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     M_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    M_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    M_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     M_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     M_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     M_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     M_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -736,24 +714,22 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     M_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     M_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     M_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<64,32,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
   mp_M_AXI_transactor->ARADDR(m_axi_araddr);
-  mp_m_axi_arlen_converter = new xsc::common::vector2vector_converter<8,4>("m_axi_arlen_converter");
-  mp_m_axi_arlen_converter->vector_in(m_m_axi_arlen_converter_signal);
-  mp_m_axi_arlen_converter->vector_out(m_axi_arlen);
-  mp_M_AXI_transactor->ARLEN(m_m_axi_arlen_converter_signal);
+  mp_M_AXI_transactor->ARLEN(m_axi_arlen);
   mp_M_AXI_transactor->ARSIZE(m_axi_arsize);
   mp_M_AXI_transactor->ARBURST(m_axi_arburst);
-  mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<2>("m_axi_arlock_converter");
+  mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arlock_converter");
   mp_m_axi_arlock_converter->scalar_in(m_m_axi_arlock_converter_signal);
   mp_m_axi_arlock_converter->vector_out(m_axi_arlock);
   mp_M_AXI_transactor->ARLOCK(m_m_axi_arlock_converter_signal);
   mp_M_AXI_transactor->ARCACHE(m_axi_arcache);
   mp_M_AXI_transactor->ARPROT(m_axi_arprot);
+  mp_M_AXI_transactor->ARREGION(m_axi_arregion);
   mp_M_AXI_transactor->ARQOS(m_axi_arqos);
   mp_M_AXI_transactor->ARVALID(m_axi_arvalid);
   mp_M_AXI_transactor->ARREADY(m_axi_arready);
@@ -811,7 +787,7 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
+hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name& nm) : hdmi_out_s00_data_fifo_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arregion("s_axi_arregion"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready"),mp_S_AXI_wr_socket_stub(nullptr),mp_M_AXI_wr_socket_stub(nullptr)
 {
   // initialize pins
   mp_impl->aclk(aclk);
@@ -819,10 +795,8 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
 
   // initialize transactors
   mp_S_AXI_transactor = NULL;
-  mp_s_axi_arlen_converter = NULL;
   mp_s_axi_arlock_converter = NULL;
   mp_M_AXI_transactor = NULL;
-  mp_m_axi_arlen_converter = NULL;
   mp_m_axi_arlock_converter = NULL;
 
   // Instantiate Socket Stubs
@@ -845,14 +819,14 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     S_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     S_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     S_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    S_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    S_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     S_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     S_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     S_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    S_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    S_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     S_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -860,24 +834,22 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     S_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     S_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     S_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     S_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<64,32,1,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
   mp_S_AXI_transactor->ARADDR(s_axi_araddr);
-  mp_s_axi_arlen_converter = new xsc::common::vector2vector_converter<4,8>("s_axi_arlen_converter");
-  mp_s_axi_arlen_converter->vector_in(s_axi_arlen);
-  mp_s_axi_arlen_converter->vector_out(m_s_axi_arlen_converter_signal);
-  mp_S_AXI_transactor->ARLEN(m_s_axi_arlen_converter_signal);
+  mp_S_AXI_transactor->ARLEN(s_axi_arlen);
   mp_S_AXI_transactor->ARSIZE(s_axi_arsize);
   mp_S_AXI_transactor->ARBURST(s_axi_arburst);
-  mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<2>("s_axi_arlock_converter");
+  mp_s_axi_arlock_converter = new xsc::common::vectorN2scalar_converter<1>("s_axi_arlock_converter");
   mp_s_axi_arlock_converter->vector_in(s_axi_arlock);
   mp_s_axi_arlock_converter->scalar_out(m_s_axi_arlock_converter_signal);
   mp_S_AXI_transactor->ARLOCK(m_s_axi_arlock_converter_signal);
   mp_S_AXI_transactor->ARCACHE(s_axi_arcache);
   mp_S_AXI_transactor->ARPROT(s_axi_arprot);
+  mp_S_AXI_transactor->ARREGION(s_axi_arregion);
   mp_S_AXI_transactor->ARQOS(s_axi_arqos);
   mp_S_AXI_transactor->ARVALID(s_axi_arvalid);
   mp_S_AXI_transactor->ARREADY(s_axi_arready);
@@ -904,14 +876,14 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     M_AXI_transactor_param_props.addLong("HAS_PROT", "1");
     M_AXI_transactor_param_props.addLong("HAS_CACHE", "1");
     M_AXI_transactor_param_props.addLong("HAS_QOS", "1");
-    M_AXI_transactor_param_props.addLong("HAS_REGION", "0");
+    M_AXI_transactor_param_props.addLong("HAS_REGION", "1");
     M_AXI_transactor_param_props.addLong("HAS_WSTRB", "0");
     M_AXI_transactor_param_props.addLong("HAS_BRESP", "0");
     M_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
-    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "16");
+    M_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "32");
     M_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     M_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -919,24 +891,22 @@ hdmi_out_s00_data_fifo_0::hdmi_out_s00_data_fifo_0(const sc_core::sc_module_name
     M_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
     M_AXI_transactor_param_props.addLong("HAS_RESET", "1");
     M_AXI_transactor_param_props.addFloat("PHASE", "0.000");
-    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI3");
+    M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_ONLY");
     M_AXI_transactor_param_props.addString("CLK_DOMAIN", "hdmi_out_processing_system7_0_0_FCLK_CLK1");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<64,32,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
   mp_M_AXI_transactor->ARADDR(m_axi_araddr);
-  mp_m_axi_arlen_converter = new xsc::common::vector2vector_converter<8,4>("m_axi_arlen_converter");
-  mp_m_axi_arlen_converter->vector_in(m_m_axi_arlen_converter_signal);
-  mp_m_axi_arlen_converter->vector_out(m_axi_arlen);
-  mp_M_AXI_transactor->ARLEN(m_m_axi_arlen_converter_signal);
+  mp_M_AXI_transactor->ARLEN(m_axi_arlen);
   mp_M_AXI_transactor->ARSIZE(m_axi_arsize);
   mp_M_AXI_transactor->ARBURST(m_axi_arburst);
-  mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<2>("m_axi_arlock_converter");
+  mp_m_axi_arlock_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arlock_converter");
   mp_m_axi_arlock_converter->scalar_in(m_m_axi_arlock_converter_signal);
   mp_m_axi_arlock_converter->vector_out(m_axi_arlock);
   mp_M_AXI_transactor->ARLOCK(m_m_axi_arlock_converter_signal);
   mp_M_AXI_transactor->ARCACHE(m_axi_arcache);
   mp_M_AXI_transactor->ARPROT(m_axi_arprot);
+  mp_M_AXI_transactor->ARREGION(m_axi_arregion);
   mp_M_AXI_transactor->ARQOS(m_axi_arqos);
   mp_M_AXI_transactor->ARVALID(m_axi_arvalid);
   mp_M_AXI_transactor->ARREADY(m_axi_arready);
@@ -996,7 +966,6 @@ void hdmi_out_s00_data_fifo_0::before_end_of_elaboration()
 hdmi_out_s00_data_fifo_0::~hdmi_out_s00_data_fifo_0()
 {
   delete mp_S_AXI_transactor;
-  delete mp_s_axi_arlen_converter;
   delete mp_s_axi_arlock_converter;
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("hdmi_out_s00_data_fifo_0", "S_AXI_TLM_MODE") != 1)
   {
@@ -1004,7 +973,6 @@ hdmi_out_s00_data_fifo_0::~hdmi_out_s00_data_fifo_0()
   }
 
   delete mp_M_AXI_transactor;
-  delete mp_m_axi_arlen_converter;
   delete mp_m_axi_arlock_converter;
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("hdmi_out_s00_data_fifo_0", "M_AXI_TLM_MODE") != 1)
   {

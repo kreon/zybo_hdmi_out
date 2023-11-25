@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.xilinx.sdx.sdsoc.debug.launch.SdsTcfLaunchDelegate">
-    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.breakpoint.main" value="true"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.breakpoint.main" value="false"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.exec.script" value="false"/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.exec.script.location" value=""/>
     <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.fsbl_exit_function" value="FsblHandoffJtagExit"/>
@@ -43,7 +43,7 @@
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.ingore.peer.conflict" value="false"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.launch.work.dir" value=""/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis" value="false"/>
-    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value=""/>
+    <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.performance.analysis.linux.hw.target" value="Local"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.sdsoc.project" value="hdmi_out"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug" value="false"/>
     <stringAttribute key="com.xilinx.sdx.sdsoc.debug.ui.secure.debug.image" value=""/>
@@ -53,6 +53,12 @@
     <stringAttribute key="ide.launch.pdi.path" value=""/>
     <stringAttribute key="ide.launch.program.device" value="false"/>
     <stringAttribute key="launch.version" value="2023.2"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/hdmi_out"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
     <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
     <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="false"/>
     <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>

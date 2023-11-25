@@ -11,7 +11,7 @@
                         "type": "XSDB_V3",
                         "name": "dbg_hub",
                         "spec": "labtools_xsdbm_v3",
-                        "clk_input_freq_hz": "142857140"
+                        "clk_input_freq_hz": "108000001"
                     },
                     {
                         "type": "ILA_V3",
@@ -120,10 +120,42 @@
                                 "id": 1,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tdest",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 2,
-                                "portIndex": 1,
+                                "portIndex": 3,
                                 "nets": [
                                     {
                                         "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tkeep",
@@ -143,50 +175,29 @@
                                 ]
                             },
                             {
-                                "name": "probe2",
-                                "id": 2,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tuser",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe3",
-                                "id": 3,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": false,
-                                "leftIndex": 0,
-                                "rightIndex": 0,
-                                "portIndex": 3,
-                                "nets": [
-                                    {
-                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tvalid",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "probe4",
                                 "id": 4,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 2,
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tready",
-                                        "isBus": false
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tstrb",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tstrb[2]"
+                                            },
+                                            {
+                                                "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tstrb[1]"
+                                            },
+                                            {
+                                                "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tstrb[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -201,6 +212,54 @@
                                 "portIndex": 5,
                                 "nets": [
                                     {
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tuser",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
                                         "name": "hdmi_out_i/system_ila_0/U0/net_slot_0_axis_tlast",
                                         "isBus": false
                                     }
@@ -211,7 +270,7 @@
                             {
                                 "name": "SLOT_0_AXIS",
                                 "vlnv": "xilinx.com:interface:axis:1.0",
-                                "connectedBus": "axi_vdma_0_M_AXIS_MM2S",
+                                "connectedBus": "v_tpg_0_m_axis_video",
                                 "port_maps": [
                                     {
                                         "logical_port": "TDATA",
@@ -223,34 +282,16 @@
                                         }
                                     },
                                     {
-                                        "logical_port": "TKEEP",
+                                        "logical_port": "TDEST",
                                         "physical_pin": {
                                             "id": 1,
                                             "name": "probe1",
                                             "leftBit": 0,
-                                            "width": 3
-                                        }
-                                    },
-                                    {
-                                        "logical_port": "TLAST",
-                                        "physical_pin": {
-                                            "id": 5,
-                                            "name": "probe5",
-                                            "leftBit": 0,
                                             "width": 1
                                         }
                                     },
                                     {
-                                        "logical_port": "TREADY",
-                                        "physical_pin": {
-                                            "id": 4,
-                                            "name": "probe4",
-                                            "leftBit": 0,
-                                            "width": 1
-                                        }
-                                    },
-                                    {
-                                        "logical_port": "TUSER",
+                                        "logical_port": "TID",
                                         "physical_pin": {
                                             "id": 2,
                                             "name": "probe2",
@@ -259,10 +300,55 @@
                                         }
                                     },
                                     {
-                                        "logical_port": "TVALID",
+                                        "logical_port": "TKEEP",
                                         "physical_pin": {
                                             "id": 3,
                                             "name": "probe3",
+                                            "leftBit": 0,
+                                            "width": 3
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "TLAST",
+                                        "physical_pin": {
+                                            "id": 8,
+                                            "name": "probe8",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "TREADY",
+                                        "physical_pin": {
+                                            "id": 7,
+                                            "name": "probe7",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "TSTRB",
+                                        "physical_pin": {
+                                            "id": 4,
+                                            "name": "probe4",
+                                            "leftBit": 0,
+                                            "width": 3
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "TUSER",
+                                        "physical_pin": {
+                                            "id": 5,
+                                            "name": "probe5",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "TVALID",
+                                        "physical_pin": {
+                                            "id": 6,
+                                            "name": "probe6",
                                             "leftBit": 0,
                                             "width": 1
                                         }

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hdmi_out_auto_pc_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_axi_gpio_btn_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_gpio_btn_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_axi_gpio_hdmi_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_gpio_hdmi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_axi_vdma_0_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_m00_data_fifo_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_m00_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_m00_regslice_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_m00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_processing_system7_0_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_rgb_doubler_0_1_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_rgb_doubler_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_s00_data_fifo_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_s00_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_s01_data_fifo_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_s01_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_s01_regslice_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_s01_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_v_tpg_0_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_xbar_0_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_out_xbar_1_synth_1" LaunchDir="C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

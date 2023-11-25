@@ -208,21 +208,21 @@
             },
             "V4": {
                 "VT": "AC",
-                "BA": "0x41200000",
-                "HA": "0x4120FFFF",
+                "BA": "0x00000000",
+                "HA": "0x1FFFFFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_led_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_led",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
+                "MA": "Data_S2MM",
+                "MX": "/axi_vdma_0",
+                "MI": "M_AXI_S2MM",
+                "MS": "SEG_processing_system7_0_HP0_DDR_LOWOCM",
+                "MV": "xilinx.com:ip:axi_vdma:6.3",
+                "SX": "/processing_system7_0",
+                "SI": "S_AXI_HP0",
+                "SS": "HP0_DDR_LOWOCM",
+                "SV": "xilinx.com:ip:processing_system7:5.5",
                 "TM": "both",
-                "TU": "register"
+                "TU": "memory"
             },
             "V5": {
                 "VT": "AC",
@@ -235,7 +235,7 @@
                 "MI": "M_AXI_GP0",
                 "MS": "SEG_axi_gpio_btn_Reg",
                 "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_btn",
+                "SX": "/axi_gpio_btn_sw",
                 "SI": "S_AXI",
                 "SS": "Reg",
                 "SV": "xilinx.com:ip:axi_gpio:2.0",
@@ -243,24 +243,6 @@
                 "TU": "register"
             },
             "V6": {
-                "VT": "AC",
-                "BA": "0x41220000",
-                "HA": "0x4122FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_sw_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_sw",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V7": {
                 "VT": "AC",
                 "BA": "0x41230000",
                 "HA": "0x4123FFFF",
@@ -278,7 +260,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V8": {
+            "V7": {
                 "VT": "AC",
                 "BA": "0x43000000",
                 "HA": "0x4300FFFF",
@@ -296,7 +278,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V9": {
+            "V8": {
                 "VT": "AC",
                 "BA": "0x43C00000",
                 "HA": "0x43C0FFFF",
@@ -314,7 +296,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V10": {
+            "V9": {
                 "VT": "AC",
                 "BA": "0x43C10000",
                 "HA": "0x43C1FFFF",
@@ -329,6 +311,24 @@
                 "SI": "S_AXI_LITE",
                 "SS": "S_AXI_LITE_reg",
                 "SV": "digilentinc.com:ip:axi_dynclk:1.2",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V10": {
+                "VT": "AC",
+                "BA": "0x43C20000",
+                "HA": "0x43C2FFFF",
+                "BP": "C_S_AXI_CTRL_BASEADDR",
+                "HP": "C_S_AXI_CTRL_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_v_tpg_0_Reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/v_tpg_0",
+                "SI": "s_axi_CTRL",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:v_tpg:8.2",
                 "TM": "both",
                 "TU": "register"
             }

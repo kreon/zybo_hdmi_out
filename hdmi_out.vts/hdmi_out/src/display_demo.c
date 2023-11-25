@@ -26,7 +26,6 @@
 #include "display_demo.h"
 #include "display_ctrl/display_ctrl.h"
 #include <stdio.h>
-#include "platform.h"
 #include "xuartps.h"
 #include "math.h"
 #include <ctype.h>
@@ -42,12 +41,10 @@
  * XPAR redefines
  */
 #define DYNCLK_BASEADDR XPAR_DYNCLK_0_S_AXI_LITE_BASEADDR
-#define VGA_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
-#define DISP_VTC_ID XPAR_VTC_0_DEVICE_ID
-//#define VID_VTC_IRPT_ID XPS_FPGA3_INT_ID
-//#define VID_GPIO_IRPT_ID XPS_FPGA4_INT_ID
-#define SCU_TIMER_ID XPAR_SCUTIMER_DEVICE_ID
-#define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
+#define VDMA_ID 		XPAR_AXIVDMA_0_DEVICE_ID
+#define VTC_ID 			XPAR_VTC_0_DEVICE_ID
+#define SCU_TIMER_ID 	XPAR_SCUTIMER_DEVICE_ID
+#define UART_BASEADDR 	XPAR_PS7_UART_1_BASEADDR
 
 #define OSDHEIGHT (u32)(osd_size*8)
 /* ------------------------------------------------------------ */
@@ -67,8 +64,8 @@ XAxiVdma vdma;
 /*
  * Framebuffers for video data
  */
-u8 frameBuf[DISPLAY_NUM_FRAMES][DEMO_MAX_FRAME] __attribute__((aligned(0x20)));
-u8 *pFrames[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
+u8 frameBuf[DISPLAY_NUM_FRAMES][DEMO_MAX_FRAME] __attribute__((aligned(0x20)));//0x20=32b
+void *pFrames[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
 
 /* ------------------------------------------------------------ */
 /*				Procedure Definitions							*/
@@ -86,7 +83,6 @@ int main(void)
 void DemoInitialize()
 {
 	int Status;
-	XAxiVdma_Config *vdmaConfig;
 	int i;
 
 	/*
@@ -102,27 +98,20 @@ void DemoInitialize()
 	TimerInitialize(SCU_TIMER_ID);
 
 	/*
-	 * Initialize VDMA driver
-	 */
-	vdmaConfig = XAxiVdma_LookupConfig(VGA_VDMA_ID);
-	if (!vdmaConfig) {
-		xil_printf("No video DMA found for ID %d\r\n", VGA_VDMA_ID);
-		return;
-	}
-	Status = XAxiVdma_CfgInitialize(&vdma, vdmaConfig, vdmaConfig->BaseAddress);
-	if (Status != XST_SUCCESS) {
-		xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
-		return;
-	}
-
-	/*
 	 * Initialize the Display controller and start it
 	 */
-	Status = DisplayInitialize(&dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
+	Status = DisplayInitialize(&dispCtrl, VDMA_ID, VTC_ID, DYNCLK_BASEADDR, pFrames, DEMO_STRIDE);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
 		return;
 	}
+/*
+	// Start with the first frame buffer (of two)
+	DisplayChangeFrame(&dispCtrl, 0);
+
+	// Set the display resolution
+	DisplaySetMode(&dispCtrl, &VMODE_640x480);
+*/
 	Status = DisplayStart(&dispCtrl);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
@@ -189,12 +178,16 @@ void DemoRun()
 			DisplayChangeFrame(&dispCtrl, nextFrame);//6 - Invert Current Frame colors seamlessly
 			break;
 		case '7'://7 - Print OSD
-			OsdSetSize(16);
-			OsdSetTitle("Information");//11 chars
+			//OsdSetSize(16);
+			//OsdSetTitle("Information");//11 chars
 			MixOSDFrame(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.framePtr[nextFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
 			break;
 		case '8'://8 - Print OSD
 			DemoPrintTest(pFrames[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_2);
+			break;
+		case '9'://9 - DemoGradient
+			//DemoAnimated(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
+			DemoGradient(&dispCtrl, dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE);
 			break;
 		case 'q'://q - Quit
 			break;
@@ -226,6 +219,8 @@ void DemoPrintMenu()
 	xil_printf("5 - Invert Current Frame colors\n\r");
 	xil_printf("6 - Invert Current Frame colors seamlessly\n\r");
 	xil_printf("7 - Osd Set Title\n\r");
+	xil_printf("8 - DemoPrintTest\n\r");
+	xil_printf("9 - DemoGradient\n\r");
 	xil_printf("q - Quit\n\r");
 	xil_printf("\n\r");
 	xil_printf("\n\r");
@@ -360,7 +355,6 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 	u32 xLeft, xMid, xRight, xInt;
 	u32 yMid, yInt;
 	double xInc, yInc;
-
 
 	switch (pattern)
 	{
@@ -504,17 +498,17 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 				wGreen = argus_sz[xcoi + 1];
 				wBlue = argus_sz[xcoi + 2];
 			}else{
-				wRed = 255;
+				wRed = 0;
 				wGreen = 0;
-				wBlue = 0;
+				wBlue = 255;
 			}
 			iPixelAddr = xcoi;
 
 			for(ycoi = 0; ycoi < height; ycoi++)
 			{
-				frame[iPixelAddr] = wBlue;
-				frame[iPixelAddr + 1] = wGreen;
-				frame[iPixelAddr + 2] = wRed;
+				frame[iPixelAddr] = wBlue; //checked
+				frame[iPixelAddr + 1] = wGreen; //checked
+				frame[iPixelAddr + 2] = wRed; //checked
 				/*
 				 * This pattern is printed one vertical line at a time, so the address must be incremented
 				 * by the stride instead of just 1.
@@ -537,12 +531,8 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 void OsdSetSize(int n) {
 	osd_size = n;
 }
-int OsdGetSize() {
-	return osd_size;
-}
 
-static void rotatechar(unsigned char *in, unsigned char *out)
-{
+static void rotatechar(unsigned char *in, unsigned char *out) {
 	int a;
 	int b;
 	int c;
@@ -558,8 +548,7 @@ static void rotatechar(unsigned char *in, unsigned char *out)
 	}
 }
 
-void OsdSetTitle(const char *s, int a)
-{
+void OsdSetTitle(const char *s, int a) {
 	// Compose the title, condensing character gaps
 	arrow = a;
 	int zeros = 0;
@@ -615,21 +604,21 @@ void OsdSetTitle(const char *s, int a)
 void MixOSDFrame(u8 *srcFrame, u8 *destFrame, u32 width, u32 height, u32 stride)//7 - Osd Set Title
 {//pic w425*h397	data_size = 168725 * LV_COLOR_SIZE / 8,
 	u32 xcoi, ycoi;
-	u32 lineStart = 0;
+	u32 lineStart= 0;
 	u32 pic_width= 425, pic_high= 397, pic_sz=506175;
 	//draw pic argus_sz
 	for(ycoi = 0; ycoi < height; ycoi++)
 	{
-		for(xcoi = 0; xcoi<(pic_width*NUM_COMPONENTS); xcoi+=3)//3 components RGB
+		for(xcoi = 0; xcoi<pic_width; xcoi+=1)
 		{
-/*Blue*/	destFrame[xcoi + lineStart] = argus_sz[xcoi];         //Red
-/*Green*/	destFrame[xcoi + lineStart + 1] = argus_sz[xcoi + 2]; //Green
-/*Red*/		destFrame[xcoi + lineStart + 2] = argus_sz[xcoi + 1]; //Blue
+/*Blue*/	destFrame[xcoi*3 + lineStart] = argus_sz[xcoi*3 + ycoi*pic_width];         //Red
+/*Green*/	destFrame[xcoi*3 + lineStart + 1] = argus_sz[xcoi*3 + 2 + ycoi*pic_width]; //Green
+/*Red*/		destFrame[xcoi*3 + lineStart + 2] = argus_sz[xcoi*3 + 1 + ycoi*pic_width]; //Blue
 		}
-		for(; xcoi<(width * NUM_COMPONENTS); xcoi+=3)
+		for(; xcoi<width; xcoi+=1)
 		{
-			destFrame[xcoi + lineStart] = srcFrame[xcoi + lineStart];         //Green
-			destFrame[xcoi + lineStart + 1] = srcFrame[xcoi + lineStart + 1]; //Blue
+			destFrame[xcoi + lineStart] = srcFrame[xcoi + lineStart];         //Blue
+			destFrame[xcoi + lineStart + 1] = srcFrame[xcoi + lineStart + 1]; //Green
 			destFrame[xcoi + lineStart + 2] = srcFrame[xcoi + lineStart + 2]; //Red
 		}
 		lineStart += stride;//stride=1920*3(RGB)=5760
@@ -660,4 +649,93 @@ void MixOSDFrame(u8 *srcFrame, u8 *destFrame, u32 width, u32 height, u32 stride)
 	Xil_DCacheFlushRange((unsigned int) destFrame, DEMO_MAX_FRAME);
 }
 
+void DemoAnimated(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {//9 - DemoAnimated
+	// Get parameters from display controller struct
+	int x, y;
+	u8 *frame;
+	u8 buff = dispCtrl.curFrame;
+	int right = 1, down = 1;
+	int xpos = 0, ypos = 0;
+	char userInput = 0;
 
+	print("\n\r\n\r");
+	print("q - Quit (don't change resolution)\n\r");
+
+	while (1) {
+			// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
+			buff = !buff;
+			frame = dispCtrl.framePtr[buff];
+
+			// Set the frame to white/black
+			memset(frame, 0x00, DEMO_MAX_FRAME);//0xff white
+
+			// Adjust the position of the square
+			if (right) {
+				xpos++;
+				if (xpos == width-64)
+					right = 0;
+			}
+			else {
+				xpos--;
+				if (xpos == 0)
+					right = 1;
+			}
+			if (down) {
+				ypos++;
+				if (ypos == height-64) {
+					down = 0;
+				}
+			}
+			else {
+				ypos--;
+				if (ypos == 0) {
+					down = 1;
+				}
+			}
+
+			// Draw black square on the screen
+			for (x = xpos; x < xpos+64; x++) {
+				for (y = ypos; y < ypos+64; y++) {
+					frame[y*stride + x] = 0xff;//set color
+				}
+			}
+
+			// Flush everything out to DDR
+			Xil_DCacheFlush();
+
+			// Switch active frame to the back buffer
+			DisplayChangeFrame(dispPtr, buff);
+
+			// Wait for the frame to switch (after active frame is drawn) before continuing
+			DisplayWaitForSync(dispPtr);
+
+			/* Check for data on UART */
+			/* Store the first character in the UART recieve FIFO and echo it */
+			userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+			if(userInput == 'q')	return;
+			else if	(userInput > 0)	print("q - Quit (don't change resolution)\n\r");
+	}
+
+}
+
+void DemoGradient(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride) {
+	// Get parameters from display controller struct
+	int x, y;
+	u8 *frame = (u8 *)dispPtr->framePtr[dispPtr->curFrame];
+	u8 red, green, blue;
+	u32 lineStart=0;
+	// Fill the screen with a nice gradient pattern
+	for (y = 0; y < height; y++) {
+		for (x = 0; x < width; x+=1) {
+			green = (x*0xFF) / width;
+			blue = 0xFF - ((x*0xFF) / width);
+			red = (y*0xFF) / height;
+			frame[x*3 + lineStart] = (blue);
+			frame[x*3 + lineStart + 1] = (green);
+			frame[x*3 + lineStart + 2] = (red);
+		}
+		lineStart += stride;
+	}
+
+	Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+}

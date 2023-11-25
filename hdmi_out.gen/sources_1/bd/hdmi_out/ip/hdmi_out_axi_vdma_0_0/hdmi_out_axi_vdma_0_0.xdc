@@ -53,9 +53,17 @@ set_false_path -from [get_cells -hier *cdc_from* -filter {is_sequential && (PRIM
 
 
 ##################################################################################################################################
-## INFO: No CDC present in axi-vdma
-## INFO: When C_PRMRY_IS_ACLK_ASYNC = 0, axi-vdma MANDATORY REQUIREMENT IS THAT ALL axi-vdma CLOCK PORTS MUST BE CONNECTED TO THE SAME CLOCK SOURCE HAVING SAME FREQUENCY i.e. THERE IS ONLY ONE CLOCK-DOMAIN IN THE ENTIRE axi-vdma DESIGN
-## INFO: PLEASE ENSURE THIS REQUIREMENT IS MET.
+##################################################################################################################################
+
+  set_false_path -from [get_cells -hierarchical  -filter {NAME =~*MM2S*LB_BUILT_IN*/*rstbt*/*rst_reg[*]}]
+  set_false_path -from [get_cells -hierarchical  -filter {NAME =~*MM2S*LB_BUILT_IN*/*rstbt*/*rst_reg_reg}]
+  set_false_path -to   [get_pins -filter {REF_PIN_NAME=~ PRE} -of_objects [get_cells -hierarchical  -filter {NAME =~*MM2S*LB_BUILT_IN*/*rstbt*/*}]]
+
+
+  set_false_path -to   [get_pins -filter {REF_PIN_NAME=~ PRE} -of_objects [get_cells -hierarchical  -filter {NAME =~*S2MM*LB_BUILT_IN*/*rstbt*/*}]]
+  set_false_path -from [get_cells -hierarchical  -filter {NAME =~*S2MM*LB_BUILT_IN*/*rstbt*/*rst_reg_reg && IS_SEQUENTIAL}]
+  set_false_path -from [get_cells -hierarchical  -filter {NAME =~*S2MM*LB_BUILT_IN*/*rstbt*/*rst_reg[*]}]
+
 
 create_waiver -internal -scope -type CDC -id {CDC-4} -user "axi_vdma" -tags "9601"\
 -desc "The CDC-4 warning is waived as it is safe in the context of AXI VDMA. The Address and Data value do not change until AXI transaction is complete." \

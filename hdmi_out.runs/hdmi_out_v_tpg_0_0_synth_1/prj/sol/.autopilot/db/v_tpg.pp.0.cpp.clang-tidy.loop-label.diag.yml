@@ -1,0 +1,3482 @@
+---
+MainSourceFile:  'C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          96568
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          323892
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          324356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          324821
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          608103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      91
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      92
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      93
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      94
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      95
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      125
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      126
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      127
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      128
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      129
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      130
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      131
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      132
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      133
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      134
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      184
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      185
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      186
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      213
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      214
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      216
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      217
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      218
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      254
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      255
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hotbm_apfixed.h'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1230967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1231781
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_289_1:  '
+    FileOffset:      289
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1234428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_289_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_449_1:  '
+    FileOffset:      449
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1237151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_449_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_629_1:  '
+    FileOffset:      629
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1240312
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_629_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_633_2:  '
+    FileOffset:      633
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1240393
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_633_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1242702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_840_1:  '
+    FileOffset:      840
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1244196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_840_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_859_2:  '
+    FileOffset:      859
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1244426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_859_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1173_1:  '
+    FileOffset:      1173
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1250608
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1173_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1256_1:  '
+    FileOffset:      1256
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cordic_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1252211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_1:  '
+    FileOffset:      68
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1260059
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_2:  '
+    FileOffset:      74
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1260209
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1260306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_4:  '
+    FileOffset:      145
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1262166
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_5:  '
+    FileOffset:      151
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1262316
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_6:  '
+    FileOffset:      155
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1262413
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_7:  '
+    FileOffset:      170
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1262794
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_8:  '
+    FileOffset:      178
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1263025
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_9:  '
+    FileOffset:      243
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1266472
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_249_10:  '
+    FileOffset:      249
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1266624
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_249_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_11:  '
+    FileOffset:      253
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1266724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_12:  '
+    FileOffset:      268
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1267106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_276_13:  '
+    FileOffset:      276
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1267344
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_276_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_505_14:  '
+    FileOffset:      505
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1282899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_505_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_15:  '
+    FileOffset:      511
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283051
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_16:  '
+    FileOffset:      515
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283150
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_525_17:  '
+    FileOffset:      525
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_525_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_529_18:  '
+    FileOffset:      529
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283425
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_529_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_539_19:  '
+    FileOffset:      539
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283710
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_539_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_547_20:  '
+    FileOffset:      547
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1283965
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_547_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_908_21:  '
+    FileOffset:      908
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1316204
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_908_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_914_22:  '
+    FileOffset:      914
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1316356
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_914_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_918_23:  '
+    FileOffset:      918
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1316456
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_918_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1034_1:  '
+    FileOffset:      1034
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1319132
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1040_2:  '
+    FileOffset:      1040
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1319282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1040_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1044_3:  '
+    FileOffset:      1044
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1319380
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1044_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1131_4:  '
+    FileOffset:      1131
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1322850
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1131_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_5:  '
+    FileOffset:      1137
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1323001
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1141_6:  '
+    FileOffset:      1141
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1323100
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1141_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1160_7:  '
+    FileOffset:      1160
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1323580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1160_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1167_8:  '
+    FileOffset:      1167
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1323822
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1167_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1283_9:  '
+    FileOffset:      1283
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1329394
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1283_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1289_10:  '
+    FileOffset:      1289
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1329546
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1289_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1293_11:  '
+    FileOffset:      1293
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1329645
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1293_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1313_12:  '
+    FileOffset:      1313
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1330154
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1313_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1320_13:  '
+    FileOffset:      1320
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1330403
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1320_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1582_14:  '
+    FileOffset:      1582
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1347760
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1582_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1588_15:  '
+    FileOffset:      1588
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1347912
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1588_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1592_16:  '
+    FileOffset:      1592
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1348012
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1592_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1616_17:  '
+    FileOffset:      1616
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1348486
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1616_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1623_18:  '
+    FileOffset:      1623
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1348753
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1623_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2053_19:  '
+    FileOffset:      2053
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1387324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2053_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2059_20:  '
+    FileOffset:      2059
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1387476
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2059_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2063_21:  '
+    FileOffset:      2063
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1387576
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2063_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2193_1:  '
+    FileOffset:      2193
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1390196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2200_2:  '
+    FileOffset:      2200
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1390359
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2200_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2204_3:  '
+    FileOffset:      2204
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1390451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2204_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2251_4:  '
+    FileOffset:      2251
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1392060
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2251_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2258_5:  '
+    FileOffset:      2258
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1392222
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2262_6:  '
+    FileOffset:      2262
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1392314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2262_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2280_7:  '
+    FileOffset:      2280
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1392687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2280_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2335_8:  '
+    FileOffset:      2335
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1395153
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2335_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2342_9:  '
+    FileOffset:      2342
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1395320
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2342_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2346_10:  '
+    FileOffset:      2346
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1395413
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2346_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2364_11:  '
+    FileOffset:      2364
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1395794
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2364_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2453_12:  '
+    FileOffset:      2453
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1401235
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2453_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2460_13:  '
+    FileOffset:      2460
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1401403
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2460_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2464_14:  '
+    FileOffset:      2464
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1401497
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2464_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2474_15:  '
+    FileOffset:      2474
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1401668
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2474_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2478_16:  '
+    FileOffset:      2478
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1401759
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2478_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2489_17:  '
+    FileOffset:      2489
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1402041
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2489_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2497_18:  '
+    FileOffset:      2497
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1402228
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2497_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2822_19:  '
+    FileOffset:      2822
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1436698
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2822_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2829_20:  '
+    FileOffset:      2829
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1436866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2829_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2833_21:  '
+    FileOffset:      2833
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1436960
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2833_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2921_1:  '
+    FileOffset:      2921
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1438762
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2928_2:  '
+    FileOffset:      2928
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1438870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2928_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2932_3:  '
+    FileOffset:      2932
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1438941
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2932_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2947_4:  '
+    FileOffset:      2947
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1439229
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2947_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2979_5:  '
+    FileOffset:      2979
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1440443
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2979_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2986_6:  '
+    FileOffset:      2986
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1440554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2986_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2990_7:  '
+    FileOffset:      2990
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1440627
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2990_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3005_8:  '
+    FileOffset:      3005
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1440922
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3005_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_9:  '
+    FileOffset:      3055
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1444255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3062_10:  '
+    FileOffset:      3062
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1444366
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3062_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3066_11:  '
+    FileOffset:      3066
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1444439
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3066_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3081_12:  '
+    FileOffset:      3081
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1444735
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3081_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3218_13:  '
+    FileOffset:      3218
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1464047
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3218_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3225_14:  '
+    FileOffset:      3225
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1464161
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3225_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3229_15:  '
+    FileOffset:      3229
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1464236
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3244_16:  '
+    FileOffset:      3244
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1464523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3244_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3404_17:  '
+    FileOffset:      3404
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1490133
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3404_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3411_18:  '
+    FileOffset:      3411
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1490247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3411_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3415_19:  '
+    FileOffset:      3415
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_exp_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1490324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3415_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1524392
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_921_1:  '
+    FileOffset:      921
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1532781
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_921_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1345_1:  '
+    FileOffset:      1345
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_log_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1551754
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1345_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_240_1:  '
+    FileOffset:      240
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1566609
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_240_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_2:  '
+    FileOffset:      268
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_sqrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1567130
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1583043
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1584193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_3:  '
+    FileOffset:      123
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1584502
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_153_4:  '
+    FileOffset:      153
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1585012
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_153_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_281_1:  '
+    FileOffset:      281
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1586926
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_281_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1587291
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_315_3:  '
+    FileOffset:      315
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1587599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_315_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_433_1:  '
+    FileOffset:      433
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1589427
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_433_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_447_2:  '
+    FileOffset:      447
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_pow_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1589752
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_447_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1592404
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1595296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_248_1:  '
+    FileOffset:      248
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_diff_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1596583
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_1:  '
+    FileOffset:      16
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1607480
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1607655
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_38_1:  '
+    FileOffset:      38
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1607816
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_38_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1607978
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_60_1:  '
+    FileOffset:      60
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1608152
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_60_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_71_1:  '
+    FileOffset:      71
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1608327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_71_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1608488
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_1:  '
+    FileOffset:      93
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_all_any_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1608650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_mad_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1679428
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_cbrt_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1681172
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_1:  '
+    FileOffset:      49
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1685678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_81_2:  '
+    FileOffset:      81
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1686409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_81_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_3:  '
+    FileOffset:      169
+    FilePath:        'C:\Xilinx\Vitis_HLS\2023.2\common\technology\autopilot\etc\hls_hypot_apfixed.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1688094
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_1:  '
+    FileOffset:      137
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753156
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_2:  '
+    FileOffset:      139
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753204
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_1:  '
+    FileOffset:      175
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_177_2:  '
+    FileOffset:      177
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_177_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_1:  '
+    FileOffset:      213
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753943
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_215_2:  '
+    FileOffset:      215
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1753993
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_215_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_251_1:  '
+    FileOffset:      251
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1754337
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_251_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_2:  '
+    FileOffset:      253
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1754387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_320_1:  '
+    FileOffset:      320
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1755129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_320_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_417_1:  '
+    FileOffset:      417
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1756011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_417_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_702_1:  '
+    FileOffset:      702
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1759690
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_702_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_742_1:  '
+    FileOffset:      742
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1760121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_742_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_838_1:  '
+    FileOffset:      838
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1761273
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_838_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_990_1:  '
+    FileOffset:      990
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1763535
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_990_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1030_1:  '
+    FileOffset:      1030
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1763970
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1030_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1126_1:  '
+    FileOffset:      1126
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_mem.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1765134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1126_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_232_1:  '
+    FileOffset:      232
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1771111
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_232_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_1:  '
+    FileOffset:      253
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1771653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_263_1:  '
+    FileOffset:      263
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1771848
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_263_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_274_1:  '
+    FileOffset:      274
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1772079
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_274_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_285_1:  '
+    FileOffset:      285
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1772306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_285_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_1:  '
+    FileOffset:      296
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1772537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_308_1:  '
+    FileOffset:      308
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1772765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_308_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_319_1:  '
+    FileOffset:      319
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1772996
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_319_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_1:  '
+    FileOffset:      331
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1773224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_342_1:  '
+    FileOffset:      342
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1773455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_342_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_619_1:  '
+    FileOffset:      619
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1779678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_619_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_696_1:  '
+    FileOffset:      696
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1781967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_696_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_1:  '
+    FileOffset:      720
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1782603
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_743_1:  '
+    FileOffset:      743
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_core.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1783268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_743_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_208_1:  '
+    FileOffset:      208
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgbase.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1787444
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_208_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_189_1:  '
+    FileOffset:      189
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_io.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1792674
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_189_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_255_1:  '
+    FileOffset:      255
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_io.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1795162
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_255_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1025_1:  '
+    FileOffset:      1025
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1825232
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1025_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1105_1:  '
+    FileOffset:      1105
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1827505
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1105_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1121_1:  '
+    FileOffset:      1121
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1828088
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1121_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1137_1:  '
+    FileOffset:      1137
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1828666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1137_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1155_1:  '
+    FileOffset:      1155
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1829328
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1155_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1193_1:  '
+    FileOffset:      1193
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1830516
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1193_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1831318
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1508_1:  '
+    FileOffset:      1508
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_arithm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1841629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1508_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_471_1:  '
+    FileOffset:      471
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1861820
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_471_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_484_2:  '
+    FileOffset:      484
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1862466
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_484_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_493_3:  '
+    FileOffset:      493
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1862887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_493_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_494_4:  '
+    FileOffset:      494
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1862969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_494_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_502_5:  '
+    FileOffset:      502
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1863418
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_502_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_516_6:  '
+    FileOffset:      516
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1863938
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_516_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_652_1:  '
+    FileOffset:      652
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1869227
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_652_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_656_2:  '
+    FileOffset:      656
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1869431
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_656_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_663_3:  '
+    FileOffset:      663
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1869690
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_663_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_680_4:  '
+    FileOffset:      680
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1870425
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_680_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_681_5:  '
+    FileOffset:      681
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1870506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_681_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_783_1:  '
+    FileOffset:      783
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1874187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_783_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_793_2:  '
+    FileOffset:      793
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1874564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_793_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_800_3:  '
+    FileOffset:      800
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1874927
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_800_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_810_4:  '
+    FileOffset:      810
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1875296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_810_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_936_1:  '
+    FileOffset:      936
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1879083
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_936_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_958_2:  '
+    FileOffset:      958
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1879855
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_958_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_964_3:  '
+    FileOffset:      964
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1880102
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_964_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1084_1:  '
+    FileOffset:      1084
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1884631
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1084_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1089_2:  '
+    FileOffset:      1089
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1884870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1089_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1117_3:  '
+    FileOffset:      1117
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1885824
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1117_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1525_1:  '
+    FileOffset:      1525
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1901199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1525_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1534_1:  '
+    FileOffset:      1534
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1901397
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1534_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2095_1:  '
+    FileOffset:      2095
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1919383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2095_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2102_2:  '
+    FileOffset:      2102
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1919615
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2102_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2103_3:  '
+    FileOffset:      2103
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1919655
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2103_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2246_1:  '
+    FileOffset:      2246
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1926201
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2246_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2253_2:  '
+    FileOffset:      2253
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1926455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2253_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2259_3:  '
+    FileOffset:      2259
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1926684
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2259_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2273_4:  '
+    FileOffset:      2273
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1927215
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2273_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2284_5:  '
+    FileOffset:      2284
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1927580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2284_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2329_1:  '
+    FileOffset:      2329
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1929538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2329_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2330_2:  '
+    FileOffset:      2330
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1929575
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2330_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2410_3:  '
+    FileOffset:      2410
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1931653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2410_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2434_4:  '
+    FileOffset:      2434
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1932449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2434_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2444_5:  '
+    FileOffset:      2444
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1932687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2444_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2562_1:  '
+    FileOffset:      2562
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1936122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2562_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2579_2:  '
+    FileOffset:      2579
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1936558
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2579_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2582_3:  '
+    FileOffset:      2582
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1936628
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2582_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2585_4:  '
+    FileOffset:      2585
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1936726
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2585_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2593_5:  '
+    FileOffset:      2593
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1936946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2593_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2596_6:  '
+    FileOffset:      2596
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1937043
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2596_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2605_7:  '
+    FileOffset:      2605
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1937271
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2605_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2613_8:  '
+    FileOffset:      2613
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1937419
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2613_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2614_9:  '
+    FileOffset:      2614
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1937455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2614_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2664_1:  '
+    FileOffset:      2664
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1938623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2664_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2665_2:  '
+    FileOffset:      2665
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1938666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2665_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2673_3:  '
+    FileOffset:      2673
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1938994
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2673_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2674_4:  '
+    FileOffset:      2674
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1939034
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2674_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2716_1:  '
+    FileOffset:      2716
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1940109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2716_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2720_2:  '
+    FileOffset:      2720
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1940182
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2720_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2774_1:  '
+    FileOffset:      2774
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1941723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2774_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2775_2:  '
+    FileOffset:      2775
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1941754
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2775_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2834_1:  '
+    FileOffset:      2834
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1944151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2834_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2835_2:  '
+    FileOffset:      2835
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1944214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2835_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2838_3:  '
+    FileOffset:      2838
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1944367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2838_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2850_4:  '
+    FileOffset:      2850
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1944982
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2850_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2861_5:  '
+    FileOffset:      2861
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1945649
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2861_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2877_6:  '
+    FileOffset:      2877
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1946626
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2877_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2883_7:  '
+    FileOffset:      2883
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1946955
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2883_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2889_8:  '
+    FileOffset:      2889
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1947311
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2889_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2901_9:  '
+    FileOffset:      2901
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1947861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2901_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2915_10:  '
+    FileOffset:      2915
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1948503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2915_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2929_11:  '
+    FileOffset:      2929
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2929_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2930_12:  '
+    FileOffset:      2930
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949200
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2930_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2935_13:  '
+    FileOffset:      2935
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949479
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2935_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2936_14:  '
+    FileOffset:      2936
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949545
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2936_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2943_15:  '
+    FileOffset:      2943
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949888
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2943_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2944_16:  '
+    FileOffset:      2944
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1949956
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2944_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2950_17:  '
+    FileOffset:      2950
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1950238
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2950_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_2951_18:  '
+    FileOffset:      2951
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1950306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_2951_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3034_1:  '
+    FileOffset:      3034
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1953267
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3034_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3035_2:  '
+    FileOffset:      3035
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1953326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3035_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3038_3:  '
+    FileOffset:      3038
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1953471
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3038_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3055_4:  '
+    FileOffset:      3055
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1954305
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3055_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3071_5:  '
+    FileOffset:      3071
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1955213
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3071_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3078_6:  '
+    FileOffset:      3078
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1955542
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3078_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3090_7:  '
+    FileOffset:      3090
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1956085
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3090_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3109_8:  '
+    FileOffset:      3109
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1957038
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3109_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_3110_9:  '
+    FileOffset:      3110
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_imgproc.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1957100
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_3110_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_1:  '
+    FileOffset:      77
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_histogram.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1958780
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_2:  '
+    FileOffset:      83
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_histogram.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1958885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_3:  '
+    FileOffset:      104
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_histogram.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1959616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_4:  '
+    FileOffset:      116
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_histogram.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1959952
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_5:  '
+    FileOffset:      156
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_histogram.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1961257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_1:  '
+    FileOffset:      69
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1962803
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_118_1:  '
+    FileOffset:      118
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1964297
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_118_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_2:  '
+    FileOffset:      122
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1964486
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_3:  '
+    FileOffset:      127
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1964696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_138_4:  '
+    FileOffset:      138
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1964952
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_138_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_5:  '
+    FileOffset:      143
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1965124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_6:  '
+    FileOffset:      151
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1965394
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_7:  '
+    FileOffset:      156
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1965566
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_182_1:  '
+    FileOffset:      182
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1966506
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_182_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_1:  '
+    FileOffset:      209
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1967085
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_215_2:  '
+    FileOffset:      215
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1967260
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_215_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_264_1:  '
+    FileOffset:      264
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1969281
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_264_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_2:  '
+    FileOffset:      265
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1969335
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_270_3:  '
+    FileOffset:      270
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1969540
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_270_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_280_4:  '
+    FileOffset:      280
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1969926
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_280_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_282_5:  '
+    FileOffset:      282
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1969978
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_282_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_288_6:  '
+    FileOffset:      288
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1970177
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_288_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_380_1:  '
+    FileOffset:      380
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1973308
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_380_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_2:  '
+    FileOffset:      381
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1973362
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_386_3:  '
+    FileOffset:      386
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1973567
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_386_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_4:  '
+    FileOffset:      396
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1973953
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_398_5:  '
+    FileOffset:      398
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1974005
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_398_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_404_6:  '
+    FileOffset:      404
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_fast.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1974204
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_404_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_1:  '
+    FileOffset:      104
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1977813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_2:  '
+    FileOffset:      108
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1977874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_110_3:  '
+    FileOffset:      110
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1977933
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_110_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_4:  '
+    FileOffset:      116
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978103
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_5:  '
+    FileOffset:      117
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_6:  '
+    FileOffset:      119
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978212
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_7:  '
+    FileOffset:      123
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978332
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_125_8:  '
+    FileOffset:      125
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978403
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_125_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_9:  '
+    FileOffset:      134
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1978703
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_10:  '
+    FileOffset:      146
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979048
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_154_1:  '
+    FileOffset:      154
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979230
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_154_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_2:  '
+    FileOffset:      163
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979431
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_168_3:  '
+    FileOffset:      168
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_168_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_4:  '
+    FileOffset:      170
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979619
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_1:  '
+    FileOffset:      181
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979818
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_186_2:  '
+    FileOffset:      186
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979910
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_186_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_3:  '
+    FileOffset:      187
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1979948
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_4:  '
+    FileOffset:      190
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1980040
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_1:  '
+    FileOffset:      266
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1982383
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_398_1:  '
+    FileOffset:      398
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_undistort.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          1986722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_398_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_215_1:  '
+    FileOffset:      215
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_hough.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2000340
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_215_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_217_2:  '
+    FileOffset:      217
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_hough.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2000398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_217_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_1:  '
+    FileOffset:      104
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2005029
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_2:  '
+    FileOffset:      105
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2005061
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_1:  '
+    FileOffset:      127
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2005935
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_130_2:  '
+    FileOffset:      130
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2006017
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_130_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_3:  '
+    FileOffset:      137
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2006223
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_4:  '
+    FileOffset:      139
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2006276
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_147_5:  '
+    FileOffset:      147
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2006512
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_147_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_6:  '
+    FileOffset:      160
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2006916
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_196_1:  '
+    FileOffset:      196
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2008093
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_196_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_2:  '
+    FileOffset:      199
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_harris.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2008167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_148_1:  '
+    FileOffset:      148
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2015958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_148_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_2:  '
+    FileOffset:      156
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2016146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_3:  '
+    FileOffset:      159
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2016206
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_4:  '
+    FileOffset:      167
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2016728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_1:  '
+    FileOffset:      190
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2017867
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_2:  '
+    FileOffset:      193
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2017925
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_1:  '
+    FileOffset:      210
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2018333
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_217_2:  '
+    FileOffset:      217
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2018618
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_217_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_246_1:  '
+    FileOffset:      246
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2019565
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_246_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_294_1:  '
+    FileOffset:      294
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2020994
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_294_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_2:  '
+    FileOffset:      296
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2021032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_3:  '
+    FileOffset:      309
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2021437
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_430_1:  '
+    FileOffset:      430
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2025059
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_430_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_432_2:  '
+    FileOffset:      432
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2025106
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_432_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_440_3:  '
+    FileOffset:      440
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2025404
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_440_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_469_1:  '
+    FileOffset:      469
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2026230
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_469_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_474_2:  '
+    FileOffset:      474
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_haar.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2026322
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_474_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_189_1:  '
+    FileOffset:      189
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2031899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_189_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_2:  '
+    FileOffset:      195
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2032042
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_3:  '
+    FileOffset:      199
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2032183
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_230_1:  '
+    FileOffset:      230
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2033473
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_230_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_231_2:  '
+    FileOffset:      231
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2033521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_231_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_234_3:  '
+    FileOffset:      234
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2033610
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_234_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_270_1:  '
+    FileOffset:      270
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2034458
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_270_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_288_1:  '
+    FileOffset:      288
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2034964
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_288_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_296_2:  '
+    FileOffset:      296
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2035134
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_296_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_314_1:  '
+    FileOffset:      314
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2035537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_314_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_317_2:  '
+    FileOffset:      317
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2035615
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_317_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_421_1:  '
+    FileOffset:      421
+    FilePath:        'c:\Xil_prj\hdmi_out\hdmi_out.gen\sources_1\bd\hdmi_out\ip\hdmi_out_v_tpg_0_0\src\hls\hls_video_stereobm.h'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2038940
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_421_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_563_1:  '
+    FileOffset:      563
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2097471
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_563_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_565_2:  '
+    FileOffset:      565
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2097509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_565_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_772_1:  '
+    FileOffset:      772
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2100332
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_772_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_774_2:  '
+    FileOffset:      774
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2100370
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_774_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_869_1:  '
+    FileOffset:      869
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2102148
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_869_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_871_2:  '
+    FileOffset:      871
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2102187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_871_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_979_1:  '
+    FileOffset:      979
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2104167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_979_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_981_2:  '
+    FileOffset:      981
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2104203
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_981_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1011_3:  '
+    FileOffset:      1011
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2104561
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1011_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1013_4:  '
+    FileOffset:      1013
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2104598
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1013_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1075_1:  '
+    FileOffset:      1075
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2105653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1075_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1103_1:  '
+    FileOffset:      1103
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2106200
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1103_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1118_1:  '
+    FileOffset:      1118
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2106537
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1118_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1133_1:  '
+    FileOffset:      1133
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2106868
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1133_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1154_1:  '
+    FileOffset:      1154
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2107408
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1154_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1175_1:  '
+    FileOffset:      1175
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2107947
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1175_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1196_1:  '
+    FileOffset:      1196
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2108487
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1196_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1218_1:  '
+    FileOffset:      1218
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2109028
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1218_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1243_1:  '
+    FileOffset:      1243
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2109669
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1243_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1277_1:  '
+    FileOffset:      1277
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2110462
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1277_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1349_1:  '
+    FileOffset:      1349
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2112751
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1349_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1396_1:  '
+    FileOffset:      1396
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2113918
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1396_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1465_1:  '
+    FileOffset:      1465
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2115520
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1465_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1535_1:  '
+    FileOffset:      1535
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2117051
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1535_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1578_1:  '
+    FileOffset:      1578
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2117906
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1578_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1635_1:  '
+    FileOffset:      1635
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2119078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1635_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1724_1:  '
+    FileOffset:      1724
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2120075
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1724_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1761_1:  '
+    FileOffset:      1761
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2120832
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1761_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1833_1:  '
+    FileOffset:      1833
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2122747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1833_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1930_1:  '
+    FileOffset:      1930
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2124635
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1930_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1961_1:  '
+    FileOffset:      1961
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2125265
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1961_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1987_1:  '
+    FileOffset:      1987
+    FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xil_prj\hdmi_out\hdmi_out.runs\hdmi_out_v_tpg_0_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp'
+        Offset:          2125957
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1987_1: '
+...

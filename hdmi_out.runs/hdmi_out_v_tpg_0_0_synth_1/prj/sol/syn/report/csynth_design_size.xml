@@ -1,0 +1,126 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 9769, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 2801, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 2076, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 2022, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1659, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 1454, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 1411, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 1415, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 1485, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 1514, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 1491, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 1468, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 1504, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 1450, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 1463, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 1453, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="v_tpg" col1="v_tpg.cpp:409" col2="9769" col3="1659" col4="1514" col5="1450" col6="1453">
+                    <row id="22" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="1" col3="1" col4="1" col5="1" col6="4"/>
+                    <row id="9" col0="v_tpgHlsDataFlow" col1="v_tpg.cpp:304" col2="9695" col3="1589" col4="1437" col5="1342" col6="1295">
+                        <row id="6" col0="tpgBackground" col1="v_tpg.cpp:536" col2="8090" col3="1155" col4="1030" col5="977" col6="969">
+                            <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="10" col2_disp="  10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="4" col0="tpgPatternHorizontalRamp" col1="v_tpg.cpp:1067" col2="134" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="3" col0="tpgPatternVerticalRamp" col1="v_tpg.cpp:1090" col2="142" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="24" col0="tpgPatternTemporalRamp" col1="v_tpg.cpp:1115" col2="120" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="18" col0="tpgPatternSolidRed" col1="v_tpg.cpp:1130" col2="138" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="29" col0="tpgPatternSolidGreen" col1="v_tpg.cpp:1151" col2="138" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="19" col0="tpgPatternSolidBlue" col1="v_tpg.cpp:1172" col2="138" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="7" col0="tpgPatternSolidBlack" col1="v_tpg.cpp:1193" col2="138" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="14" col0="tpgPatternSolidWhite" col1="v_tpg.cpp:1214" col2="138" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="30" col0="tpgPatternColorBars" col1="v_tpg.cpp:1235" col2="754" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="26" col0="tpgPatternZonePlate" col1="v_tpg.cpp:1319" col2="203" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                                <row id="2" col0="reg&lt;int&gt;" col1="x_hls_utils.h:222" col2="1" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="23" col0="tpgPatternTartanColorBars" col1="v_tpg.cpp:1369" col2="638" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="10" col2_disp="  10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="1" col0="tpgPatternCrossHatch" col1="v_tpg.cpp:1437" col2="781" col3="125" col4="119" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                                <row id="13" col0="reg&lt;ap_uint&lt;10&gt; &gt;" col1="x_hls_utils.h:222" col2="3" col3="3" col4="3" col5="" col6=""/>
+                            </row>
+                            <row id="12" col0="tpgPatternRainbow" col1="v_tpg.cpp:1273" col2="277" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="8" col0="tpgPatternVerticalHorizontalRamp" col1="v_tpg.cpp:1527" col2="139" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="21" col0="tpgPatternCheckerBoard" col1="v_tpg.cpp:1551" col2="648" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="11" col0="tpgPRBS" col1="v_tpg.cpp:1823" col2="1767" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="28" col0="tpgPatternDPColorRamp" col1="v_tpg.cpp:1618" col2="469" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="10" col2_disp="  10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="15" col0="tpgPatternDPBlackWhiteVerticalLine" col1="v_tpg.cpp:1718" col2="124" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="16" col0="tpgPatternDPColorSquare" col1="v_tpg.cpp:1734" col2="947" col3="145" col4="138" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="2" col0="reg&lt;int&gt;" col1="x_hls_utils.h:222" col2="" col3="1" col4="1" col5="1" col6="4"/>
+                            <row id="13" col0="reg&lt;ap_uint&lt;10&gt; &gt;" col1="x_hls_utils.h:222" col2="" col3="" col4="" col5="2" col6="5"/>
+                        </row>
+                        <row id="17" col0="tpgForeground" col1="v_tpg.cpp:759" col2="666" col3="272" col4="216" col5="202" col6="193">
+                            <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="15" col2_disp="  15 (3 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="20" col0="tpgPatternBox" col1="v_tpg.cpp:1869" col2="248" col3="" col4="" col5="" col6=""/>
+                            <row id="25" col0="tpgPatternCrossHair" col1="v_tpg.cpp:1956" col2="144" col3="" col4="" col5="" col6=""/>
+                            <row id="10" col0="tpgPatternMask" col1="v_tpg.cpp:1983" col2="137" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="5" col0="MultiPixStream2AXIvideo" col1="v_tpg.cpp:919" col2="845" col3="134" col4="181" col5="153" col6="119">
+                            <row id="27" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

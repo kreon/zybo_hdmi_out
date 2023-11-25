@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Nov 19 07:19:12 2023
-# Process ID: 7060
-# Current directory: C:/xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1
+# Start of session at: Tue Nov 21 15:34:16 2023
+# Process ID: 14440
+# Current directory: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1
 # Command line: vivado.exe -log hdmi_out_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_processing_system7_0_0.tcl
-# Log file: C:/xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1/hdmi_out_processing_system7_0_0.vds
-# Journal file: C:/xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1\vivado.jou
-# Running On: ta4ka, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 16938 MB
+# Log file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1/hdmi_out_processing_system7_0_0.vds
+# Journal file: C:/Xil_prj/hdmi_out/hdmi_out.runs/hdmi_out_processing_system7_0_0_synth_1\vivado.jou
+# Running On: ARGUS-IT-WS1, OS: Windows, CPU Frequency: 3686 MHz, CPU Physical cores: 10, Host memory: 34084 MB
 #-----------------------------------------------------------
 source hdmi_out_processing_system7_0_0.tcl -notrace

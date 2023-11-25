@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_3" LaunchPart="xc7z010clg400-1" LaunchTime="1700383957">
+<GenRun Id="impl_3" LaunchPart="xc7z010clg400-1" LaunchTime="1700827015">
   <File Type="ROUTE-PWR" Name="hdmi_out_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="hdmi_out_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="hdmi_out_wrapper_power_summary_routed.pb"/>
@@ -86,13 +86,6 @@
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/rgb_doubler.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/hdmi_out/hdmi_out.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -103,6 +96,21 @@
     <File Path="$PGENDIR/sources_1/bd/hdmi_out/hdl/hdmi_out_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb_pattern.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb_doubler.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -153,16 +161,20 @@
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_gpio_btn_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_dynclk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_gpio_sw_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_proc_sys_reset_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_proc_sys_reset_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_rgb2dvi_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_gpio_hdmi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_v_tc_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_v_axi4s_vid_out_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_gpio_led_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axi_vdma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_v_tc_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axis_subset_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_out_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_rgb2vga_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_rgb_doubler_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_v_tpg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axis_broadcaster_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_axis_subset_converter_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_out_v_axi4s_vid_out_0_1"/>
 </GenRun>

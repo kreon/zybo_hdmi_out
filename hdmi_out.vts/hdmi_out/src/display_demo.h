@@ -27,6 +27,7 @@
 /* ------------------------------------------------------------ */
 
 #include "xil_types.h"
+#include "display_ctrl/display_ctrl.h"
 
 /* ------------------------------------------------------------ */
 /*					Miscellaneous Declarations					*/
@@ -51,6 +52,8 @@ void DemoChangeRes();
 void DemoCRMenu();
 void DemoInvertFrame(u8 *srcFrame, u8 *destFrame, u32 width, u32 height, u32 stride);
 void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern);
+void DemoGradient(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride);
+void DemoAnimated(DisplayCtrl *dispPtr, u32 width, u32 height, u32 stride);
 
 /* ------------------------------------------------------------ */
 // *character font

@@ -9,6 +9,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out ||
 # IP: bd/hdmi_out/ip/hdmi_out_axi_dynclk_0_0/hdmi_out_axi_dynclk_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_dynclk_0_0 || ORIG_REF_NAME==hdmi_out_axi_dynclk_0_0} -quiet] -quiet
 
+# IP: bd/hdmi_out/ip/hdmi_out_xbar_1/hdmi_out_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_xbar_1 || ORIG_REF_NAME==hdmi_out_xbar_1} -quiet] -quiet
+
 # IP: bd/hdmi_out/ip/hdmi_out_axi_mem_intercon_0/hdmi_out_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_mem_intercon_0 || ORIG_REF_NAME==hdmi_out_axi_mem_intercon_0} -quiet] -quiet
 
@@ -48,12 +51,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_ax
 # IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_hdmi_0/hdmi_out_axi_gpio_hdmi_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_hdmi_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_hdmi_0} -quiet] -quiet
 
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_led_0/hdmi_out_axi_gpio_led_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_led_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_led_0} -quiet] -quiet
-
-# IP: bd/hdmi_out/ip/hdmi_out_axi_gpio_sw_0/hdmi_out_axi_gpio_sw_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axi_gpio_sw_0 || ORIG_REF_NAME==hdmi_out_axi_gpio_sw_0} -quiet] -quiet
-
 # IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_0_0/hdmi_out_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_0_0 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_0_0} -quiet] -quiet
 
@@ -66,11 +63,29 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_pr
 # IP: bd/hdmi_out/ip/hdmi_out_system_ila_0_0/hdmi_out_system_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_system_ila_0_0 || ORIG_REF_NAME==hdmi_out_system_ila_0_0} -quiet] -quiet
 
+# IP: bd/hdmi_out/ip/hdmi_out_v_tpg_0_0/hdmi_out_v_tpg_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_v_tpg_0_0 || ORIG_REF_NAME==hdmi_out_v_tpg_0_0} -quiet] -quiet
+
 # IP: bd/hdmi_out/ip/hdmi_out_rgb2vga_0_0/hdmi_out_rgb2vga_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_rgb2vga_0_0 || ORIG_REF_NAME==hdmi_out_rgb2vga_0_0} -quiet] -quiet
 
-# IP: bd/hdmi_out/ip/hdmi_out_rgb_doubler_0_1/hdmi_out_rgb_doubler_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_rgb_doubler_0_1 || ORIG_REF_NAME==hdmi_out_rgb_doubler_0_1} -quiet] -quiet
+# IP: bd/hdmi_out/ip/hdmi_out_v_axi4s_vid_out_0_1/hdmi_out_v_axi4s_vid_out_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_v_axi4s_vid_out_0_1 || ORIG_REF_NAME==hdmi_out_v_axi4s_vid_out_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_axis_broadcaster_0_0/hdmi_out_axis_broadcaster_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axis_broadcaster_0_0 || ORIG_REF_NAME==hdmi_out_axis_broadcaster_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_v_tc_1_0/hdmi_out_v_tc_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_v_tc_1_0 || ORIG_REF_NAME==hdmi_out_v_tc_1_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_axis_subset_converter_0_1/hdmi_out_axis_subset_converter_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_axis_subset_converter_0_1 || ORIG_REF_NAME==hdmi_out_axis_subset_converter_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_clk_wiz_0_0/hdmi_out_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_out_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_proc_sys_reset_0_1/hdmi_out_proc_sys_reset_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_proc_sys_reset_0_1 || ORIG_REF_NAME==hdmi_out_proc_sys_reset_0_1} -quiet] -quiet
 
 # IP: bd/hdmi_out/ip/hdmi_out_s00_regslice_0/hdmi_out_s00_regslice_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s00_regslice_0 || ORIG_REF_NAME==hdmi_out_s00_regslice_0} -quiet] -quiet
@@ -78,10 +93,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s0
 # IP: bd/hdmi_out/ip/hdmi_out_s00_data_fifo_0/hdmi_out_s00_data_fifo_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s00_data_fifo_0 || ORIG_REF_NAME==hdmi_out_s00_data_fifo_0} -quiet] -quiet
 
+# IP: bd/hdmi_out/ip/hdmi_out_s01_regslice_0/hdmi_out_s01_regslice_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s01_regslice_0 || ORIG_REF_NAME==hdmi_out_s01_regslice_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_s01_data_fifo_0/hdmi_out_s01_data_fifo_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_s01_data_fifo_0 || ORIG_REF_NAME==hdmi_out_s01_data_fifo_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_m00_data_fifo_0/hdmi_out_m00_data_fifo_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_m00_data_fifo_0 || ORIG_REF_NAME==hdmi_out_m00_data_fifo_0} -quiet] -quiet
+
+# IP: bd/hdmi_out/ip/hdmi_out_m00_regslice_0/hdmi_out_m00_regslice_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_m00_regslice_0 || ORIG_REF_NAME==hdmi_out_m00_regslice_0} -quiet] -quiet
+
 # IP: bd/hdmi_out/ip/hdmi_out_auto_pc_0/hdmi_out_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_auto_pc_0 || ORIG_REF_NAME==hdmi_out_auto_pc_0} -quiet] -quiet
 
 # IP: bd/hdmi_out/ip/hdmi_out_auto_pc_1/hdmi_out_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_auto_pc_1 || ORIG_REF_NAME==hdmi_out_auto_pc_1} -quiet] -quiet
 
-# XDC: c:/xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdmi_out_ooc.xdc
+# IP: bd/hdmi_out/ip/hdmi_out_auto_cc_0/hdmi_out_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==hdmi_out_auto_cc_0 || ORIG_REF_NAME==hdmi_out_auto_cc_0} -quiet] -quiet
+
+# XDC: c:/Xil_prj/hdmi_out/hdmi_out.gen/sources_1/bd/hdmi_out/hdmi_out_ooc.xdc
